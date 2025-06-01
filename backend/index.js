@@ -6,7 +6,7 @@ const cors = require('cors');
 const nodemailer = require('nodemailer');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-
+const searchRoutes = require('./routes/search');
 const connectDB = require('./config/db');
 const EmailLog = require('./models/EmailLog');
 const User = require('./models/User');
@@ -22,6 +22,8 @@ app.use(cors());
 
 // Middleware to parse JSON body
 app.use(bodyParser.json());
+
+app.use(searchRoutes);
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
