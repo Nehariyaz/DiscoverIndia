@@ -1,0 +1,1555 @@
+module.exports = [
+   {
+    name: "Lepakshi Temple",
+    state: "Andhra Pradesh",
+    travelTypes: ["solo", "culture", "heritage"],
+    budgetRange: [3000, 10000],
+    activities: ["temple", "architecture", "history"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Front_side_of_Veerabhadra_Temple%2C_Lepakshi.jpg",
+    description: "Famous for its hanging pillar and intricate Vijayanagara-style architecture."
+  },
+  {
+    name: "Undavalli Caves",
+    state: "Andhra Pradesh",
+    travelTypes: ["solo", "heritage", "group"],
+    budgetRange: [2000, 8000],
+    activities: ["caves", "architecture", "history"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/1-undavalli-caves-guntur-andhra-pradesh-attr-hero?qlt=82&ts=1726743723061",
+    description: "Ancient rock-cut caves carved from sandstone, featuring Jain and Hindu sculptures."
+  },
+  {
+    name: "Kondapalli Fort",
+    state: "Andhra Pradesh",
+    travelTypes: ["family", "history", "group"],
+    budgetRange: [2500, 9000],
+    activities: ["fort", "trekking", "heritage"],
+    seasons: ["winter", "monsoon"],
+    imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/25/39/c9/kondapalli-fort.jpg?w=1200&h=-1&s=1",
+    description: "A centuries-old fort located on a hilltop, known for panoramic views and wooden toys."
+  },
+  {
+    name: "Tirupati Temple",
+    state: "Andhra Pradesh",
+    travelTypes: ["family", "spiritual", "solo"],
+    budgetRange: [4000, 15000],
+    activities: ["pilgrimage", "temple", "culture"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Tirumala_Anand_nilayam4653.jpg",
+    description: "One of the most visited and sacred Hindu temples dedicated to Lord Venkateswara."
+  },
+  {
+    name: "Araku Valley",
+    state: "Andhra Pradesh",
+    travelTypes: ["couple", "nature", "family"],
+    budgetRange: [5000, 18000],
+    activities: ["hill station", "coffee plantations", "nature"],
+    seasons: ["winter", "monsoon"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_iEf-koK81s1y7-Q_LyWK3KdhX9Wfb9waiA&s",
+    description: "A scenic hill station known for tribal culture, coffee gardens, and pleasant weather."
+  },
+  {
+    name: "Borra Caves",
+    state: "Andhra Pradesh",
+    travelTypes: ["adventure", "group", "nature"],
+    budgetRange: [3000, 12000],
+    activities: ["caves", "geological", "trekking"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://www.holidify.com/images/cmsuploads/compressed/Borra-Caves_20200117122959.jpg",
+    description: "Limestone caves with fascinating stalactites and stalagmites formations nestled in the Ananthagiri Hills."
+  },
+  {
+  name: "Tawang Monastery",
+  state: "Arunachal Pradesh",
+  travelTypes: ["spiritual", "solo", "nature"],
+  budgetRange: [8000, 20000],
+  activities: ["monastery", "culture", "mountains"],
+  seasons: ["summer", "autumn"],
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/66/Tawang_Monastery_3.jpg",
+  description: "The largest monastery in India, offering stunning views of the Himalayas and deep spiritual significance."
+},
+{
+    name: "Ziro Valley",
+    state: "Arunachal Pradesh",
+    travelTypes: ["solo", "couple", "nature"],
+    budgetRange: [6000, 15000],
+    activities: ["nature", "trekking", "culture"],
+    seasons: ["summer", "autumn"],
+    imageUrl: "https://www.india.com/wp-content/uploads/2024/07/Explore-Ziro-Valley.jpg",
+    description: "A picturesque valley known for lush rice fields, Apatani tribal culture, and scenic views."
+  },
+  {
+    name: "Namdapha National Park",
+    state: "Arunachal Pradesh",
+    travelTypes: ["adventure", "nature", "wildlife"],
+    budgetRange: [7000, 18000],
+    activities: ["wildlife", "trekking", "nature"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://namdaphatigerreserve.org/uploads/news/220580017_216437287040710_1161354752835014055_n.jpg",
+    description: "A biodiversity hotspot home to tigers, leopards, and pristine forests."
+  },
+  {
+    name: "Sela Pass",
+    state: "Arunachal Pradesh",
+    travelTypes: ["solo", "adventure", "group"],
+    budgetRange: [5000, 14000],
+    activities: ["mountains", "snow", "scenic drive"],
+    seasons: ["winter", "summer"],
+    imageUrl: "https://res.cloudinary.com/kmadmin/image/upload/v1620113610/kiomoi/Tawang_Sela_Pass_1620113609430.jpg",
+    description: "Snow-covered high-altitude pass with breathtaking views and a sacred lake."
+  },
+  {
+    name: "Bhalukpong",
+    state: "Arunachal Pradesh",
+    travelTypes: ["family", "group", "nature"],
+    budgetRange: [4000, 12000],
+    activities: ["river rafting", "camping", "nature"],
+    seasons: ["spring", "autumn"],
+    imageUrl: "https://tripxl.com/blog/wp-content/uploads/2024/08/Bhalukpong-Fort.jpg",
+    description: "A peaceful gateway to Arunachal known for outdoor activities and riverside scenery."
+  },
+  {
+    name: "Dirang Valley",
+    state: "Arunachal Pradesh",
+    travelTypes: ["couple", "nature", "relaxation"],
+    budgetRange: [5000, 13000],
+    activities: ["nature", "hot springs", "hiking"],
+    seasons: ["summer", "spring"],
+    imageUrl: "https://oddessemania.in/wp-content/uploads/2024/10/Dirang-images.jpg",
+    description: "A serene valley with hot springs, monasteries, and beautiful mountain views."
+  },
+  {
+    name: "Kaziranga National Park",
+    state: "Assam",
+    travelTypes: ["family", "wildlife", "photography"],
+    budgetRange: [8000, 20000],
+    activities: ["wildlife", "jeep safari", "bird watching"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJW6wVMFa8sLb6pi5p5JakJdYXoOZkRIHJig&s",
+    description: "World Heritage site famed for one-horned rhinoceroses and diverse wildlife. Ideal for safaris and nature enthusiasts."
+  },
+  {
+    name: "Majuli Island",
+    state: "Assam",
+    travelTypes: ["solo", "culture", "nature"],
+    budgetRange: [3000, 10000],
+    activities: ["culture", "river cruise", "monastery visits"],
+    seasons: ["autumn", "winter"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_XdMjueEjodU6uxThvCtF0r1cFnIESNJGDQ&s",
+    description: "World's largest river island, rich in Assamese culture, Vaishnavite monasteries, and scenic beauty."
+  },
+  {
+    name: "Kamakhya Temple",
+    state: "Assam",
+    travelTypes: ["pilgrimage", "culture", "solo"],
+    budgetRange: [2000, 7000],
+    activities: ["spiritual", "heritage", "local markets"],
+    seasons: ["monsoon", "autumn"],
+    imageUrl: "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/20/f375af75a20179930ed9e19567ebed13_1000x1000.jpg",
+    description: "Ancient temple atop Nilachal Hill, a major Hindu pilgrimage site known for the Ambubachi Mela."
+  },
+  {
+    name: "Sivasagar",
+    state: "Assam",
+    travelTypes: ["history", "family", "culture"],
+    budgetRange: [4000, 11000],
+    activities: ["heritage", "temple visits", "museum tours"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTScddQ_JapwRGgIjxO4LbKhyrVIdQ2vxdajQ&s",
+    description: "Historic town with Ahom-era monuments, temples, and the iconic Sivasagar tank."
+  },
+  {
+    name: "Hoollongapar Gibbon Sanctuary",
+    state: "Assam",
+    travelTypes: ["wildlife", "eco", "photography"],
+    budgetRange: [5000, 13000],
+    activities: ["wildlife", "jungle walk", "bird watching"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtsKDUphxRP5FI7Y1F9Ql-2CXJKRYbNdtKFA&s",
+    description: "India’s only sanctuary for hoolock gibbons. A hidden gem for primate and nature lovers."
+  },
+  {
+    name: "Manas National Park",
+    state: "Assam",
+    travelTypes: ["adventure", "wildlife", "group"],
+    budgetRange: [9000, 22000],
+    activities: ["wildlife", "rafting", "camping"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Manas_National_Park_Jeep_Safari.jpg", // Replaced the broken base64 image
+    description: "UNESCO World Heritage site with tigers, elephants, and rare wildlife along the Bhutan border."
+  },
+  {
+    name: "Bodh Gaya",
+    state: "Bihar",
+    travelTypes: ["spiritual", "solo", "culture"],
+    budgetRange: [3000, 9000],
+    activities: ["pilgrimage", "meditation", "heritage"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/12/shutterstock_402120757-1.jpg",
+    description: "One of the most important Buddhist pilgrimage sites where Lord Buddha attained enlightenment under the Bodhi tree."
+  },
+  {
+    name: "Nalanda University Ruins",
+    state: "Bihar",
+    travelTypes: ["history", "culture", "educational"],
+    budgetRange: [2500, 8000],
+    activities: ["heritage", "museum", "sightseeing"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://imgcld.yatra.com/ytimages/image/upload/t_yt_blog_w_800_c_fill_g_auto_q_auto:good_f_jpg/v1512376308/Ruins_of_Nalanda_University_Bihar_1512376701.jpg",
+    description: "Ancient center of learning and one of the world’s first residential universities, now a UNESCO World Heritage site."
+  },
+  {
+    name: "Rajgir",
+    state: "Bihar",
+    travelTypes: ["spiritual", "nature", "family"],
+    budgetRange: [3000, 10000],
+    activities: ["cable car", "hot springs", "temple visits"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrDsUgC4V0-kTu1yYsXdabp24WyDHLM7inxg&s",
+    description: "A historic town nestled in hills, known for Vishwa Shanti Stupa, hot springs, and religious significance in Buddhism and Jainism."
+  },
+  {
+    name: "Vaishali",
+    state: "Bihar",
+    travelTypes: ["heritage", "culture", "pilgrimage"],
+    budgetRange: [2500, 7000],
+    activities: ["ruins", "monuments", "spiritual"],
+    seasons: ["autumn", "winter"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZ1FLbQL_4vZha9b9Nbp3gDpch2D_tSmew&s",
+    description: "An ancient city and important Buddhist and Jain pilgrimage site, known as the birthplace of democracy."
+  },
+  {
+    name: "Patna Museum",
+    state: "Bihar",
+    travelTypes: ["family", "educational", "history"],
+    budgetRange: [2000, 6000],
+    activities: ["museum", "artifacts", "local culture"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR970f5C0yKXLHo6ZMdv5R_zV0IyQjPgkxn0g&s",
+    description: "Historical museum housing artifacts from the Maurya and Gupta empires, including a holy relic of the Buddha."
+  },
+  {
+    name: "Kesaria Stupa",
+    state: "Bihar",
+    travelTypes: ["spiritual", "heritage", "history"],
+    budgetRange: [2000, 6500],
+    activities: ["heritage", "photography", "exploration"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://pwonlyias.com/wp-content/uploads/2024/04/untitled-2024-04-20t121629155-1-66238db9aa2a9.webp",
+    description: "One of the tallest and largest Buddhist stupas in the world, associated with Lord Buddha's final journey."
+  },
+  {
+    name: "Chitrakote Falls",
+    state: "Chhattisgarh",
+    travelTypes: ["nature", "photography", "family"],
+    budgetRange: [4000, 10000],
+    activities: ["waterfalls", "scenic views", "nature"],
+    seasons: ["monsoon", "winter"],
+    imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/44/c5/49/chitrakoot-falls.jpg?w=1200&h=-1&s=1",
+    description: "Often called the 'Niagara Falls of India', Chitrakote is the widest waterfall in India with majestic monsoon flow."
+  },
+  {
+    name: "Kanger Valley National Park",
+    state: "Chhattisgarh",
+    travelTypes: ["wildlife", "adventure", "nature"],
+    budgetRange: [5000, 12000],
+    activities: ["trekking", "wildlife", "cave exploration"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://res.cloudinary.com/roundglass/image/upload/f_auto/q_auto/f_auto/c_limit,w_auto:breakpoints_200_2560_100_5:1265/v1660126274/rg/collective/media/chhatisgarh-kanger-sand-boa-one-dhritiman-mukherjee-1660126273447.jpg",
+    description: "A dense forest area rich in biodiversity, known for Tirathgarh Waterfall and limestone caves like Kotumsar and Dandak."
+  },
+  {
+    name: "Bastar Dussehra",
+    state: "Chhattisgarh",
+    travelTypes: ["culture", "festival", "group"],
+    budgetRange: [3000, 8000],
+    activities: ["festivals", "tribal rituals", "cultural events"],
+    seasons: ["autumn"],
+    imageUrl: "https://www.savaari.com/blog/wp-content/uploads/2021/10/dussehra_3_5192086_835x547-m_6448268_835x547-m.jpeg",
+    description: "A 75-day tribal festival unlike any other Dussehra, showcasing the vibrant traditions of Bastar's indigenous communities."
+  },
+  {
+    name: "Barnawapara Wildlife Sanctuary",
+    state: "Chhattisgarh",
+    travelTypes: ["eco", "family", "wildlife"],
+    budgetRange: [4000, 10000],
+    activities: ["wildlife", "jungle safari", "nature walk"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://www.chhattisgarhtourism.co.in/photo_gallery/barnawapara_wildlife_sanctuary/05.jpg",
+    description: "A serene sanctuary home to leopards, bison, and numerous bird species, ideal for nature lovers and photographers."
+  },
+  {
+    name: "Ratanpur Fort",
+    state: "Chhattisgarh",
+    travelTypes: ["history", "heritage", "photography"],
+    budgetRange: [2000, 6000],
+    activities: ["fort visit", "temples", "exploration"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://d3sftlgbtusmnv.cloudfront.net/blog/wp-content/uploads/2024/09/Ratanpur-Fort-Cover-Photo-840x425.jpg",
+    description: "A historic hilltop fort with panoramic views and ancient temples, once the capital of Chhattisgarh."
+  },
+  {
+    name: "Rajim",
+    state: "Chhattisgarh",
+    travelTypes: ["spiritual", "culture", "pilgrimage"],
+    budgetRange: [2000, 7000],
+    activities: ["temple visits", "religious gatherings", "photography"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://chhattisgarhtourism.co.in/destinations/rajim_temple.jpg",
+    description: "A sacred town known for the Rajim Kumbh and ancient temples at the confluence of Mahanadi, Pairi, and Sondur rivers."
+  },
+  {
+    name: "Baga Beach",
+    state: "Goa",
+    travelTypes: ["couple", "group", "party","beach"],
+    budgetRange: [4000, 12000],
+    activities: ["beach", "water sports", "nightlife"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8RuY0LoWUfHiMsQuTs4dV82SMC8__FDkUDA&s",
+    description: "One of the most popular beaches in North Goa, known for its vibrant nightlife, beach clubs, and water sports."
+  },
+  {
+    name: "Basilica of Bom Jesus",
+    state: "Goa",
+    travelTypes: ["spiritual", "history", "culture"],
+    budgetRange: [2000, 6000],
+    activities: ["church visit", "architecture", "photography"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://cdn-iladmib.nitrocdn.com/htBCYuNetSQrkeDEiUPoyTCbyIlIyAQV/assets/images/optimized/rev-0efd0da/www.soultravelling.in/blog/wp-content/uploads/2024/12/4-6-1024x685.jpg",
+    description: "A UNESCO World Heritage Site, this 16th-century church houses the mortal remains of St. Francis Xavier and showcases Baroque architecture."
+  },
+  {
+    name: "Fort Aguada",
+    state: "Goa",
+    travelTypes: ["history", "photography", "family"],
+    budgetRange: [2500, 7000],
+    activities: ["fort visit", "sunset views", "exploration"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://goa-tourism.org.in/images/places-to-visit/headers/fort-aguada-goa-entry-fee-timings-holidays-reviews-header.jpg",
+    description: "A 17th-century Portuguese fort overlooking the Arabian Sea, famous for its lighthouse and panoramic coastal views."
+  },
+  {
+    name: "Anjuna Beach",
+    state: "Goa",
+    travelTypes: ["solo", "group", "adventure"],
+    budgetRange: [4000, 10000,5000],
+    activities: ["beach", "flea market", "paragliding"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1WyMZG5nFdxHazAbUXOxWzJRuL89qrxs54A&s",
+    description: "A lively beach known for its hippie vibe, weekly flea market, and exciting beachside activities."
+  },
+  {
+    name: "Colva Beach",
+    state: "Goa",
+    travelTypes: ["family", "couple", "relaxation","solo"],
+    budgetRange: [3000, 9000,5000],
+    activities: ["beach", "swimming", "sunbathing"],
+    seasons: ["winter", "summer"],
+    imageUrl: "https://media1.thrillophilia.com/filestore/v75wl4inicgj2sa3p1ux3rnlfje7_shutterstock_1066876736.jpg",
+    description: "A clean and tranquil beach in South Goa ideal for peaceful walks, swimming, and family picnics."
+  },
+  {
+    name: "Shimla",
+    state: "Himachal Pradesh",
+    travelTypes: ["couple", "family", "snow"],
+    budgetRange: [5000, 15000],
+    activities: ["shopping", "heritage walk", "snow play"],
+    seasons: ["winter", "summer"],
+    imageUrl: "https://c.ndtvimg.com/2025-01/tuhgraag_shimla_625x300_31_January_25.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=738",
+    description: "The Queen of Hills with colonial charm, mall roads, and snowy winters."
+  },
+  {
+    name: "Manali",
+    state: "Himachal Pradesh",
+    travelTypes: ["couple", "adventure", "group"],
+    budgetRange: [6000, 18000],
+    activities: ["snow sports", "trekking", "local shopping"],
+    seasons: ["winter", "summer"],
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Mountains%2C_Manali%2C_Himachal_Pradesh.jpg/250px-Mountains%2C_Manali%2C_Himachal_Pradesh.jpg",
+    description: "Adventure hub with riverside cafes, snowy peaks, and scenic beauty."
+  },
+  {
+    name: "Dharamshala",
+    state: "Himachal Pradesh",
+    travelTypes: ["solo", "spiritual", "nature"],
+    budgetRange: [4000, 12000],
+    activities: ["monasteries", "trekking", "nature walk"],
+    seasons: ["spring", "autumn"],
+    imageUrl: "https://www.tripsavvy.com/thmb/WL6eR0h8UKxPXNiDWhB4KCPpzSo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dharamsala-1134331246-cfdf3711c9f543ca9b758a25c3386b6e.jpg",
+    description: "The residence of the Dalai Lama with Tibetan culture and lush valleys."
+  },
+  {
+    name: "Rohtang Pass",
+    state: "Himachal Pradesh",
+    travelTypes: ["snow", "photography", "adventure"],
+    budgetRange: [6000, 16000],
+    activities: ["snow biking", "scenic drive", "trekking"],
+    seasons: ["summer", "autumn"],
+    imageUrl: "https://www.tripstorz.com/_astro/snow-in-rohtang-pass.CGkQdILW_Z1Fqupd.jpg",
+    description: "A high mountain pass offering breathtaking snow-capped views and thrilling rides."
+  },
+  {
+    name: "Kullu Valley",
+    state: "Himachal Pradesh",
+    travelTypes: ["nature", "relaxation", "group"],
+    budgetRange: [5000, 13000],
+    activities: ["river rafting", "temples", "scenic views"],
+    seasons: ["spring", "autumn"],
+    imageUrl: "https://static.toiimg.com/thumb/68792904/Kullu-Valley-landscape.jpg?width=1200&height=900",
+    description: "A charming valley nestled with apple orchards and beautiful landscapes."
+  },
+  {
+    name: "Spiti Valley",
+    state: "Himachal Pradesh",
+    travelTypes: ["adventure", "solo", "photography"],
+    budgetRange: [8000, 20000],
+    activities: ["bike trip", "monasteries", "desert mountains"],
+    seasons: ["summer", "autumn"],
+    imageUrl: "https://blogs.tripzygo.in/wp-content/uploads/2024/11/best-time-to-visit-spiti-valley-1.jpg",
+    description: "A cold desert valley known for its stark beauty, Buddhist monasteries, and rugged treks."
+  },
+  {
+    name: "Varkala Beach",
+    state: "Kerala",
+    travelTypes: ["solo", "couple", "family"],
+    budgetRange: [5000, 15000],
+    activities: ["beach", "relaxation", "nature"],
+    seasons: ["winter", "monsoon"],
+    imageUrl: "https://www.indianarrative.com/wp-content/uploads/2023/05/Varkala-Beach1.jpg",
+    description: "Cliff-side beaches with beautiful views of the Arabian Sea."
+  },
+  {
+    name: "Backwaters of Alleppey",
+    state: "Kerala",
+    travelTypes: ["couple", "family"],
+    budgetRange: [7000, 22000],
+    activities: ["backwaters", "boating", "relaxation"],
+    seasons: ["winter", "monsoon"],
+    imageUrl: "https://res.cloudinary.com/kmadmin/image/upload/v1725363873/kiomoi/Backwaters_in_Alleppey_8718.jpg",
+    description: "Famous for houseboat cruises through tranquil waters."
+  },
+  {
+    name: "Munnar",
+    state: "Kerala",
+    travelTypes: ["couple", "family", "nature"],
+    budgetRange: [6000, 20000],
+    activities: ["hill station", "nature", "tea plantations"],
+    seasons: ["summer", "monsoon"],
+    imageUrl: "https://www.keralatravels.com/userfiles/1475821114_munnar.jpeg",
+    description: "Lush tea gardens and cool climate in the Western Ghats."
+  },
+  {
+    name: "Fort Kochi",
+    state: "Kerala",
+    travelTypes: ["solo", "culture", "heritage"],
+    budgetRange: [4000, 15000],
+    activities: ["heritage", "culture", "sightseeing"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/zo-media/blog_photo/Flickr_Kochi.jpg",
+    description: "Colonial charm, Chinese fishing nets, and history."
+  },
+  {
+    name: "Periyar Wildlife Sanctuary",
+    state: "Kerala",
+    travelTypes: ["adventure", "family", "nature"],
+    budgetRange: [5000, 18000],
+    activities: ["wildlife", "nature", "safari"],
+    seasons: ["winter", "monsoon"],
+    imageUrl: "https://ihplb.b-cdn.net/wp-content/uploads/2017/04/Periyar-Wildlife-Sanctuary.jpg",
+    description: "Lush forest reserve with elephants and boat safaris."
+  },
+  {
+    name: "Athirappilly Falls",
+    state: "Kerala",
+    travelTypes: ["solo", "group", "nature"],
+    budgetRange: [4000, 12000],
+    activities: ["waterfalls", "nature", "trekking"],
+    seasons: ["monsoon", "winter"],
+    imageUrl: "https://static.wixstatic.com/media/d37a82_805574f456ed486f8d080a7369bdb21f~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,usm_0.66_1.00_0.01/d37a82_805574f456ed486f8d080a7369bdb21f~mv2.jpg",
+    description: "Majestic waterfalls often called the 'Niagara of India'."
+  },
+  {
+    name: "Deoghar",
+    state: "Jharkhand",
+    travelTypes: ["spiritual", "culture", "family"],
+    budgetRange: [3000, 9000],
+    activities: ["temple visits", "rituals", "shopping"],
+    seasons: ["monsoon", "winter"],
+    imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/35/8b/de/main-temple-of-baba-baijnath.jpg?w=1200&h=1200&s=1",
+    description: "A major pilgrimage destination housing Baba Baidyanath Temple, one of the 12 Jyotirlingas."
+  },
+  {
+    name: "Dassam Falls",
+    state: "Jharkhand",
+    travelTypes: ["nature", "family", "photography"],
+    budgetRange: [2000, 6000],
+    activities: ["waterfalls", "picnic", "nature walk"],
+    seasons: ["monsoon", "winter"],
+    imageUrl: "https://travelentice.com/wp-content/uploads/2022/10/Exclusive-Dassam-Falls.jpg",
+    description: "A scenic waterfall near Ranchi with lush surroundings, perfect for weekend getaways."
+  },
+  {
+    name: "Rajrappa Temple",
+    state: "Jharkhand",
+    travelTypes: ["spiritual", "local", "family"],
+    budgetRange: [2000, 5000],
+    activities: ["temple visit", "boating", "rituals"],
+    seasons: ["autumn", "winter"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbX-GhO8yvt_s6UP5E3KoAE2QJwkwt2yg_FQ&s",
+    description: "Dedicated to Goddess Chinnamastika, located at the confluence of rivers, a unique Shakti Peeth."
+  },
+  {
+    name: "Betla National Park",
+    state: "Jharkhand",
+    travelTypes: ["wildlife", "eco", "adventure"],
+    budgetRange: [4000, 10000],
+    activities: ["safari", "trekking", "bird watching"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://ik.imagekit.io/4gy32yev7mxg/pics/1181.jpg",
+    description: "Part of the Palamau Tiger Reserve, rich in biodiversity and ancient forts."
+  },
+  {
+    name: "Hazaribagh National Park",
+    state: "Jharkhand",
+    travelTypes: ["wildlife", "family", "eco"],
+    budgetRange: [3000, 8000],
+    activities: ["jeep safari", "lake visit", "wildlife photography"],
+    seasons: ["winter"],
+    imageUrl: "https://content.jdmagicbox.com/comp/hazaribagh/t5/9999p6546.6546.141223122617.t3t5/catalogue/hazaribagh-national-park-hazaribagh-ho-hazaribagh-tourist-attraction-cw974su.jpg",
+    description: "A wildlife sanctuary with hills, lakes, and opportunities to spot deer and leopards."
+  },
+  {
+    name: "Netarhat",
+    state: "Jharkhand",
+    travelTypes: ["nature", "solo", "couple"],
+    budgetRange: [3000, 9000],
+    activities: ["sunset view", "hill station", "hiking"],
+    seasons: ["summer", "autumn"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv0UOErB7fE7D7rujz_zZ5YjYh888jHwB8BQ&s",
+    description: "Known as the ‘Queen of Chotanagpur’, a peaceful hill station with cool climate and scenic charm."
+  },
+   {
+    name: "Mysore Palace",
+    state: "Karnataka",
+    travelTypes: ["family", "heritage", "photography"],
+    budgetRange: [3000, 9000],
+    activities: ["palace tour", "light show", "architecture"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://static.toiimg.com/thumb/51010213/Mysore-Palace.jpg?width=1200&height=900",
+    description: "A magnificent Indo-Saracenic palace known for its grandeur, royal history, and Dasara celebrations."
+  },
+  {
+    name: "Hampi",
+    state: "Karnataka",
+    travelTypes: ["history", "adventure", "solo"],
+    budgetRange: [4000, 10000],
+    activities: ["temples", "ruins", "cycling"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://karnatakatourism.org/wp-content/uploads/2020/05/Vastuchitra_Krishna-Bazaar-Pushkarni-Hampi-03-1.jpg",
+    description: "UNESCO World Heritage site featuring the ruins of the Vijayanagara Empire amid stunning landscapes."
+  },
+  {
+    name: "Coorg",
+    state: "Karnataka",
+    travelTypes: ["couple", "nature", "relaxation"],
+    budgetRange: [5000, 15000],
+    activities: ["coffee plantation", "trekking", "river rafting"],
+    seasons: ["summer", "monsoon"],
+    imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/df/42/5d/the-tamara-coorg.jpg?w=900&h=500&s=1",
+    description: "A hill station famous for coffee estates, misty hills, and cozy homestays."
+  },
+  {
+    name: "Jog Falls",
+    state: "Karnataka",
+    travelTypes: ["nature", "photography", "family"],
+    budgetRange: [3000, 8000],
+    activities: ["waterfall view", "hiking", "boating"],
+    seasons: ["monsoon", "autumn"],
+    imageUrl: "https://www.karnataka.com/wp-content/uploads/2009/07/jog-falls-01-1280x720.jpg",
+    description: "India’s second-highest plunge waterfall, spectacular during the monsoon season."
+  },
+  {
+    name: "Bandipur National Park",
+    state: "Karnataka",
+    travelTypes: ["wildlife", "eco", "family"],
+    budgetRange: [4000, 12000],
+    activities: ["safari", "bird watching", "nature trails"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnbyTbVX-sJxilA4MfUSXQiWq5zKFUsEj0xQ&s",
+    description: "A tiger reserve rich in flora and fauna, located in the Nilgiri biosphere."
+  },
+  {
+    name: "Shravanabelagola",
+    state: "Karnataka",
+    travelTypes: ["spiritual", "culture", "history"],
+    budgetRange: [2000, 6000],
+    activities: ["temple climb", "heritage visit", "photography"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://oneday.travel/wp-content/uploads/one-day-bangalore-to-shravanabelagola-tour-package-private-car-header.jpg",
+    description: "Home to the towering statue of Gommateshwara, a significant Jain pilgrimage center."
+  },
+  {
+  name: "Khajuraho Temples",
+  state: "Madhya Pradesh",
+  travelTypes: ["heritage", "culture", "architecture"],
+  budgetRange: [4000, 10000],
+  activities: ["temple tours", "sculpture viewing", "photography"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/4-javari-temple-khajuraho-madhya-pradesh-city-hero-new?qlt=82&ts=1726671527373",
+  description: "Famous for their intricate sculptures, these UNESCO-listed temples reflect India's rich artistic legacy."
+},
+{
+  name: "Kanha National Park",
+  state: "Madhya Pradesh",
+  travelTypes: ["wildlife", "adventure", "nature"],
+  budgetRange: [5000, 12000],
+  activities: ["safari", "wildlife spotting", "nature walks"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Tiger_Kanha_National_Park.jpg",
+  description: "One of India's largest tiger reserves, ideal for wildlife lovers and nature photographers."
+},
+{
+  name: "Bhimbetka Caves",
+  state: "Madhya Pradesh",
+  travelTypes: ["history", "adventure", "education"],
+  budgetRange: [3000, 8000],
+  activities: ["cave exploration", "rock painting viewing", "trekking"],
+  seasons: ["autumn", "winter"],
+  imageUrl: "https://www.artfervour.com/wp-content/uploads/2022/11/689c7e_001049cd7b65452abc356c32218db5a9mv2.jpg",
+  description: "A UNESCO site with prehistoric cave paintings, offering a glimpse into early human life."
+},
+{
+  name: "Sanchi Stupa",
+  state: "Madhya Pradesh",
+  travelTypes: ["spiritual", "history", "culture"],
+  budgetRange: [2500, 7000],
+  activities: ["stupa visit", "heritage walk", "photography"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://cdn.elebase.io/173fe953-8a63-4a8a-8ca3-1bacb56d78a5/8364aefd-257c-4312-a9ff-55bcae88e683-greatstupa-cover-michaelturtle.jpg?q=90",
+  description: "Ancient Buddhist monument and UNESCO site with intricate carvings and peaceful surroundings."
+},
+{
+  name: "Gwalior Fort",
+  state: "Madhya Pradesh",
+  travelTypes: ["heritage", "family", "architecture"],
+  budgetRange: [3000, 9000],
+  activities: ["fort tours", "light and sound show", "photography"],
+  seasons: ["winter", "monsoon"],
+  imageUrl: "https://kevinstandagephotography.wordpress.com/wp-content/uploads/2019/04/ksp_4751.jpg?w=1024",
+  description: "A historic hill fort known for its massive architecture and panoramic views."
+},
+{
+  name: "Pachmarhi",
+  state: "Madhya Pradesh",
+  travelTypes: ["nature", "romantic", "adventure"],
+  budgetRange: [4000, 10000],
+  activities: ["trekking", "waterfalls", "cave exploration"],
+  seasons: ["monsoon", "winter"],
+  imageUrl: "https://hikerwolf.com/wp-content/uploads/2020/09/rajat_pratap1.jpg",
+  description: "The only hill station in Madhya Pradesh with waterfalls, caves, and serene landscapes."
+},
+{
+    name: "Living Root Bridges",
+    state: "Meghalaya",
+    travelTypes: ["adventure", "nature", "eco"],
+    budgetRange: [4000, 10000],
+    activities: ["trekking", "nature walk", "photography"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/5/51/Living_root_bridges%2C_Nongriat_village%2C_Meghalaya2.jpg",
+    description: "Unique bridges formed by training roots of rubber trees—an engineering marvel deep in the forest."
+  },
+  {
+    name: "Cherrapunji",
+    state: "Meghalaya",
+    travelTypes: ["nature", "solo", "scenic"],
+    budgetRange: [3000, 9000],
+    activities: ["waterfalls", "trekking", "viewpoints"],
+    seasons: ["monsoon", "winter"],
+    imageUrl: "https://www.culturalsafaritours.com/wp-content/uploads/2024/03/shillong.jpg",
+    description: "Famous for its record-breaking rainfall, caves, and misty landscapes."
+  },
+  {
+    name: "Nohkalikai Falls",
+    state: "Meghalaya",
+    travelTypes: ["nature", "photography", "romantic"],
+    budgetRange: [3000, 8000],
+    activities: ["waterfall viewing", "hiking", "photography"],
+    seasons: ["monsoon", "autumn"],
+    imageUrl: "https://www.trawell.in/admin/images/upload/195195923Cherrapunji_Nohkalikai_Waterfalls_Main.jpg",
+    description: "India’s tallest plunge waterfall with a tragic legend and spectacular views."
+  },
+  {
+    name: "Mawsynram",
+    state: "Meghalaya",
+    travelTypes: ["nature", "offbeat", "monsoon"],
+    budgetRange: [3000, 9000],
+    activities: ["rain tourism", "scenic drives", "local culture"],
+    seasons: ["monsoon", "autumn"],
+    imageUrl: "https://oddessemania.in/wp-content/uploads/2024/07/Mawsynram-village-local-sightseeing-is-one-of-the-best-things-to-do-in-Mawsynram.jpg",
+    description: "One of the wettest places on Earth, surrounded by green hills and waterfalls."
+  },
+  {
+    name: "Elephant Falls",
+    state: "Meghalaya",
+    travelTypes: ["family", "nature", "relaxation"],
+    budgetRange: [2000, 6000],
+    activities: ["waterfall visit", "photography", "short trek"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://www.elephanthills.com/wp-content/uploads/2022/02/last.jpeg",
+    description: "A beautiful multi-tiered waterfall near Shillong ideal for light adventure."
+  },
+  {
+    name: "Shillong",
+    state: "Meghalaya",
+    travelTypes: ["urban", "couple", "culture"],
+    budgetRange: [4000, 10000],
+    activities: ["sightseeing", "shopping", "lake visit"],
+    seasons: ["spring", "autumn"],
+    imageUrl: "https://static.toiimg.com/photo/51324390.cms",
+    description: "The capital city known as the 'Scotland of the East', with music, markets, and misty hills."
+  },
+  {
+    name: "Aizawl",
+    state: "Mizoram",
+    travelTypes: ["urban", "culture", "offbeat"],
+    budgetRange: [4000, 9000],
+    activities: ["city tour", "local market", "museum visit"],
+    seasons: ["autumn", "winter"],
+    imageUrl: "https://s3.india.com/wp-content/uploads/2024/04/Feature-Image-_-Aziwal.jpg?impolicy=Medium_Widthonly&w=350&h=263",
+    description: "The hilly capital of Mizoram known for churches, local cuisine, and panoramic views."
+  },
+  {
+    name: "Dampa Tiger Reserve",
+    state: "Mizoram",
+    travelTypes: ["wildlife", "eco", "adventure"],
+    budgetRange: [5000, 12000],
+    activities: ["jungle safari", "bird watching"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/dampa-tiger-reserve-aizawl-mizoram-1-attr-hero?qlt=82&ts=1726674869819",
+    description: "A dense tropical forest reserve known for rich biodiversity and elusive wildlife."
+  },
+  {
+    name: "Vantawng Falls",
+    state: "Mizoram",
+    travelTypes: ["nature", "photography", "romantic"],
+    budgetRange: [3000, 8000],
+    activities: ["waterfall viewing", "hiking"],
+    seasons: ["monsoon", "autumn"],
+    imageUrl: "https://aravindgundumane.com/wp-content/uploads/2022/10/Vantawng-falls-highest-waterfall-in-Mizoram.jpg",
+    description: "The tallest waterfall in Mizoram, cascading through lush valleys and forests."
+  },
+  {
+    name: "Phawngpui Peak",
+    state: "Mizoram",
+    travelTypes: ["adventure", "trekking", "nature"],
+    budgetRange: [4000, 10000],
+    activities: ["hiking", "mountain view", "camping"],
+    seasons: ["autumn", "winter"],
+    imageUrl: "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/07/A-Trekking-Guide-to-Mizorams-Highest-Peak-Phawngpui-Trek-1.jpg",
+    description: "The highest point in Mizoram offering scenic trails and a vibrant biosphere."
+  },
+  {
+    name: "Reiek Tlang",
+    state: "Mizoram",
+    travelTypes: ["trekking", "offbeat", "nature"],
+    budgetRange: [3000, 9000],
+    activities: ["hiking", "viewpoint", "eco-tour"],
+    seasons: ["spring", "autumn"],
+    imageUrl: "https://www.mizoramtourism.com/post_images/62b863291e665_Reiek%20Hills.jpg",
+    description: "A quaint hilltop escape offering breathtaking views and traditional Mizo villages."
+  },
+  {
+    name: "Palak Lake",
+    state: "Mizoram",
+    travelTypes: ["eco", "romantic", "relaxation"],
+    budgetRange: [3000, 8500],
+    activities: ["boating", "wildlife", "nature walk"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsF59468drf15RD9ZZLwzTwSnMhNOeoNQXeg&s",
+    description: "A serene lake surrounded by forests and wildlife—perfect for solitude seekers."
+  },
+  {
+  name: "Gateway of India",
+  state: "Maharashtra",
+  travelTypes: ["heritage", "urban", "photography"],
+  budgetRange: [2000, 6000],
+  activities: ["sightseeing", "boat rides", "street food"],
+  seasons: ["winter", "monsoon"],
+  imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/gateway-of-india-mumbai-maharashtra-2-attr-hero?qlt=82&ts=1727355556744",
+  description: "Iconic arch-monument on Mumbai's waterfront and a popular tourist and historical site."
+},
+{
+  name: "Ajanta Caves",
+  state: "Maharashtra",
+  travelTypes: ["heritage", "spiritual", "art"],
+  budgetRange: [4000, 10000],
+  activities: ["cave exploration", "Buddhist art viewing", "photography"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/ajanta-caves-chhatrapati-sambhaji-nagar-maharashtra-attr-hero-1?qlt=82&ts=1727010611256",
+  description: "UNESCO World Heritage Site known for its ancient Buddhist cave paintings and sculptures."
+},
+{
+  name: "Ellora Caves",
+  state: "Maharashtra",
+  travelTypes: ["heritage", "culture", "spiritual"],
+  budgetRange: [4000, 9000],
+  activities: ["temple tours", "architecture", "rock-cut cave exploration"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://www.worldhistory.org/img/r/p/1500x1500/4565.jpg",
+  description: "Magnificent rock-cut temples representing Hindu, Buddhist, and Jain cultures."
+},
+{
+  name: "Marine Drive",
+  state: "Maharashtra",
+  travelTypes: ["urban", "romantic", "leisure"],
+  budgetRange: [2000, 5000],
+  activities: ["walking", "sunset view", "street snacks"],
+  seasons: ["winter", "monsoon"],
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Marine_Lines_Mumbai_2021.jpg/250px-Marine_Lines_Mumbai_2021.jpg",
+  description: "Mumbai’s iconic seaside promenade perfect for scenic walks and sea views."
+},
+{
+  name: "Shirdi",
+  state: "Maharashtra",
+  travelTypes: ["spiritual", "family", "culture"],
+  budgetRange: [3000, 7000],
+  activities: ["temple visits", "rituals", "spiritual retreat"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzVCQb2zSpI5gr9IY42jori4tjw_JIUWW4g&s",
+  description: "Home to the famous Sai Baba Temple, attracting millions of devotees annually."
+},
+{
+  name: "Sanjay Gandhi National Park",
+  state: "Maharashtra",
+  travelTypes: ["nature", "adventure", "family"],
+  budgetRange: [2000, 6000],
+  activities: ["safari", "trekking", "cave visits"],
+  seasons: ["monsoon", "winter"],
+  imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/1-sanjay-gandhi-national-park-mumbai-maharashtra-attr-hero?qlt=82&ts=1727355346883",
+  description: "An urban national park in Mumbai known for its biodiversity and the Kanheri Caves."
+},
+{
+  name: "Loktak Lake",
+  state: "Manipur",
+  travelTypes: ["nature", "photography", "romantic"],
+  budgetRange: [3000, 8000],
+  activities: ["boating", "sightseeing", "birdwatching"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://dics.co/uploads/2023/05/1683703916blogimg_24_c690cd77a382935735ed037ee25da4e9.webp",
+  description: "Northeast India's largest freshwater lake, famous for its floating phumdis and rich ecology."
+},
+{
+  name: "Imphal War Cemetery",
+  state: "Manipur",
+  travelTypes: ["history", "memorial", "culture"],
+  budgetRange: [1500, 4000],
+  activities: ["historical visit", "memorial walk", "education"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK2gesDtOewxn1ufojwkYSoDSCFxibgZx4mA&s",
+  description: "A peaceful war cemetery maintained by the Commonwealth, commemorating World War II soldiers."
+},
+{
+  name: "Kangla Fort",
+  state: "Manipur",
+  travelTypes: ["heritage", "local", "history"],
+  budgetRange: [2000, 5000],
+  activities: ["fort tours", "museum visits", "cultural insights"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://oddessemania.in/wp-content/uploads/2024/05/Kangla-fort-featured.jpg",
+  description: "A historic and spiritual site central to Manipur's heritage and Meitei royalty."
+},
+{
+  name: "Shirui Hill",
+  state: "Manipur",
+  travelTypes: ["nature", "trekking", "photography"],
+  budgetRange: [3000, 8000],
+  activities: ["trekking", "flower viewing", "eco-tourism"],
+  seasons: ["spring", "summer"],
+  imageUrl: "https://indiacinehub.gov.in/sites/default/files/styles/flexslider_full/public/2024-03/shirui_hills_ukhrul_district1.jpg?itok=SfN9NRNt",
+  description: "Famous for the rare Shirui Lily, offering misty hills and serene trekking trails."
+},
+{
+  name: "Andro Village",
+  state: "Manipur",
+  travelTypes: ["culture", "local", "family"],
+  budgetRange: [2000, 6000],
+  activities: ["village tour", "handicrafts", "folk culture"],
+  seasons: ["autumn", "winter"],
+  imageUrl: "https://www.mappls.com/place/N7O7IO_1670570931158_0.png",
+  description: "A traditional Manipuri village preserving ancient pot-making and cultural practices."
+},
+{
+  name: "Sangai Deer Sanctuary",
+  state: "Manipur",
+  travelTypes: ["wildlife", "eco-tourism", "family"],
+  budgetRange: [2500, 7000],
+  activities: ["wildlife spotting", "conservation tour", "nature walks"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://www.eocaconservation.org/wp-content/uploads/2015/01/Community-Action-to-Protect-the-Sangai-Deer.jpg",
+  description: "Home to the endangered Sangai deer, located in Keibul Lamjao—the world’s only floating park."
+},
+
+ {
+    name: "Kohima",
+    state: "Nagaland",
+    travelTypes: ["culture", "heritage", "family"],
+    budgetRange: [4000, 10000],
+    activities: ["war cemetery", "local markets", "viewpoints"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://www.thesevensister.com/blog/wp-content/uploads/2017/03/Kohima.jpg",
+    description: "The capital city known for WWII history, tribal culture, and scenic beauty."
+  },
+  {
+    name: "Dzukou Valley",
+    state: "Nagaland",
+    travelTypes: ["adventure", "trekking", "nature"],
+    budgetRange: [5000, 12000],
+    activities: ["trekking", "camping", "flora exploration"],
+    seasons: ["summer", "autumn"],
+    imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/dzukou-valley-kohima-nagaland-attr-hero-1?qlt=82&ts=1727012411648",
+    description: "A stunning valley filled with seasonal wildflowers, perfect for nature lovers and trekkers."
+  },
+  {
+    name: "Khonoma Village",
+    state: "Nagaland",
+    travelTypes: ["eco", "cultural", "offbeat"],
+    budgetRange: [3000, 9000],
+    activities: ["village stay", "heritage walk", "agriculture"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://static.toiimg.com/photo/78315598.cms",
+    description: "India’s first green village, showcasing sustainable practices and warrior heritage."
+  },
+  {
+    name: "Nagaland State Museum",
+    state: "Nagaland",
+    travelTypes: ["culture", "history", "educational"],
+    budgetRange: [2000, 5000],
+    activities: ["museum visit", "tribal exhibits"],
+    seasons: ["all"],
+    imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/state-museum-kohima-nagaland-1-attr-hero?qlt=82&ts=1727012321062",
+    description: "Offers insight into the lives, art, and customs of Nagaland’s tribes."
+  },
+  {
+    name: "Intanki National Park",
+    state: "Nagaland",
+    travelTypes: ["wildlife", "adventure", "eco"],
+    budgetRange: [4000, 10000],
+    activities: ["jungle safari", "wildlife spotting"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://www.clubmahindra.com/blog/media/section_images/uttarakhan-dab1be5724e19d7.webp",
+    description: "A preserved tropical forest with elephants, hoolock gibbons, and lush biodiversity."
+  },
+  {
+    name: "Tseminyu",
+    state: "Nagaland",
+    travelTypes: ["culture", "heritage", "offbeat"],
+    budgetRange: [3000, 8000],
+    activities: ["village life", "local culture", "countryside exploration"],
+    seasons: ["spring", "autumn"],
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/dc/Tseminy%C3%BC_district%2C_Nagaland%2C_India_%28landscape%29_-_2016.jpg",
+    description: "A culturally rich district with traditional Rengma Naga heritage and rolling landscapes."
+  },
+  {
+    name: "Konark Sun Temple",
+    state: "Odisha",
+    travelTypes: ["heritage", "architecture", "history"],
+    budgetRange: [3000, 9000],
+    activities: ["temple visit", "sunset viewing", "photography"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://media.istockphoto.com/id/1444924249/photo/konark-sun-temple-at-sunrise-konark-temple-is-a-unesco-world-heritage-site-at-puri-odisha.jpg?s=612x612&w=0&k=20&c=5Gd3UDpZeYh8DejD4a4TTrpAZLoPw5SARAUFT7hfwRk=",
+    description: "A UNESCO World Heritage site, known for its chariot-like structure dedicated to the Sun God."
+  },
+  {
+    name: "Puri Jagannath Temple",
+    state: "Odisha",
+    travelTypes: ["spiritual", "family", "culture"],
+    budgetRange: [3000, 8000],
+    activities: ["pilgrimage", "Rath Yatra", "beach nearby"],
+    seasons: ["all"],
+    imageUrl: "https://admin.stayatpurijagannatha.in/images/frontend/main-slider-2_1670308972.jpg",
+    description: "One of the Char Dhams of Hinduism, famous for the annual chariot festival."
+  },
+  {
+    name: "Chilika Lake",
+    state: "Odisha",
+    travelTypes: ["nature", "wildlife", "family"],
+    budgetRange: [4000, 9000],
+    activities: ["bird watching", "boating", "dolphin spotting"],
+    seasons: ["winter"],
+    imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/chilika-lake-bhubaneshwar-odisha-3-atttr-hero?qlt=82&ts=1727010856968",
+    description: "Asia’s largest coastal lagoon, rich in migratory birds and Irrawaddy dolphins."
+  },
+  {
+    name: "Lingaraj Temple",
+    state: "Odisha",
+    travelTypes: ["spiritual", "architecture", "history"],
+    budgetRange: [2000, 6000],
+    activities: ["temple tour", "rituals"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/lingaraj-temple-bhubaneshwar-odisha-2-attr-hero?qlt=82&ts=1727010612047",
+    description: "A magnificent 11th-century temple showcasing Kalinga architecture dedicated to Lord Shiva."
+  },
+  {
+    name: "Simlipal National Park",
+    state: "Odisha",
+    travelTypes: ["eco", "wildlife", "adventure"],
+    budgetRange: [4000, 12000],
+    activities: ["safari", "camping", "waterfalls"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://www.similipal.org/assets/images/gate1.jpg",
+    description: "A tiger reserve and biosphere with thick forests, waterfalls, and tribal villages."
+  },
+  {
+    name: "Dhauli Peace Pagoda",
+    state: "Odisha",
+    travelTypes: ["spiritual", "history", "peaceful"],
+    budgetRange: [2000, 5000],
+    activities: ["Buddhist site", "heritage", "panoramic views"],
+    seasons: ["all"],
+    imageUrl: "https://kevinstandagephotography.wordpress.com/wp-content/uploads/2020/04/ksp_8623.jpg?w=800",
+    description: "Built by Japanese Buddhists at the site of the Kalinga war—symbol of peace and transformation."
+  },
+  {
+    name: "Golden Temple",
+    state: "Punjab",
+    travelTypes: ["spiritual", "cultural", "family"],
+    budgetRange: [3000, 8000],
+    activities: ["prayer", "langar service", "reflection"],
+    seasons: ["all"],
+    imageUrl: "https://assets.cntraveller.in/photos/60c07fa11393a40ce8d810b0/4:3/w_4076,h_3057,c_limit/D8R9MT.jpg",
+    description: "The holiest Sikh shrine in Amritsar, known for its golden dome and divine atmosphere."
+  },
+  {
+    name: "Jallianwala Bagh",
+    state: "Punjab",
+    travelTypes: ["history", "heritage", "educational"],
+    budgetRange: [1000, 4000],
+    activities: ["memorial visit", "light show"],
+    seasons: ["all"],
+    imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/jallianwala-bagh-amritsar-punjab-1-attr-hero?qlt=82&ts=1726662275638",
+    description: "A historic site of the tragic 1919 massacre, now a peaceful garden and memorial."
+  },
+  {
+    name: "Wagah Border",
+    state: "Punjab",
+    travelTypes: ["patriotic", "group", "experience"],
+    budgetRange: [2000, 5000],
+    activities: ["border parade", "flag ceremony"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://earthresorts.in/blog/wp-content/uploads/2024/03/1.jpg",
+    description: "Famous for the Beating Retreat ceremony between India and Pakistan—a powerful sight."
+  },
+  {
+    name: "Anandpur Sahib",
+    state: "Punjab",
+    travelTypes: ["spiritual", "heritage", "culture"],
+    budgetRange: [2000, 6000],
+    activities: ["Gurdwara visit", "Hola Mohalla festival"],
+    seasons: ["spring"],
+    imageUrl: "https://www.sikhnet.com/files/styles/max-width-page-wide/public/news/2010/November/KesgarhSahib17.jpg?itok=Teb-8RpH",
+    description: "One of the holiest Sikh towns where the Khalsa was founded by Guru Gobind Singh."
+  },
+  {
+    name: "Patiala",
+    state: "Punjab",
+    travelTypes: ["heritage", "urban", "culture"],
+    budgetRange: [3000, 8000],
+    activities: ["palace tour", "shopping", "heritage walk"],
+    seasons: ["winter", "spring"],
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/6f/NSNIS.png",
+    description: "A princely city known for Patiala peg, turbans, and royal architecture."
+  },
+  {
+    name: "Sheesh Mahal",
+    state: "Punjab",
+    travelTypes: ["heritage", "architecture", "photography"],
+    budgetRange: [2000, 5000],
+    activities: ["museum visit", "photography", "artwork","culture"],
+    seasons: ["spring", "winter"],
+    imageUrl: "https://nitsaholidays.in/uploads/blog/860603pexels-chirag-biyani-2660484-9902399_(1).jpg",
+    description: "An ornate palace with intricate mirror work, paintings, and Mughal-style gardens."
+  },
+  {
+  name: "Hawa Mahal",
+  state: "Rajasthan",
+  travelTypes: ["heritage", "architecture", "urban"],
+  budgetRange: [3000, 8000],
+  activities: ["sightseeing", "photography", "local shopping"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://im.hunt.in/cg/jaipur/City-Guide/sheesh-mahal.jpg",
+  description: "The iconic 'Palace of Winds' in Jaipur, known for its ornate pink sandstone windows and city views."
+},
+{
+  name: "Amber Fort",
+  state: "Rajasthan",
+  travelTypes: ["heritage", "adventure", "culture"],
+  budgetRange: [4000, 10000],
+  activities: ["fort tour", "elephant ride", "light & sound show"],
+  seasons: ["winter", "monsoon"],
+  imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/amber-fort-jaipur-rajasthan-1-attr-hero?qlt=82&ts=1742157903972",
+  description: "Majestic hilltop fort offering rich Rajput history and stunning architecture."
+},
+{
+  name: "City Palace, Udaipur",
+  state: "Rajasthan",
+  travelTypes: ["royal", "romantic", "family"],
+  budgetRange: [5000, 12000],
+  activities: ["palace tour", "museum visit", "lake views"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/city-palace-udaipur-rajasthan-1-new-attr-hero?qlt=82&ts=1727353238554",
+  description: "An opulent palace complex on Lake Pichola, showcasing royal lifestyle and Rajasthani art."
+},
+{
+  name: "Jaisalmer Fort",
+  state: "Rajasthan",
+  travelTypes: ["heritage", "desert", "photography"],
+  budgetRange: [4000, 10000],
+  activities: ["fort visit", "camel ride", "sunset view"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://jaisalmertourism.co.in/images/places-to-visit/headers/jaisalmer-fort-entry-fee-timings-holidays-reviews-header.jpg",
+  description: "A living fort made of golden sandstone in the Thar Desert, bustling with shops and homes."
+},
+{
+  name: "Pushkar Lake",
+  state: "Rajasthan",
+  travelTypes: ["spiritual", "culture", "photography"],
+  budgetRange: [2000, 6000],
+  activities: ["temple visits", "ghat walks", "camel fair"],
+  seasons: ["autumn", "winter"],
+  imageUrl: "https://lsg.urban.rajasthan.gov.in/content/dam/raj/udh/development-authority/ada-ajmer/images/PushkarLake.jpg",
+  description: "A sacred lake surrounded by temples, best known for its camel fair and serene vibes."
+},
+{
+  name: "Ranthambore National Park",
+  state: "Rajasthan",
+  travelTypes: ["wildlife", "adventure", "family"],
+  budgetRange: [5000, 12000],
+  activities: ["safari", "wildlife photography", "fort trek"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://www.lih.travel/wp-content/uploads/2024/07/history-of-ranthambore-national-park.jpg",
+  description: "One of the top tiger reserves in India, combining nature and historic Ranthambore Fort."
+},
+{
+  name: "Tsomgo Lake",
+  state: "Sikkim",
+  travelTypes: ["nature", "romantic", "adventure"],
+  budgetRange: [4000, 9000],
+  activities: ["boating", "snow play", "photography"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/tsomgo-lake-gangtok-sikkim-1-attr-hero?qlt=82&ts=1727355082114",
+  description: "A glacial lake surrounded by snow-capped peaks, located near Gangtok at high altitude."
+},
+{
+  name: "Nathula Pass",
+  state: "Sikkim",
+  travelTypes: ["adventure", "history", "photography"],
+  budgetRange: [5000, 10000],
+  activities: ["mountain drive", "border viewing", "snow activities"],
+  seasons: ["summer", "autumn"],
+  imageUrl: "https://media1.thrillophilia.com/filestore/wmv35tgt1clsyhq1i1eib7jywd76_shutterstock_1040258842.jpg",
+  description: "Historic mountain pass on the Indo-China border with stunning high-altitude views."
+},
+{
+  name: "Rumtek Monastery",
+  state: "Sikkim",
+  travelTypes: ["spiritual", "culture", "peace"],
+  budgetRange: [3000, 7000],
+  activities: ["monastery tour", "meditation", "photography"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://dwq3yv87q1b43.cloudfront.net/public/blogs/fit-in/1350x300/Blog_20241231-1706054417-1735621009.jpeg",
+  description: "One of the largest and most important monasteries of Tibetan Buddhism in India."
+},
+{
+  name: "Pelling",
+  state: "Sikkim",
+  travelTypes: ["nature", "romantic", "trekking"],
+  budgetRange: [3000, 8000],
+  activities: ["hiking", "mountain views", "local culture"],
+  seasons: ["spring", "autumn"],
+  imageUrl: "https://ryasktourism.com/wp-content/uploads/2024/01/Gangtok-Namchi-Pelling-Ravangla.webp",
+  description: "Charming hill town with majestic views of Kanchenjunga and several local attractions."
+},
+{
+  name: "Gangtok",
+  state: "Sikkim",
+  travelTypes: ["urban", "culture", "nature"],
+  budgetRange: [4000, 10000],
+  activities: ["local sightseeing", "shopping", "monastery visits"],
+  seasons: ["spring", "autumn"],
+  imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/tsomgo-lake-gangtok-sikkim-2-attr-hero?qlt=82&ts=1727355185446",
+  description: "Capital of Sikkim with a blend of modern attractions, monasteries, and scenic vistas."
+},
+{
+  name: "Yuksom",
+  state: "Sikkim",
+  travelTypes: ["heritage", "trekking", "spiritual"],
+  budgetRange: [3000, 7000],
+  activities: ["trekking", "monastery visits", "village stay"],
+  seasons: ["autumn", "spring"],
+  imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmunF-v5LblrM05W7zcIlmK-MqLkmOfxrdgQ&s",
+  description: "Historic town and base for several Himalayan treks, rich in Buddhist heritage."
+},
+{
+  name: "Meenakshi Temple",
+  state: "Tamil Nadu",
+  travelTypes: ["spiritual", "architecture", "culture"],
+  budgetRange: [3000, 8000],
+  activities: ["temple visit", "rituals", "architecture tour"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://www.abhibus.com/blog/wp-content/uploads/2023/04/Madurai-Meenakshi-Temple-History-Timings-How-to-Reach.jpg",
+  description: "A magnificent Dravidian-style temple in Madurai dedicated to Goddess Meenakshi with intricate carvings."
+},
+{
+  name: "Marina Beach",
+  state: "Tamil Nadu",
+  travelTypes: ["leisure", "urban", "photography"],
+  budgetRange: [1500, 4000],
+  activities: ["beach walk", "sunrise view", "local snacks"],
+  seasons: ["winter", "monsoon"],
+  imageUrl: "https://storage.googleapis.com/goa-app-12a91.appspot.com/2024-07-29T00%3A43%3A47.231Z1001.webp?...",
+  description: "India’s longest urban beach, popular for early morning walks, cricket, and street food."
+},
+{
+  name: "Mahabalipuram",
+  state: "Tamil Nadu",
+  travelTypes: ["heritage", "culture", "photography"],
+  budgetRange: [2500, 6000],
+  activities: ["temple tours", "shoreline walk", "rock carvings"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://www.worldhistory.org/img/r/p/500x600/4127.jpg?v=1618794907",
+  description: "UNESCO site known for its rock-cut temples, giant bas-reliefs, and coastal views."
+},
+{
+  name: "Ooty",
+  state: "Tamil Nadu",
+  travelTypes: ["nature", "romantic", "family"],
+  budgetRange: [4000, 9000],
+  activities: ["boating", "trekking", "sightseeing"],
+  seasons: ["summer", "winter"],
+  imageUrl: "https://s3.india.com/wp-content/uploads/2024/07/Historical-Places-To-Visit-In-Ooty.jpg?impolicy=Medium_Widthonly...",
+  description: "A popular hill station in the Nilgiris offering cool weather, lakes, and gardens."
+},
+{
+  name: "Ramanathaswamy Temple",
+  state: "Tamil Nadu",
+  travelTypes: ["spiritual", "pilgrimage", "culture"],
+  budgetRange: [3000, 7000],
+  activities: ["temple rituals", "holy bath", "cultural tour"],
+  seasons: ["winter", "monsoon"],
+  imageUrl: "https://www.captureatrip.com/_next/image?...",
+  description: "Famous Shiva temple in Rameswaram with long corridors and sacred water tanks."
+},
+{
+  name: "Kanyakumari",
+  state: "Tamil Nadu",
+  travelTypes: ["spiritual", "nature", "photography"],
+  budgetRange: [3000, 8000],
+  activities: ["sunrise view", "temple visit", "beach walk"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://www.indiasinvitation.com/wp-content/uploads/2016/09/Kanyakumari-Temples.jpg",
+  description: "Southernmost tip of India known for ocean confluence, sunsets, and spiritual energy."
+},
+{
+  name: "Charminar",
+  state: "Telangana",
+  travelTypes: ["heritage", "culture", "urban"],
+  budgetRange: [2000, 5000],
+  activities: ["monument visit", "shopping", "photography"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/02/8f6093aebbc74bb6ca61e415fe436d3b_1000x1000.jpg",
+  description: "Hyderabad’s most iconic monument surrounded by vibrant bazaars and street food."
+},
+{
+  name: "Golconda Fort",
+  state: "Telangana",
+  travelTypes: ["heritage", "adventure", "history"],
+  budgetRange: [3000, 8000],
+  activities: ["fort tour", "light and sound show", "climbing"],
+  seasons: ["winter", "monsoon"],
+  imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/golconda-fort-hyderabad-secunderabad-telangana-2-musthead-hero?qlt=82&ts=1726652800762",
+  description: "A massive fort known for its strategic design and panoramic views over Hyderabad."
+},
+{
+  name: "Ramoji Film City",
+  state: "Telangana",
+  travelTypes: ["entertainment", "family", "theme park"],
+  budgetRange: [4000, 10000],
+  activities: ["studio tour", "rides", "shows"],
+  seasons: ["winter", "summer"],
+  imageUrl: "https://i0.wp.com/weekendyaari.in/wp-content/uploads/2024/09/weekend-yaari-ramoji-film-city-1.webp?fit=1921%2C1081&ssl=1",
+  description: "World’s largest film studio complex offering entertainment and Bollywood-themed attractions."
+},
+{
+  name: "Hussain Sagar Lake",
+  state: "Telangana",
+  travelTypes: ["leisure", "urban", "romantic"],
+  budgetRange: [2000, 5000],
+  activities: ["boating", "lake walk", "photography"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://housing.com/news/wp-content/uploads/2024/04/Hussain-Sagar-Lake-Hyderabad-Location-timings-attractions-f.jpg",
+  description: "A large artificial lake with a Buddha statue at the center, offering boat rides and sunset views."
+},
+{
+  name: "Birla Mandir",
+  state: "Telangana",
+  travelTypes: ["spiritual", "architecture", "urban"],
+  budgetRange: [1500, 4000],
+  activities: ["temple visit", "city view", "photography"],
+  seasons: ["winter", "monsoon"],
+  imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/e4/ab/29/birla-temple.jpg?w=800&h=500&s=1",
+  description: "A marble temple on a hill offering divine serenity and panoramic cityscape views."
+},
+{
+  name: "Salar Jung Museum",
+  state: "Telangana",
+  travelTypes: ["culture", "history", "education"],
+  budgetRange: [2000, 5000],
+  activities: ["museum tour", "art viewing", "photography"],
+  seasons: ["all"],
+  imageUrl: "https://www.salarjungmuseum.in/images/slides/slide6.jpg",
+  description: "One of India's largest museums featuring a diverse collection of art, antiques, and rare artifacts."
+},
+{
+  name: "Ujjayanta Palace",
+  state: "Tripura",
+  travelTypes: ["heritage", "culture", "history"],
+  budgetRange: [2500, 7000],
+  activities: ["palace visit", "museum", "cultural tour"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://assets.simplotel.com/.../Agartala_Tripura_India_-_Luxury_Trails_of_India_xqy2ou",
+  description: "A former royal palace now serving as a museum in Agartala, showcasing Tripura’s heritage."
+},
+{
+  name: "Neermahal",
+  state: "Tripura",
+  travelTypes: ["heritage", "photography", "romantic"],
+  budgetRange: [3000, 8000],
+  activities: ["boat ride", "fort exploration", "lake view"],
+  seasons: ["monsoon", "winter"],
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Neer-Mahal.jpg",
+  description: "The only water palace in Northeast India, located in the center of Rudrasagar Lake."
+},
+{
+  name: "Jampui Hills",
+  state: "Tripura",
+  travelTypes: ["nature", "trekking", "photography"],
+  budgetRange: [2500, 6000],
+  activities: ["hill trek", "viewpoint visit", "orange festival"],
+  seasons: ["autumn", "winter"],
+  imageUrl: "https://tripuratourism.gov.in/images/tour/1661756901/71.jpg",
+  description: "Scenic hill range known for its cool climate, orange orchards, and panoramic valley views."
+},
+{
+  name: "Dumboor Lake",
+  state: "Tripura",
+  travelTypes: ["nature", "adventure", "family"],
+  budgetRange: [2000, 5000],
+  activities: ["boating", "fishing", "island hopping"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/01/18/4d81b2634b9119f1f8d799179ef0d925_1000x1000.jpg",
+  description: "A picturesque lake with 48 islands, surrounded by green hills and rich birdlife."
+},
+{
+  name: "Sepahijala Wildlife Sanctuary",
+  state: "Tripura",
+  travelTypes: ["wildlife", "eco-tourism", "family"],
+  budgetRange: [2000, 5000],
+  activities: ["zoo", "nature walk", "birdwatching"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/sepahijala-wildlife-sanctuary-agartala-tripura-5-musthead-hero?qlt=82&ts=1726651090361",
+  description: "Sanctuary with botanical gardens, lakes, and diverse wildlife including spectacled monkeys."
+},
+{
+  name: "Ambassa",
+  state: "Tripura",
+  travelTypes: ["local", "nature", "culture"],
+  budgetRange: [1500, 4000],
+  activities: ["village exploration", "forest trails", "tribal experience"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://i.pinimg.com/564x/9f/7a/6d/9f7a6d606eaaf130333822be6132dc35.jpg",
+  description: "A serene town rich in tribal culture, forests, and natural charm of Dhalai district."
+},
+{
+  name: "Taj Mahal",
+  state: "Uttar Pradesh",
+  travelTypes: ["heritage", "romantic", "photography"],
+  budgetRange: [4000, 10000],
+  activities: ["monument visit", "photography", "cultural tour"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg",
+  description: "One of the Seven Wonders of the World, the Taj Mahal in Agra is a symbol of eternal love built in white marble."
+},
+{
+  name: "Varanasi Ghats",
+  state: "Uttar Pradesh",
+  travelTypes: ["spiritual", "culture", "local"],
+  budgetRange: [3000, 8000],
+  activities: ["Ganga aarti", "boat ride", "temple visits"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://stampedmoments.com/wp-content/uploads/2023/12/ghats-on-ganges-varanasi-2.jpg",
+  description: "Ancient riverfront steps where spiritual rituals and Ganga Aarti are performed, offering a mystical experience."
+},
+{
+  name: "Fatehpur Sikri",
+  state: "Uttar Pradesh",
+  travelTypes: ["heritage", "architecture", "history"],
+  budgetRange: [2000, 6000],
+  activities: ["fort tour", "photography", "historical walk"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/99/25/22/photo0jpg.jpg?w=900&h=500&s=1",
+  description: "A UNESCO World Heritage Site built by Emperor Akbar, featuring red sandstone structures and Mughal architecture."
+},
+{
+  name: "Agra Fort",
+  state: "Uttar Pradesh",
+  travelTypes: ["heritage", "architecture", "photography"],
+  budgetRange: [2500, 7000],
+  activities: ["fort visit", "museum", "view of Taj"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://kevinstandagephotography.wordpress.com/wp-content/uploads/2019/05/cover-3.jpg?w=640",
+  description: "A massive fort complex in Agra that served as a residence for Mughal emperors and offers views of the Taj Mahal."
+},
+{
+  name: "Sarnath",
+  state: "Uttar Pradesh",
+  travelTypes: ["spiritual", "history", "peace"],
+  budgetRange: [2000, 5000],
+  activities: ["stupa visit", "museum", "monastery tour"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://cdn.britannica.com/19/256719-050-E4CE0DBA/Sarnath-site-Dhamekh-Stupa-Varanasi-Uttar-Pradesh-India.jpg",
+  description: "The sacred place where Lord Buddha gave his first sermon after enlightenment."
+},
+{
+  name: "Mathura",
+  state: "Uttar Pradesh",
+  travelTypes: ["spiritual", "culture", "festival"],
+  budgetRange: [2500, 6000],
+  activities: ["temple visit", "Ghat walk", "Janmashtami celebration"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Vishram_Ghat.jpg",
+  description: "Birthplace of Lord Krishna, known for its spiritual energy and colorful Holi celebrations."
+},
+{
+  name: "Nainital",
+  state: "Uttarakhand",
+  travelTypes: ["nature", "romantic", "family"],
+  budgetRange: [4000, 9000],
+  activities: ["boating", "shopping", "hill walk"],
+  seasons: ["summer", "winter"],
+  imageUrl: "https://etimg.etb2bimg.com/photo/96474921.cms",
+  description: "A picturesque hill station with a scenic lake, bustling markets, and pleasant climate."
+},
+{
+  name: "Mussoorie",
+  state: "Uttarakhand",
+  travelTypes: ["nature", "romantic", "leisure"],
+  budgetRange: [4000, 10000],
+  activities: ["cable car", "shopping", "sunset point"],
+  seasons: ["summer", "winter"],
+  imageUrl: "https://s3.india.com/wp-content/uploads/2024/04/Feature-Image_-Mussoorie-13.jpg?impolicy=Medium_Widthonly&w=350&h=263",
+  description: "The ‘Queen of the Hills’, popular for its colonial charm, waterfalls, and scenic viewpoints."
+},
+{
+  name: "Valley of Flowers",
+  state: "Uttarakhand",
+  travelTypes: ["trekking", "nature", "photography"],
+  budgetRange: [5000, 11000],
+  activities: ["trek", "wildlife spotting", "nature photography"],
+  seasons: ["monsoon", "spring"],
+  imageUrl: "https://www.gokitetours.com/wp-content/uploads/2024/10/Best-time-to-visit-valley-of-flowers-in-Uttarakhand-1200x720.webp",
+  description: "UNESCO site with meadows of endemic alpine flowers and diverse fauna, accessible via trek."
+},
+{
+  name: "Jim Corbett National Park",
+  state: "Uttarakhand",
+  travelTypes: ["wildlife", "adventure", "family"],
+  budgetRange: [6000, 12000],
+  activities: ["safari", "birdwatching", "nature stay"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://vajiram-prod.s3.ap-south-1.amazonaws.com/Jim_Corbett_National_Park_0eeff01675.webp",
+  description: "India’s oldest national park famous for its Bengal tiger reserve and forest lodges."
+},
+{
+  name: "Haridwar",
+  state: "Uttarakhand",
+  travelTypes: ["spiritual", "culture", "pilgrimage"],
+  budgetRange: [2000, 5000],
+  activities: ["Ganga aarti", "temple visits", "festival"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://shivshankartirthyatra.com/blog/wp-content/uploads/2023/08/Temples-In-Haridwar.jpg",
+  description: "One of the holiest Hindu cities where devotees gather at the ghats for rituals and aarti."
+},
+{
+  name: "Badrinath Temple",
+  state: "Uttarakhand",
+  travelTypes: ["spiritual", "mountain", "trekking"],
+  budgetRange: [5000, 10000],
+  activities: ["temple darshan", "hot springs", "pilgrimage"],
+  seasons: ["summer", "autumn"],
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Badrinath_Temple_%2C_Uttarakhand.jpg/1200px-Badrinath_Temple_%2C_Uttarakhand.jpg",
+  description: "One of the Char Dhams, nestled in the Himalayas along the banks of Alaknanda River."
+},
+{
+  name: "Victoria Memorial",
+  state: "West Bengal",
+  travelTypes: ["heritage", "photography", "urban"],
+  budgetRange: [2500, 6000],
+  activities: ["museum visit", "garden walk", "photography"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://www.gokitetours.com/wp-content/uploads/2024/11/Top-10-Things-to-Know-About-Victoria-Memorial-in-Kolkata-1200x900.webp",
+  description: "Marble palace turned museum in Kolkata, built in memory of Queen Victoria with expansive gardens."
+},
+{
+  name: "Sundarbans National Park",
+  state: "West Bengal",
+  travelTypes: ["nature", "wildlife", "eco-tourism"],
+  budgetRange: [5000, 11000],
+  activities: ["boat safari", "mangrove walk", "birdwatching"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://i0.wp.com/stampedmoments.com/wp-content/uploads/2023/02/mangrove.jpg?fit=1024%2C764&ssl=1",
+  description: "The world's largest mangrove forest and home to the Royal Bengal tiger."
+},
+{
+  name: "Darjeeling",
+  state: "West Bengal",
+  travelTypes: ["hill station", "romantic", "family"],
+  budgetRange: [4000, 9000],
+  activities: ["toy train", "sunrise at Tiger Hill", "tea gardens"],
+  seasons: ["summer", "autumn"],
+  imageUrl: "https://www.iilsindia.com/blogs/wp-content/uploads/2019/05/Tourism.png",
+  description: "Famous hill town known for its tea, Himalayan views, and UNESCO heritage railway."
+},
+{
+  name: "Howrah Bridge",
+  state: "West Bengal",
+  travelTypes: ["urban", "photography", "architecture"],
+  budgetRange: [1000, 3000],
+  activities: ["walk", "riverfront view", "city photography"],
+  seasons: ["all"],
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Howrah_bridge_at_night.jpg/960px-Howrah_bridge_at_night.jpg",
+  description: "An iconic cantilever bridge in Kolkata connecting the city across the Hooghly River."
+},
+{
+  name: "Kalimpong",
+  state: "West Bengal",
+  travelTypes: ["nature", "peace", "culture"],
+  budgetRange: [3000, 7000],
+  activities: ["monastery visit", "viewpoints", "handicraft shopping"],
+  seasons: ["spring", "autumn"],
+  imageUrl: "https://s7ap1.scene7.com/is/image/incredibleindia/lord-buddha-statue-kalimpong-west-bengal-city-1-hero?qlt=82&ts=1726645267006",
+  description: "Serene hill town known for its Buddhist monasteries, colonial architecture, and orchid nurseries."
+},
+{
+  name: "Hazarduari Palace",
+  state: "West Bengal",
+  travelTypes: ["heritage", "history", "museum"],
+  budgetRange: [2000, 5000],
+  activities: ["palace tour", "museum", "river view"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://shop.museumsofindia.org/sites/default/files/2017-11/outer-facade-of-the-museum-09.jpg",
+  description: "Historic palace in Murshidabad with a museum housing artifacts from the Nawabi era."
+},
+
+   
+];

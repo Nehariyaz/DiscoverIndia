@@ -1,29 +1,27 @@
-require('dotenv').config();  // Load .env variables
-
+require('dotenv').config(); 
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const searchRoutes = require('./routes/search');
 const connectDB = require('./config/db');
 const EmailLog = require('./models/EmailLog');
 const User = require('./models/User');
 const { verifyRecaptcha } = require('./utils/recaptcha');
-
+const recommendationRoutes = require('./routes/recommendations');
+const UserPreference = require('./models/UserPreference');
 const app = express();
+const recommendationsRouter = require('./routes/recommendations');
 
-// Connect to MongoDB
 connectDB();
 
-// Enable CORS for all origins (adjust as needed)
 app.use(cors());
 
-// Middleware to parse JSON body
 app.use(bodyParser.json());
 
-app.use(searchRoutes);
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -35,7 +33,6 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Routes
 
 app.post('/enquiry', async (req, res) => {
   console.log('Received enquiry:', req.body);
@@ -104,7 +101,8 @@ app.post('/signup', async (req, res) => {
     await newUser.save();
 
     console.log('User registered:', email);
-    res.status(200).json({ message: "Signup successful" });
+    res.status(200).json({ message: "Signup successful", userId: newUser._id });
+
 
   } catch (err) {
     console.error('Signup error:', err);
@@ -138,7 +136,8 @@ app.post('/login', async (req, res) => {
     }
 
     console.log('Login successful!');
-    res.status(200).json({ message: "Login successful" });
+    res.status(200).json({ message: "Login successful", userId: user._id });
+
 
   } catch (error) {
     console.error('Login failed:', error);
@@ -260,8 +259,26 @@ app.post('/reset-password', async (req, res) => {
   }
 });
 
+app.post('/api/preferences', async (req, res) => {
+  try {
+    console.log('Full Request Body:', req.body);
+
+    if (!req.body.userId || !req.body.travelType) {
+      return res.status(400).json({ error: 'Missing fields in preferences' });
+    }
+
+    const newPreference = new UserPreference(req.body); // Accept full object
+    await newPreference.save();
+
+    res.status(200).json({ success: true });
+  } catch (err) {
+    console.error('Error inserting preferences:', err.stack || err.message);
+    res.status(500).json({ error: 'Failed to save preferences' });
+  }
+});
 
 
-// Start server - LAST STEP
+app.use('/api/recommendations', recommendationsRouter);
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
