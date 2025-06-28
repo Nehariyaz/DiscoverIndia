@@ -280,5 +280,13 @@ app.post('/api/preferences', async (req, res) => {
 
 app.use('/api/recommendations', recommendationsRouter);
 
+const destinationRoutes = require("./routes/destinations");
+app.use("/api/destinations", destinationRoutes);
+
+
+const chatbotRoutes = require('./routes/chatbot');
+app.use('/api', chatbotRoutes);
+
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
