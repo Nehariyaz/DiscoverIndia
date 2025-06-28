@@ -279,10 +279,7 @@ app.post('/api/preferences', async (req, res) => {
 
 
 app.use('/api/recommendations', recommendationsRouter);
-
-const destinationRoutes = require("./routes/destinations");
-app.use("/api/destinations", destinationRoutes);
-
+app.use("/api/destinations", require("./routes/destination"))
 
 const chatbotRoutes = require('./routes/chatbot');
 app.use('/api', chatbotRoutes);
