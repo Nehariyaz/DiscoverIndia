@@ -385,8 +385,140 @@ module.exports = [
     description: "A clean and tranquil beach in South Goa ideal for peaceful walks, swimming, and family picnics."
   },
   {
+  name: "Gir National Park",
+  stateId: 7,
+  state: "Gujarat",
+  travelTypes: ["wildlife", "nature", "adventure"],
+  budgetRange: [7000, 15000],
+  activities: ["jeep safari", "wildlife spotting", "photography"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://www.hlimg.com/images/stories/738X538/gir-national-park_1538032855m.jpeg",
+  description: "The only home of Asiatic lions, offering thrilling safaris and rich biodiversity."
+},
+{
+  name: "Rann of Kutch",
+  stateId: 7,
+  state: "Gujarat",
+  travelTypes: ["culture", "photography", "festival"],
+  budgetRange: [6000, 16000],
+  activities: ["Rann Utsav", "camel rides", "salt desert camping"],
+  seasons: ["winter"],
+  imageUrl: "https://static.toiimg.com/photo/72975551.cms",
+  description: "A surreal white salt desert that comes alive with culture and colors during Rann Utsav."
+},
+{
+  name: "Dwarka",
+  stateId: 7,
+  state: "Gujarat",
+  travelTypes: ["spiritual", "family", "heritage"],
+  budgetRange: [4000, 10000],
+  activities: ["temple visits", "beach walk", "cultural tour"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://www.transindiatravels.com/wp-content/uploads/dwarka.jpg",
+  description: "One of the Char Dham pilgrimage sites, steeped in Krishna legends and coastal serenity."
+},
+{
+  name: "Somnath Temple",
+  stateId: 7,
+  state: "Gujarat",
+  travelTypes: ["spiritual", "heritage", "solo"],
+  budgetRange: [3000, 9000],
+  activities: ["temple darshan", "sea view", "heritage exploration"],
+  seasons: ["winter", "monsoon"],
+  imageUrl: "https://www.holidify.com/images/cmsuploads/compressed/Somnath-Temple1_20180205170350.jpg",
+  description: "An iconic Jyotirlinga temple by the Arabian Sea known for its history and grandeur."
+},
+{
+  name: "Statue of Unity",
+  stateId: 7,
+  state: "Gujarat",
+  travelTypes: ["family", "group", "educational"],
+  budgetRange: [5000, 12000],
+  activities: ["viewing gallery", "museum", "boat ride"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/88/Statue_of_Unity_Narmada_India_2020.jpg",
+  description: "World's tallest statue honoring Sardar Patel, surrounded by gardens and adventure zones."
+},
+{
+  name: "Saputara",
+  stateId: 7,
+  state: "Gujarat",
+  travelTypes: ["nature", "couple", "relaxation"],
+  budgetRange: [4000, 11000],
+  activities: ["boating", "hill station stroll", "sunset point"],
+  seasons: ["monsoon", "summer"],
+  imageUrl: "https://www.gujarattourism.com/content/dam/gujrattourism/images/destination/saputara/saputara_banner.jpg",
+  description: "Gujarat's only hill station with a calm lake, cool climate, and lush greenery."
+},
+{
+  name: "Kurukshetra",
+  stateId: 8,
+  state: "Haryana",
+  travelTypes: ["spiritual", "heritage", "educational"],
+  budgetRange: [3000, 9000],
+  activities: ["temple visits", "heritage tours", "museums"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://www.hlimg.com/images/stories/738X538/kurukshetra_1538032963m.jpeg",
+  description: "A historic city known as the battlefield of Mahabharata, rich in mythology and temples."
+},
+{
+  name: "Sultanpur Bird Sanctuary",
+  stateId: 8,
+  state: "Haryana",
+  travelTypes: ["nature", "photography", "family"],
+  budgetRange: [2000, 7000],
+  activities: ["birdwatching", "nature walk", "photography"],
+  seasons: ["winter", "spring"],
+  imageUrl: "https://www.hlimg.com/images/stories/738X538/sultanpur-bird-sanctuary_1538032874m.jpeg",
+  description: "A paradise for bird lovers with migratory birds flocking during winter."
+},
+{
+  name: "Panipat",
+  stateId: 8,
+  state: "Haryana",
+  travelTypes: ["heritage", "educational", "solo"],
+  budgetRange: [2500, 8000],
+  activities: ["museum visit", "battlefield tour", "fort exploration"],
+  seasons: ["winter", "autumn"],
+  imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Panipat_Museum.jpg",
+  description: "Famous for its historic battles, this city houses a museum and significant landmarks."
+},
+{
+  name: "Morni Hills",
+  stateId: 8,
+  state: "Haryana",
+  travelTypes: ["nature", "couple", "relaxation"],
+  budgetRange: [3000, 9000],
+  activities: ["trekking", "boating", "picnic"],
+  seasons: ["summer", "monsoon"],
+  imageUrl: "https://www.nativeplanet.com/img/2017/03/25-1489734704-morni-hills2.jpg",
+  description: "The only hill station in Haryana offering scenic views, lakes, and peaceful retreats."
+},
+{
+  name: "Pinjore Gardens",
+  stateId: 8,
+  state: "Haryana",
+  travelTypes: ["family", "heritage", "relaxation"],
+  budgetRange: [2000, 6000],
+  activities: ["garden walk", "picnic", "heritage site"],
+  seasons: ["spring", "autumn"],
+  imageUrl: "https://www.tourmyindia.com/states/haryana/images/pinjore-gardens-1.jpg",
+  description: "A beautiful Mughal-style garden known for its fountains, terraces, and calm ambiance."
+},
+{
+  name: "Surajkund",
+  stateId: 8,
+  state: "Haryana",
+  travelTypes: ["culture", "shopping", "festival"],
+  budgetRange: [3000, 10000],
+  activities: ["crafts fair", "cultural shows", "local shopping"],
+  seasons: ["winter"],
+  imageUrl: "https://static.toiimg.com/thumb/msid-88667062,width-748,height-499,resizemode=4,imgsize-186214/.jpg",
+  description: "Hosts the famous Surajkund Mela, a global craft and culture fair every February."
+},
+  {
     name: "Shimla",
-    stateId: 7,
+    stateId: 9,
     state: "Himachal Pradesh",
     travelTypes: ["couple", "family", "snow"],
     budgetRange: [5000, 15000],
@@ -397,7 +529,7 @@ module.exports = [
   },
   {
     name: "Manali",
-    stateId: 7,
+    stateId: 9,
     state: "Himachal Pradesh",
     travelTypes: ["couple", "adventure", "group"],
     budgetRange: [6000, 18000],
@@ -408,7 +540,7 @@ module.exports = [
   },
   {
     name: "Dharamshala",
-    stateId: 7,
+    stateId: 9,
     state: "Himachal Pradesh",
     travelTypes: ["solo", "spiritual", "nature"],
     budgetRange: [4000, 12000],
@@ -419,7 +551,7 @@ module.exports = [
   },
   {
     name: "Rohtang Pass",
-    stateId: 7,
+    stateId: 9,
     state: "Himachal Pradesh",
     travelTypes: ["snow", "photography", "adventure"],
     budgetRange: [6000, 16000],
@@ -430,7 +562,7 @@ module.exports = [
   },
   {
     name: "Kullu Valley",
-    stateId: 7,
+    stateId: 9,
     state: "Himachal Pradesh",
     travelTypes: ["nature", "relaxation", "group"],
     budgetRange: [5000, 13000],
@@ -441,7 +573,7 @@ module.exports = [
   },
   {
     name: "Spiti Valley",
-    stateId: 7,
+    stateId: 9,
     state: "Himachal Pradesh",
     travelTypes: ["adventure", "solo", "photography"],
     budgetRange: [8000, 20000],
@@ -451,74 +583,8 @@ module.exports = [
     description: "A cold desert valley known for its stark beauty, Buddhist monasteries, and rugged treks."
   },
   {
-    name: "Varkala Beach",
-    stateId: 8,
-    state: "Kerala",
-    travelTypes: ["solo", "couple", "family"],
-    budgetRange: [5000, 15000],
-    activities: ["beach", "relaxation", "nature"],
-    seasons: ["winter", "monsoon"],
-    imageUrl: "https://www.indianarrative.com/wp-content/uploads/2023/05/Varkala-Beach1.jpg",
-    description: "Cliff-side beaches with beautiful views of the Arabian Sea."
-  },
-  {
-    name: "Backwaters of Alleppey",
-    stateId: 8,
-    state: "Kerala",
-    travelTypes: ["couple", "family"],
-    budgetRange: [7000, 22000],
-    activities: ["backwaters", "boating", "relaxation"],
-    seasons: ["winter", "monsoon"],
-    imageUrl: "https://res.cloudinary.com/kmadmin/image/upload/v1725363873/kiomoi/Backwaters_in_Alleppey_8718.jpg",
-    description: "Famous for houseboat cruises through tranquil waters."
-  },
-  {
-    name: "Munnar",
-    stateId: 8,
-    state: "Kerala",
-    travelTypes: ["couple", "family", "nature"],
-    budgetRange: [6000, 20000],
-    activities: ["hill station", "nature", "tea plantations"],
-    seasons: ["summer", "monsoon"],
-    imageUrl: "https://www.keralatravels.com/userfiles/1475821114_munnar.jpeg",
-    description: "Lush tea gardens and cool climate in the Western Ghats."
-  },
-  {
-    name: "Fort Kochi",
-    stateId: 8,
-    state: "Kerala",
-    travelTypes: ["solo", "culture", "heritage"],
-    budgetRange: [4000, 15000],
-    activities: ["heritage", "culture", "sightseeing"],
-    seasons: ["winter", "autumn"],
-    imageUrl: "https://s3.ap-south-1.amazonaws.com/zo-media/blog_photo/Flickr_Kochi.jpg",
-    description: "Colonial charm, Chinese fishing nets, and history."
-  },
-  {
-    name: "Periyar Wildlife Sanctuary",
-    stateId: 8,
-    state: "Kerala",
-    travelTypes: ["adventure", "family", "nature"],
-    budgetRange: [5000, 18000],
-    activities: ["wildlife", "nature", "safari"],
-    seasons: ["winter", "monsoon"],
-    imageUrl: "https://ihplb.b-cdn.net/wp-content/uploads/2017/04/Periyar-Wildlife-Sanctuary.jpg",
-    description: "Lush forest reserve with elephants and boat safaris."
-  },
-  {
-    name: "Athirappilly Falls",
-    stateId: 8,
-    state: "Kerala",
-    travelTypes: ["solo", "group", "nature"],
-    budgetRange: [4000, 12000],
-    activities: ["waterfalls", "nature", "trekking"],
-    seasons: ["monsoon", "winter"],
-    imageUrl: "https://static.wixstatic.com/media/d37a82_805574f456ed486f8d080a7369bdb21f~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,usm_0.66_1.00_0.01/d37a82_805574f456ed486f8d080a7369bdb21f~mv2.jpg",
-    description: "Majestic waterfalls often called the 'Niagara of India'."
-  },
-  {
     name: "Deoghar",
-    stateId: 9,
+    stateId: 10,
     state: "Jharkhand",
     travelTypes: ["spiritual", "culture", "family"],
     budgetRange: [3000, 9000],
@@ -530,7 +596,7 @@ module.exports = [
   {
     name: "Dassam Falls",
     state: "Jharkhand",
-    stateId: 9,
+    stateId: 10,
     travelTypes: ["nature", "family", "photography"],
     budgetRange: [2000, 6000],
     activities: ["waterfalls", "picnic", "nature walk"],
@@ -541,7 +607,7 @@ module.exports = [
   {
     name: "Rajrappa Temple",
     state: "Jharkhand",
-    stateId: 9,
+    stateId: 10,
     travelTypes: ["spiritual", "local", "family"],
     budgetRange: [2000, 5000],
     activities: ["temple visit", "boating", "rituals"],
@@ -552,7 +618,7 @@ module.exports = [
   {
     name: "Betla National Park",
     state: "Jharkhand",
-    stateId: 9,
+    stateId: 10,
     travelTypes: ["wildlife", "eco", "adventure"],
     budgetRange: [4000, 10000],
     activities: ["safari", "trekking", "bird watching"],
@@ -563,7 +629,7 @@ module.exports = [
   {
     name: "Hazaribagh National Park",
     state: "Jharkhand",
-    stateId: 9,
+    stateId: 10,
     travelTypes: ["wildlife", "family", "eco"],
     budgetRange: [3000, 8000],
     activities: ["jeep safari", "lake visit", "wildlife photography"],
@@ -573,7 +639,7 @@ module.exports = [
   },
   {
     name: "Netarhat",
-    stateId: 9,
+    stateId: 10,
     state: "Jharkhand",
     travelTypes: ["nature", "solo", "couple"],
     budgetRange: [3000, 9000],
@@ -582,9 +648,76 @@ module.exports = [
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv0UOErB7fE7D7rujz_zZ5YjYh888jHwB8BQ&s",
     description: "Known as the ‘Queen of Chotanagpur’, a peaceful hill station with cool climate and scenic charm."
   },
+  {
+    name: "Varkala Beach",
+    stateId: 12,
+    state: "Kerala",
+    travelTypes: ["solo", "couple", "family"],
+    budgetRange: [5000, 15000],
+    activities: ["beach", "relaxation", "nature"],
+    seasons: ["winter", "monsoon"],
+    imageUrl: "https://www.indianarrative.com/wp-content/uploads/2023/05/Varkala-Beach1.jpg",
+    description: "Cliff-side beaches with beautiful views of the Arabian Sea."
+  },
+  {
+    name: "Backwaters of Alleppey",
+    stateId: 12,
+    state: "Kerala",
+    travelTypes: ["couple", "family"],
+    budgetRange: [7000, 22000],
+    activities: ["backwaters", "boating", "relaxation"],
+    seasons: ["winter", "monsoon"],
+    imageUrl: "https://res.cloudinary.com/kmadmin/image/upload/v1725363873/kiomoi/Backwaters_in_Alleppey_8718.jpg",
+    description: "Famous for houseboat cruises through tranquil waters."
+  },
+  {
+    name: "Munnar",
+    stateId: 12,
+    state: "Kerala",
+    travelTypes: ["couple", "family", "nature"],
+    budgetRange: [6000, 20000],
+    activities: ["hill station", "nature", "tea plantations"],
+    seasons: ["summer", "monsoon"],
+    imageUrl: "https://www.keralatravels.com/userfiles/1475821114_munnar.jpeg",
+    description: "Lush tea gardens and cool climate in the Western Ghats."
+  },
+  {
+    name: "Fort Kochi",
+    stateId: 12,
+    state: "Kerala",
+    travelTypes: ["solo", "culture", "heritage"],
+    budgetRange: [4000, 15000],
+    activities: ["heritage", "culture", "sightseeing"],
+    seasons: ["winter", "autumn"],
+    imageUrl: "https://s3.ap-south-1.amazonaws.com/zo-media/blog_photo/Flickr_Kochi.jpg",
+    description: "Colonial charm, Chinese fishing nets, and history."
+  },
+  {
+    name: "Periyar Wildlife Sanctuary",
+    stateId: 12,
+    state: "Kerala",
+    travelTypes: ["adventure", "family", "nature"],
+    budgetRange: [5000, 18000],
+    activities: ["wildlife", "nature", "safari"],
+    seasons: ["winter", "monsoon"],
+    imageUrl: "https://ihplb.b-cdn.net/wp-content/uploads/2017/04/Periyar-Wildlife-Sanctuary.jpg",
+    description: "Lush forest reserve with elephants and boat safaris."
+  },
+  {
+    name: "Athirappilly Falls",
+    stateId: 12,
+    state: "Kerala",
+    travelTypes: ["solo", "group", "nature"],
+    budgetRange: [4000, 12000],
+    activities: ["waterfalls", "nature", "trekking"],
+    seasons: ["monsoon", "winter"],
+    imageUrl: "https://static.wixstatic.com/media/d37a82_805574f456ed486f8d080a7369bdb21f~mv2.jpg/v1/fill/w_1000,h_750,al_c,q_85,usm_0.66_1.00_0.01/d37a82_805574f456ed486f8d080a7369bdb21f~mv2.jpg",
+    description: "Majestic waterfalls often called the 'Niagara of India'."
+  },
+  
    {
     name: "Mysore Palace",
-    stateId: 10,
+    stateId: 11,
     state: "Karnataka",
     travelTypes: ["family", "heritage", "photography"],
     budgetRange: [3000, 9000],
@@ -595,7 +728,7 @@ module.exports = [
   },
   {
     name: "Hampi",
-    stateId: 10,
+    stateId: 11,
     state: "Karnataka",
     travelTypes: ["history", "adventure", "solo"],
     budgetRange: [4000, 10000],
@@ -606,7 +739,7 @@ module.exports = [
   },
   {
     name: "Coorg",
-    stateId: 10,
+    stateId: 11,
     state: "Karnataka",
     travelTypes: ["couple", "nature", "relaxation"],
     budgetRange: [5000, 15000],
@@ -617,7 +750,7 @@ module.exports = [
   },
   {
     name: "Jog Falls",
-    stateId: 10,
+    stateId: 11,
     state: "Karnataka",
     travelTypes: ["nature", "photography", "family"],
     budgetRange: [3000, 8000],
@@ -628,7 +761,7 @@ module.exports = [
   },
   {
     name: "Bandipur National Park",
-    stateId: 10,
+    stateId: 11,
     state: "Karnataka",
     travelTypes: ["wildlife", "eco", "family"],
     budgetRange: [4000, 12000],
@@ -639,7 +772,7 @@ module.exports = [
   },
   {
     name: "Shravanabelagola",
-    stateId: 10,
+    stateId: 11,
     state: "Karnataka",
     travelTypes: ["spiritual", "culture", "history"],
     budgetRange: [2000, 6000],
@@ -650,7 +783,7 @@ module.exports = [
   },
   {
   name: "Khajuraho Temples",
-  stateId: 11,
+  stateId: 13,
   state: "Madhya Pradesh",
   travelTypes: ["heritage", "culture", "architecture"],
   budgetRange: [4000, 10000],
@@ -661,7 +794,7 @@ module.exports = [
 },
 {
   name: "Kanha National Park",
-  stateId: 11,
+  stateId: 13,
   state: "Madhya Pradesh",
   travelTypes: ["wildlife", "adventure", "nature"],
   budgetRange: [5000, 12000],
@@ -672,7 +805,7 @@ module.exports = [
 },
 {
   name: "Bhimbetka Caves",
-  stateId: 11,
+  stateId: 13,
   state: "Madhya Pradesh",
   travelTypes: ["history", "adventure", "education"],
   budgetRange: [3000, 8000],
@@ -683,7 +816,7 @@ module.exports = [
 },
 {
   name: "Sanchi Stupa",
-  stateId: 11,
+  stateId: 13,
   state: "Madhya Pradesh",
   travelTypes: ["spiritual", "history", "culture"],
   budgetRange: [2500, 7000],
@@ -694,7 +827,7 @@ module.exports = [
 },
 {
   name: "Gwalior Fort",
-  stateId: 11,
+  stateId: 13,
   state: "Madhya Pradesh",
   travelTypes: ["heritage", "family", "architecture"],
   budgetRange: [3000, 9000],
@@ -705,7 +838,7 @@ module.exports = [
 },
 {
   name: "Pachmarhi",
-  stateId: 12,
+  stateId: 13,
   state: "Madhya Pradesh",
   travelTypes: ["nature", "romantic", "adventure"],
   budgetRange: [4000, 10000],
@@ -716,7 +849,7 @@ module.exports = [
 },
 {
     name: "Living Root Bridges",
-    stateId: 12,
+    stateId: 16,
     state: "Meghalaya",
     travelTypes: ["adventure", "nature", "eco"],
     budgetRange: [4000, 10000],
@@ -727,7 +860,7 @@ module.exports = [
   },
   {
     name: "Cherrapunji",
-    stateId: 12,
+    stateId: 16,
     state: "Meghalaya",
     travelTypes: ["nature", "solo", "scenic"],
     budgetRange: [3000, 9000],
@@ -738,7 +871,7 @@ module.exports = [
   },
   {
     name: "Nohkalikai Falls",
-    stateId: 12,
+    stateId: 16,
     state: "Meghalaya",
     travelTypes: ["nature", "photography", "romantic"],
     budgetRange: [3000, 8000],
@@ -749,7 +882,7 @@ module.exports = [
   },
   {
     name: "Mawsynram",
-    stateId: 12,
+    stateId: 16,
     state: "Meghalaya",
     travelTypes: ["nature", "offbeat", "monsoon"],
     budgetRange: [3000, 9000],
@@ -760,7 +893,7 @@ module.exports = [
   },
   {
     name: "Elephant Falls",
-    stateId: 12,
+    stateId: 16,
     state: "Meghalaya",
     travelTypes: ["family", "nature", "relaxation"],
     budgetRange: [2000, 6000],
@@ -771,7 +904,7 @@ module.exports = [
   },
   {
     name: "Shillong",
-    stateId: 12,
+    stateId: 16,
     state: "Meghalaya",
     travelTypes: ["urban", "couple", "culture"],
     budgetRange: [4000, 10000],
@@ -782,7 +915,7 @@ module.exports = [
   },
   {
     name: "Aizawl",
-    stateId: 13,
+    stateId: 17,
     state: "Mizoram",
     travelTypes: ["urban", "culture", "offbeat"],
     budgetRange: [4000, 9000],
@@ -793,7 +926,7 @@ module.exports = [
   },
   {
     name: "Dampa Tiger Reserve",
-    stateId: 13,
+    stateId: 17,
     state: "Mizoram",
     travelTypes: ["wildlife", "eco", "adventure"],
     budgetRange: [5000, 12000],
@@ -804,7 +937,7 @@ module.exports = [
   },
   {
     name: "Vantawng Falls",
-    stateId: 13,
+    stateId: 17,
     state: "Mizoram",
     travelTypes: ["nature", "photography", "romantic"],
     budgetRange: [3000, 8000],
@@ -815,7 +948,7 @@ module.exports = [
   },
   {
     name: "Phawngpui Peak",
-    stateId: 13,
+    stateId: 17,
     state: "Mizoram",
     travelTypes: ["adventure", "trekking", "nature"],
     budgetRange: [4000, 10000],
@@ -826,7 +959,7 @@ module.exports = [
   },
   {
     name: "Reiek Tlang",
-    stateId: 13,
+    stateId: 17,
     state: "Mizoram",
     travelTypes: ["trekking", "offbeat", "nature"],
     budgetRange: [3000, 9000],
@@ -837,7 +970,7 @@ module.exports = [
   },
   {
     name: "Palak Lake",
-    stateId: 13,
+    stateId: 17,
     state: "Mizoram",
     travelTypes: ["eco", "romantic", "relaxation"],
     budgetRange: [3000, 8500],
@@ -981,7 +1114,7 @@ module.exports = [
 
  {
     name: "Kohima",
-    stateId: 16,
+    stateId: 18,
     state: "Nagaland",
     travelTypes: ["culture", "heritage", "family"],
     budgetRange: [4000, 10000],
@@ -992,7 +1125,7 @@ module.exports = [
   },
   {
     name: "Dzukou Valley",
-    stateId: 16,
+    stateId: 18,
     state: "Nagaland",
     travelTypes: ["adventure", "trekking", "nature"],
     budgetRange: [5000, 12000],
@@ -1003,7 +1136,7 @@ module.exports = [
   },
   {
     name: "Khonoma Village",
-    stateId: 16,
+    stateId: 18,
     state: "Nagaland",
     travelTypes: ["eco", "cultural", "offbeat"],
     budgetRange: [3000, 9000],
@@ -1014,7 +1147,7 @@ module.exports = [
   },
   {
     name: "Nagaland State Museum",
-    stateId: 16,
+    stateId: 18,
     state: "Nagaland",
     travelTypes: ["culture", "history", "educational"],
     budgetRange: [2000, 5000],
@@ -1025,7 +1158,7 @@ module.exports = [
   },
   {
     name: "Intanki National Park",
-    stateId: 16,
+    stateId: 18,
     state: "Nagaland",
     travelTypes: ["wildlife", "adventure", "eco"],
     budgetRange: [4000, 10000],
@@ -1037,7 +1170,7 @@ module.exports = [
   {
     name: "Tseminyu",
     state: "Nagaland",
-    stateId: 16,
+    stateId: 18,
     travelTypes: ["culture", "heritage", "offbeat"],
     budgetRange: [3000, 8000],
     activities: ["village life", "local culture", "countryside exploration"],
@@ -1047,7 +1180,7 @@ module.exports = [
   },
   {
     name: "Konark Sun Temple",
-    stateId: 17,
+    stateId: 18,
     state: "Odisha",
     travelTypes: ["heritage", "architecture", "history"],
     budgetRange: [3000, 9000],
@@ -1058,7 +1191,7 @@ module.exports = [
   },
   {
     name: "Puri Jagannath Temple",
-    stateId: 17,
+    stateId: 19,
     state: "Odisha",
     travelTypes: ["spiritual", "family", "culture"],
     budgetRange: [3000, 8000],
@@ -1069,7 +1202,7 @@ module.exports = [
   },
   {
     name: "Chilika Lake",
-    stateId: 17,
+    stateId: 19,
     state: "Odisha",
     travelTypes: ["nature", "wildlife", "family"],
     budgetRange: [4000, 9000],
@@ -1080,7 +1213,7 @@ module.exports = [
   },
   {
     name: "Lingaraj Temple",
-    stateId: 17,
+    stateId: 19,
     state: "Odisha",
     travelTypes: ["spiritual", "architecture", "history"],
     budgetRange: [2000, 6000],
@@ -1091,7 +1224,7 @@ module.exports = [
   },
   {
     name: "Simlipal National Park",
-    stateId: 17,
+    stateId: 19,
     state: "Odisha",
     travelTypes: ["eco", "wildlife", "adventure"],
     budgetRange: [4000, 12000],
@@ -1103,7 +1236,7 @@ module.exports = [
   {
 
     state: "Odisha",
-    stateId: 17,
+    stateId: 19,
     travelTypes: ["spiritual", "history", "peaceful"],
     budgetRange: [2000, 5000],
     activities: ["Buddhist site", "heritage", "panoramic views"],
@@ -1113,7 +1246,7 @@ module.exports = [
   },
   {
     name: "Golden Temple",
-    stateId: 18,
+    stateId: 20,
     state: "Punjab",
     travelTypes: ["spiritual", "cultural", "family"],
     budgetRange: [3000, 8000],
@@ -1124,7 +1257,7 @@ module.exports = [
   },
   {
     name: "Jallianwala Bagh",
-    stateId: 18,
+    stateId: 20,
     state: "Punjab",
     travelTypes: ["history", "heritage", "educational"],
     budgetRange: [1000, 4000],
@@ -1136,7 +1269,7 @@ module.exports = [
   {
     name: "Wagah Border",
     state: "Punjab",
-    stateId: 18,
+    stateId: 20,
     travelTypes: ["patriotic", "group", "experience"],
     budgetRange: [2000, 5000],
     activities: ["border parade", "flag ceremony"],
@@ -1147,7 +1280,7 @@ module.exports = [
   {
     name: "Anandpur Sahib",
     state: "Punjab",
-    stateId: 18,
+    stateId: 20,
     travelTypes: ["spiritual", "heritage", "culture"],
     budgetRange: [2000, 6000],
     activities: ["Gurdwara visit", "Hola Mohalla festival"],
@@ -1157,7 +1290,7 @@ module.exports = [
   },
   {
     name: "Patiala",
-    stateId: 18,
+    stateId: 20,
     state: "Punjab",
     travelTypes: ["heritage", "urban", "culture"],
     budgetRange: [3000, 8000],
@@ -1168,7 +1301,7 @@ module.exports = [
   },
   {
     name: "Sheesh Mahal",
-    stateId: 18,
+    stateId: 20,
     state: "Punjab",
     travelTypes: ["heritage", "architecture", "photography"],
     budgetRange: [2000, 5000],
@@ -1179,7 +1312,7 @@ module.exports = [
   },
   {
   name: "Hawa Mahal",
-  stateId: 19,
+  stateId: 21,
   state: "Rajasthan",
   travelTypes: ["heritage", "architecture", "urban"],
   budgetRange: [3000, 8000],
@@ -1190,7 +1323,7 @@ module.exports = [
 },
 {
   name: "Amber Fort",
-  stateId: 19,
+  stateId: 21,
   state: "Rajasthan",
   travelTypes: ["heritage", "adventure", "culture"],
   budgetRange: [4000, 10000],
@@ -1201,7 +1334,7 @@ module.exports = [
 },
 {
   name: "City Palace, Udaipur",
-  stateId: 19,
+  stateId: 21,
   state: "Rajasthan",
   travelTypes: ["royal", "romantic", "family"],
   budgetRange: [5000, 12000],
@@ -1212,7 +1345,7 @@ module.exports = [
 },
 {
   name: "Jaisalmer Fort",
-  stateId: 19,
+  stateId: 21,
   state: "Rajasthan",
   travelTypes: ["heritage", "desert", "photography"],
   budgetRange: [4000, 10000],
@@ -1223,7 +1356,7 @@ module.exports = [
 },
 {
   name: "Pushkar Lake",
-  stateId: 19,
+  stateId: 21,
   state: "Rajasthan",
   travelTypes: ["spiritual", "culture", "photography"],
   budgetRange: [2000, 6000],
@@ -1234,7 +1367,7 @@ module.exports = [
 },
 {
   name: "Ranthambore National Park",
-  stateId: 19,
+  stateId: 21,
   state: "Rajasthan",
   travelTypes: ["wildlife", "adventure", "family"],
   budgetRange: [5000, 12000],
@@ -1245,7 +1378,7 @@ module.exports = [
 },
 {
   name: "Tsomgo Lake",
-  stateId: 20,
+  stateId: 22,
   state: "Sikkim",
   travelTypes: ["nature", "romantic", "adventure"],
   budgetRange: [4000, 9000],
@@ -1256,7 +1389,7 @@ module.exports = [
 },
 {
   name: "Nathula Pass",
-  stateId: 20,
+  stateId: 22,
   state: "Sikkim",
   travelTypes: ["adventure", "history", "photography"],
   budgetRange: [5000, 10000],
@@ -1267,7 +1400,7 @@ module.exports = [
 },
 {
   name: "Rumtek Monastery",
-  stateId: 20,
+  stateId: 22,
   state: "Sikkim",
   travelTypes: ["spiritual", "culture", "peace"],
   budgetRange: [3000, 7000],
@@ -1278,7 +1411,7 @@ module.exports = [
 },
 {
   name: "Pelling",
-  stateId: 20,
+  stateId: 22,
   state: "Sikkim",
   travelTypes: ["nature", "romantic", "trekking"],
   budgetRange: [3000, 8000],
@@ -1289,7 +1422,7 @@ module.exports = [
 },
 {
   name: "Gangtok",
-  stateId: 20,
+  stateId: 22,
   state: "Sikkim",
   travelTypes: ["urban", "culture", "nature"],
   budgetRange: [4000, 10000],
@@ -1300,7 +1433,7 @@ module.exports = [
 },
 {
   name: "Yuksom",
-  stateId: 20,
+  stateId: 22,
   state: "Sikkim",
   travelTypes: ["heritage", "trekking", "spiritual"],
   budgetRange: [3000, 7000],
@@ -1311,7 +1444,7 @@ module.exports = [
 },
 {
   name: "Meenakshi Temple",
-  stateId: 21,
+  stateId: 23,
   state: "Tamil Nadu",
   travelTypes: ["spiritual", "architecture", "culture"],
   budgetRange: [3000, 8000],
@@ -1322,7 +1455,7 @@ module.exports = [
 },
 {
   name: "Marina Beach",
-  stateId: 21,
+  stateId: 23,
   state: "Tamil Nadu",
   travelTypes: ["leisure", "urban", "photography"],
   budgetRange: [1500, 4000],
@@ -1334,7 +1467,7 @@ module.exports = [
 {
   name: "Mahabalipuram",
   state: "Tamil Nadu",
-  stateId: 21,
+  stateId: 23,
   travelTypes: ["heritage", "culture", "photography"],
   budgetRange: [2500, 6000],
   activities: ["temple tours", "shoreline walk", "rock carvings"],
@@ -1345,7 +1478,7 @@ module.exports = [
 {
   name: "Ooty",
   state: "Tamil Nadu",
-  stateId: 21,
+  stateId: 23,
   travelTypes: ["nature", "romantic", "family"],
   budgetRange: [4000, 9000],
   activities: ["boating", "trekking", "sightseeing"],
@@ -1356,7 +1489,7 @@ module.exports = [
 {
   name: "Ramanathaswamy Temple",
   state: "Tamil Nadu",
-  stateId: 21,
+  stateId: 23,
   travelTypes: ["spiritual", "pilgrimage", "culture"],
   budgetRange: [3000, 7000],
   activities: ["temple rituals", "holy bath", "cultural tour"],
@@ -1366,7 +1499,7 @@ module.exports = [
 },
 {
   name: "Kanyakumari",
-  stateId: 21,
+  stateId: 23,
   state: "Tamil Nadu",
   travelTypes: ["spiritual", "nature", "photography"],
   budgetRange: [3000, 8000],
@@ -1377,7 +1510,7 @@ module.exports = [
 },
 {
   name: "Charminar",
-  stateId: 22,
+  stateId: 24,
   state: "Telangana",
   travelTypes: ["heritage", "culture", "urban"],
   budgetRange: [2000, 5000],
@@ -1388,7 +1521,7 @@ module.exports = [
 },
 {
   name: "Golconda Fort",
-  stateId: 22,
+  stateId: 24,
   state: "Telangana",
   travelTypes: ["heritage", "adventure", "history"],
   budgetRange: [3000, 8000],
@@ -1399,7 +1532,7 @@ module.exports = [
 },
 {
   name: "Ramoji Film City",
-  stateId: 22,
+  stateId: 24,
   state: "Telangana",
   travelTypes: ["entertainment", "family", "theme park"],
   budgetRange: [4000, 10000],
@@ -1410,7 +1543,7 @@ module.exports = [
 },
 {
   name: "Hussain Sagar Lake",
-  stateId: 22,
+  stateId: 24,
   state: "Telangana",
   travelTypes: ["leisure", "urban", "romantic"],
   budgetRange: [2000, 5000],
@@ -1421,7 +1554,7 @@ module.exports = [
 },
 {
   name: "Birla Mandir",
-  stateId: 22,
+  stateId: 24,
   state: "Telangana",
   travelTypes: ["spiritual", "architecture", "urban"],
   budgetRange: [1500, 4000],
@@ -1432,7 +1565,7 @@ module.exports = [
 },
 {
   name: "Salar Jung Museum",
-  stateId: 22,
+  stateId: 24,
   state: "Telangana",
   travelTypes: ["culture", "history", "education"],
   budgetRange: [2000, 5000],
@@ -1443,7 +1576,7 @@ module.exports = [
 },
 {
   name: "Ujjayanta Palace",
-  stateId: 23,
+  stateId: 25,
   state: "Tripura",
   travelTypes: ["heritage", "culture", "history"],
   budgetRange: [2500, 7000],
@@ -1454,7 +1587,7 @@ module.exports = [
 },
 {
   name: "Neermahal",
-  stateId: 23,
+  stateId: 25,
   state: "Tripura",
   travelTypes: ["heritage", "photography", "romantic"],
   budgetRange: [3000, 8000],
@@ -1465,7 +1598,7 @@ module.exports = [
 },
 {
   name: "Jampui Hills",
-  stateId: 23,
+  stateId: 25,
   state: "Tripura",
   travelTypes: ["nature", "trekking", "photography"],
   budgetRange: [2500, 6000],
@@ -1476,7 +1609,7 @@ module.exports = [
 },
 {
   name: "Dumboor Lake",
-  stateId: 23,
+  stateId: 25,
   state: "Tripura",
   travelTypes: ["nature", "adventure", "family"],
   budgetRange: [2000, 5000],
@@ -1487,7 +1620,7 @@ module.exports = [
 },
 {
   name: "Sepahijala Wildlife Sanctuary",
-  stateId: 23,
+  stateId: 25,
   state: "Tripura",
   travelTypes: ["wildlife", "eco-tourism", "family"],
   budgetRange: [2000, 5000],
@@ -1498,7 +1631,7 @@ module.exports = [
 },
 {
   name: "Ambassa",
-  stateId: 23,
+  stateId: 25,
   state: "Tripura",
   travelTypes: ["local", "nature", "culture"],
   budgetRange: [1500, 4000],
@@ -1509,7 +1642,7 @@ module.exports = [
 },
 {
   name: "Taj Mahal",
-  stateId: 24,
+  stateId: 26,
   state: "Uttar Pradesh",
   travelTypes: ["heritage", "romantic", "photography"],
   budgetRange: [4000, 10000],
@@ -1520,7 +1653,7 @@ module.exports = [
 },
 {
   name: "Varanasi Ghats",
-  stateId: 24,
+  stateId: 26,
   state: "Uttar Pradesh",
   travelTypes: ["spiritual", "culture", "local"],
   budgetRange: [3000, 8000],
@@ -1531,7 +1664,7 @@ module.exports = [
 },
 {
   name: "Fatehpur Sikri",
-  stateId: 24,
+  stateId: 26,
   state: "Uttar Pradesh",
   travelTypes: ["heritage", "architecture", "history"],
   budgetRange: [2000, 6000],
@@ -1542,7 +1675,7 @@ module.exports = [
 },
 {
   name: "Agra Fort",
-  stateId: 24,
+  stateId: 26,
   state: "Uttar Pradesh",
   travelTypes: ["heritage", "architecture", "photography"],
   budgetRange: [2500, 7000],
@@ -1553,7 +1686,7 @@ module.exports = [
 },
 {
   name: "Sarnath",
-  stateId: 24,
+  stateId: 26,
   state: "Uttar Pradesh",
   travelTypes: ["spiritual", "history", "peace"],
   budgetRange: [2000, 5000],
@@ -1564,7 +1697,7 @@ module.exports = [
 },
 {
   name: "Mathura",
-  stateId: 24,
+  stateId: 26,
   state: "Uttar Pradesh",
   travelTypes: ["spiritual", "culture", "festival"],
   budgetRange: [2500, 6000],
@@ -1575,7 +1708,7 @@ module.exports = [
 },
 {
   name: "Nainital",
-  stateId: 25,
+  stateId: 27,
   state: "Uttarakhand",
   travelTypes: ["nature", "romantic", "family"],
   budgetRange: [4000, 9000],
@@ -1586,7 +1719,7 @@ module.exports = [
 },
 {
   name: "Mussoorie",
-  stateId: 25,
+  stateId: 27,
   state: "Uttarakhand",
   travelTypes: ["nature", "romantic", "leisure"],
   budgetRange: [4000, 10000],
@@ -1597,7 +1730,7 @@ module.exports = [
 },
 {
   name: "Valley of Flowers",
-  stateId: 25,
+  stateId: 27,
   state: "Uttarakhand",
   travelTypes: ["trekking", "nature", "photography"],
   budgetRange: [5000, 11000],
@@ -1608,7 +1741,7 @@ module.exports = [
 },
 {
   name: "Jim Corbett National Park",
-  stateId: 25,
+  stateId: 27,
   state: "Uttarakhand",
   travelTypes: ["wildlife", "adventure", "family"],
   budgetRange: [6000, 12000],
@@ -1619,7 +1752,7 @@ module.exports = [
 },
 {
   name: "Haridwar",
-  stateId: 25,
+  stateId: 27,
   state: "Uttarakhand",
   travelTypes: ["spiritual", "culture", "pilgrimage"],
   budgetRange: [2000, 5000],
@@ -1630,7 +1763,7 @@ module.exports = [
 },
 {
   name: "Badrinath Temple",
-  stateId: 25,
+  stateId: 27,
   state: "Uttarakhand",
   travelTypes: ["spiritual", "mountain", "trekking"],
   budgetRange: [5000, 10000],
@@ -1641,7 +1774,7 @@ module.exports = [
 },
 {
   name: "Victoria Memorial",
-  stateId: 26,
+  stateId: 28,
   state: "West Bengal",
   travelTypes: ["heritage", "photography", "urban"],
   budgetRange: [2500, 6000],
@@ -1652,7 +1785,7 @@ module.exports = [
 },
 {
   name: "Sundarbans National Park",
-  stateId: 26,
+  stateId: 28,
   state: "West Bengal",
   travelTypes: ["nature", "wildlife", "eco-tourism"],
   budgetRange: [5000, 11000],
@@ -1663,7 +1796,7 @@ module.exports = [
 },
 {
   name: "Darjeeling",
-  stateId: 26,
+  stateId: 28,
   state: "West Bengal",
   travelTypes: ["hill station", "romantic", "family"],
   budgetRange: [4000, 9000],
@@ -1674,7 +1807,7 @@ module.exports = [
 },
 {
   name: "Howrah Bridge",
-  stateId: 26,
+  stateId: 28,
   state: "West Bengal",
   travelTypes: ["urban", "photography", "architecture"],
   budgetRange: [1000, 3000],
@@ -1685,7 +1818,7 @@ module.exports = [
 },
 {
   name: "Kalimpong",
-  stateId: 26,
+  stateId: 28,
   state: "West Bengal",
   travelTypes: ["nature", "peace", "culture"],
   budgetRange: [3000, 7000],
@@ -1696,7 +1829,7 @@ module.exports = [
 },
 {
   name: "Hazarduari Palace",
-  stateId: 26,
+  stateId: 28,
   state: "West Bengal",
   travelTypes: ["heritage", "history", "museum"],
   budgetRange: [2000, 5000],
