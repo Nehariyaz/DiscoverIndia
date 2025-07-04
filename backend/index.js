@@ -13,6 +13,8 @@ const recommendationRoutes = require('./routes/recommendations');
 const UserPreference = require('./models/UserPreference');
 const app = express();
 const recommendationsRouter = require('./routes/recommendations');
+const destinationRoutes = require('./routes/destination');
+const chatbotRoutes = require('./routes/chatbot');
 
 connectDB();
 
@@ -33,7 +35,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-
+app.use('/api/destinations', destinationRoutes); 
 app.post('/enquiry', async (req, res) => {
   console.log('Received enquiry:', req.body);
 
@@ -277,13 +279,11 @@ app.post('/api/preferences', async (req, res) => {
   }
 });
 
+const PORT = process.env.PORT 
 
+// ✅ ONE clear mount point
 app.use('/api/recommendations', recommendationsRouter);
-app.use("/api/destinations", require("./routes/destination"))
+app.use('/api/chatbot', chatbotRoutes); // use a unique path for chatbot
 
-const chatbotRoutes = require('./routes/chatbot');
-app.use('/api', chatbotRoutes);
-
-
-const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
