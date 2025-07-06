@@ -2,6 +2,23 @@ const express = require('express');
 const router = express.Router();
 const destinations = require('../data/destination');
 
+function sanitizeNaN(obj) {
+  const sanitized = {};
+  for (const [key, value] of Object.entries(obj)) {
+    if (typeof value === 'number' && Number.isNaN(value)) {
+      sanitized[key] = null;
+    }
+    else if (typeof value === 'string' && value.toLowerCase() === 'nan') {
+      // Just in case NaN came as string
+      sanitized[key] = null;
+    }
+    else {
+      sanitized[key] = value;
+    }
+  }
+  return sanitized;
+}
+
 router.post('/', (req, res) => {
   let {
     travelType,
@@ -31,9 +48,8 @@ router.post('/', (req, res) => {
       const matchesSeason = !preferredSeason || dest.seasons.map(s => s.toLowerCase()).includes(preferredSeason);
       const matchesState = !state || dest.state.toLowerCase() === state;
       const matchesActivity = !activity ||
-      destinationActivities.includes(activity) ||
-      dest.travelTypes.map(t => t.toLowerCase()).includes(activity);
-
+        destinationActivities.includes(activity) ||
+        dest.travelTypes.map(t => t.toLowerCase()).includes(activity);
 
       const activityMatches = interestedActivities.filter(act =>
         destinationActivities.includes(act)
@@ -41,9 +57,11 @@ router.post('/', (req, res) => {
 
       const matchesActivitiesList = interestedActivities.length === 0 || activityMatches > 0;
 
+      // Use the sanitizeNaN function here
+      const sanitizedDest = sanitizeNaN(dest);
 
       return {
-        ...dest,
+        ...sanitizedDest,
         matches: matchesType && matchesBudget && matchesActivitiesList && matchesSeason && matchesState && matchesActivity,
         activityScore: activityMatches
       };
@@ -54,7 +72,6 @@ router.post('/', (req, res) => {
   console.log('\n Filtered destinations:', filtered.map(d => d.name));
   res.json(filtered);
 });
-
 
 router.get('/experience/:experience', (req, res) => {
   const experience = req.params.experience.toLowerCase();
@@ -71,9 +88,9 @@ router.get('/experience/:experience', (req, res) => {
     return res.json({ message: `No ${experience} places found in ${stateFilter}` });
   }
 
-  res.json(filtered);
+  const sanitizedFiltered = filtered.map(dest => sanitizeNaN(dest));
+
+  res.json(sanitizedFiltered);
 });
-
-
 
 module.exports = router;

@@ -2,9 +2,24 @@ const express = require('express');
 const router = express.Router();
 const destinations = require('../data/destination');
 
+function sanitizeNaN(obj) {
+  const sanitized = {};
+  for (const [key, value] of Object.entries(obj)) {
+    if (typeof value === 'number' && Number.isNaN(value)) {
+      sanitized[key] = null;
+    } else if (typeof value === 'string' && value.toLowerCase() === 'nan') {
+      sanitized[key] = null;
+    } else {
+      sanitized[key] = value;
+    }
+  }
+  return sanitized;
+}
+
 // GET all destinations
 router.get('/', (req, res) => {
-  res.json(destinations);
+  const sanitizedDestinations = destinations.map(dest => sanitizeNaN(dest));
+  res.json(sanitizedDestinations);
 });
 
 // ✅ NEW: GET destinations that match a search query
@@ -17,7 +32,7 @@ router.get('/search', (req, res) => {
     dest.state.toLowerCase().includes(query) ||
     (dest.description && dest.description.toLowerCase().includes(query)) ||
     (dest.activities && dest.activities.some(a => a.toLowerCase().includes(query)))
-  );
+  ).map(dest => sanitizeNaN(dest));
 
   res.json(results);
 });
@@ -31,7 +46,7 @@ router.get('/:name', (req, res) => {
   );
 
   if (destination) {
-    res.json(destination);
+    res.json(sanitizeNaN(destination));
   } else {
     res.status(404).json({ error: 'Destination not found' });
   }

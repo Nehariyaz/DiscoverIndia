@@ -89,28 +89,40 @@ app.post('/signup', async (req, res) => {
   }
 
   try {
-     const emailNormalized = email.toLowerCase().trim();
-    // Check if user already exists
+    const emailNormalized = email.toLowerCase().trim();
+
     const existingUser = await User.findOne({ email: emailNormalized });
     if (existingUser) {
       return res.status(409).json({ error: "User already exists with this email" });
     }
 
-    // Hash password and save new user
-   
     const hashedPassword = await bcrypt.hash(password, 10);
-    const newUser = new User({ firstName, lastName, email: emailNormalized, password: hashedPassword });
+    const newUser = new User({
+      firstName,
+      lastName,
+      email: emailNormalized,
+      password: hashedPassword
+    });
+
     await newUser.save();
 
-    console.log('User registered:', email);
-    res.status(200).json({ message: "Signup successful", userId: newUser._id });
+    const token = jwt.sign({ userId: newUser._id }, process.env.JWT_SECRET, {
+      expiresIn: '2h'
+    });
 
+    console.log('User registered:', emailNormalized);
+    res.status(200).json({
+      message: "Signup successful",
+      userId: newUser._id,
+      token, 
+    });
 
   } catch (err) {
     console.error('Signup error:', err);
     res.status(500).json({ error: "Signup failed", details: err.message });
   }
 });
+
 
 app.post('/login', async (req, res) => {
   const { email, password, recaptchaToken } = req.body;
@@ -120,26 +132,29 @@ app.post('/login', async (req, res) => {
   console.log('Password:', password);
   console.log('reCAPTCHA token:', recaptchaToken);
 
-
   try {
     const emailNormalized = email.toLowerCase().trim();
     const user = await User.findOne({ email: emailNormalized });
-    console.log('User from DB:', user);
 
     if (!user) {
       return res.status(401).json({ error: "Invalid email or password" });
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
-    console.log('Password match:', isMatch);
 
     if (!isMatch) {
       return res.status(401).json({ error: "Invalid email or password" });
     }
 
-    console.log('Login successful!');
-    res.status(200).json({ message: "Login successful", userId: user._id });
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
+      expiresIn: '2h',
+    });
 
+    res.status(200).json({
+      message: "Login successful",
+      userId: user._id,
+      token,
+    });
 
   } catch (error) {
     console.error('Login failed:', error);
@@ -281,7 +296,6 @@ app.post('/api/preferences', async (req, res) => {
 
 const PORT = process.env.PORT 
 
-// ✅ ONE clear mount point
 app.use('/api/recommendations', recommendationsRouter);
 app.use('/api/chatbot', chatbotRoutes); // use a unique path for chatbot
 

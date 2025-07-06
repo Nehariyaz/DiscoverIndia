@@ -7,8 +7,6 @@ module.exports = [
   budgetRange: [3000, 10000],
   activities: ["temple", "architecture", "history", "photography", "meditation", "festivals"],
   seasons: ["winter", "autumn", "spring"],
-  rating: 4.5,
-  popularity: 8,
   tags: ["Vijayanagara", "hanging pillar", "ancient temple", "religious site", "sculpture", "group destination", "instagrammable", "culture lovers"]
 },
 {
@@ -19,8 +17,6 @@ module.exports = [
   budgetRange: [2000, 8000],
   activities: ["caves", "architecture", "history", "exploration", "photography", "meditation"],
   seasons: ["winter", "spring", "autumn"],
-  rating: 4.3,
-  popularity: 7,
   tags: ["rock-cut", "Jain sculptures", "Hindu sculptures", "ancient caves", "archaeology", "instagrammable", "solo-friendly", "heritage site"]
 },
 {
@@ -31,8 +27,6 @@ module.exports = [
   budgetRange: [2500, 9000],
   activities: ["fort", "trekking", "heritage", "photography", "festivals", "food tours"],
   seasons: ["winter", "monsoon", "autumn"],
-  rating: 4.2,
-  popularity: 6,
   tags: ["hilltop fort", "panoramic views", "wooden toys", "historical monument", "trekking", "eco spot", "local crafts", "group destination"]
 },
 {
@@ -43,8 +37,6 @@ module.exports = [
   budgetRange: [4000, 15000],
   activities: ["pilgrimage", "temple", "culture", "festivals", "meditation", "heritage tours"],
   seasons: ["winter", "autumn", "spring"],
-  rating: 4.9,
-  popularity: 10,
   tags: ["Lord Venkateswara", "sacred temple", "religious pilgrimage", "festivals", "heritage", "spiritual hub", "instagrammable", "culture lovers"]
 },
 {
@@ -55,8 +47,6 @@ module.exports = [
   budgetRange: [5000, 18000],
   activities: ["hill station", "coffee plantations", "nature walks", "bird watching", "trekking", "yoga", "food tours", "photography"],
   seasons: ["winter", "monsoon", "spring", "autumn", "summer"],
-  rating: 4.7,
-  popularity: 9,
   tags: ["tribal culture", "scenic beauty", "coffee gardens", "waterfalls", "eco-tourism", "relaxing", "yoga retreats", "solo-friendly", "instagrammable"]
 },
  {
@@ -67,8 +57,6 @@ module.exports = [
   budgetRange: [4000, 10000],
   activities: ["yoga", "meditation", "nature walks"],
   seasons: ["summer", "monsoon", "autumn", "winter"],
-  rating: 4.6,
-  popularity: 7,
   tags: ["wellness retreat", "yoga", "natural setting", "peaceful", "spiritual"],
   imageUrl: "https://www.tourmyindia.com/blog//wp-content/uploads/2018/06/Yoga-Retreats-India.jpg",
   description: "A tranquil ashram offering immersive yoga and meditation experiences amidst natural surroundings for spiritual and solo travelers."
@@ -81,8 +69,6 @@ module.exports = [
   budgetRange: [3000, 8000],
   activities: ["festivals", "food tours", "beach walks"],
   seasons: ["winter", "autumn"],
-  rating: 4.3,
-  popularity: 6,
   tags: ["local cuisine", "cultural events", "beach", "music"],
   imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/91/Kakinada_Beach_Festival.jpg",
   description: "A lively coastal festival with cultural performances, food stalls, and beachside activities attracting families and groups."
@@ -95,8 +81,6 @@ module.exports = [
   budgetRange: [3000, 12000],
   activities: ["caves", "geological formations", "trekking", "photography", "exploration", "nature walks"],
   seasons: ["winter", "spring", "autumn"],
-  rating: 4.6,
-  popularity: 8,
   tags: ["limestone caves", "stalactites", "stalagmites", "Ananthagiri Hills", "underground", "eco spot", "group destination", "instagrammable"]
 },
  {
@@ -107,8 +91,6 @@ module.exports = [
     budgetRange: [8000, 20000],
     activities: ["monastery visits", "mountain trekking", "culture exploration", "photography", "meditation", "local culture tours"],
     seasons: ["summer", "autumn", "spring"],
-    rating: 4.8,
-    popularity: 9,
     tags: ["Buddhism", "largest monastery", "Himalayas", "spiritual retreat", "scenic views", "peaceful stay", "monk interactions"],
     imageUrl: "https://upload.wikimedia.org/wikipedia/commons/6/66/Tawang_Monastery_3.jpg",
     description: "The largest monastery in India, offering stunning views of the Himalayas and deep spiritual significance for visitors."
@@ -121,8 +103,6 @@ module.exports = [
     budgetRange: [6000, 15000],
     activities: ["nature", "trekking", "culture", "music festivals", "local food tasting", "hiking"],
     seasons: ["summer", "autumn", "spring"],
-    rating: 4.5,
-    popularity: 7,
     tags: ["Apatani tribe", "lush rice fields", "scenic valley", "music festivals", "eco-tourism", "tribal culture", "organic farming"],
     imageUrl: "https://www.india.com/wp-content/uploads/2024/07/Explore-Ziro-Valley.jpg",
     description: "A picturesque valley known for its lush rice fields, unique Apatani tribal culture, and vibrant music festivals attracting nature and culture enthusiasts."
@@ -149,8 +129,6 @@ module.exports = [
     budgetRange: [5000, 14000],
     activities: ["mountains", "snow trekking", "scenic drive", "photography", "road trip", "snow viewing"],
     seasons: ["winter", "summer", "spring"],
-    rating: 4.4,
-    popularity: 7,
     tags: ["snow-capped pass", "high altitude", "sacred lake", "mountain views", "trekking", "adventure drive", "frozen lake"],
     imageUrl: "https://res.cloudinary.com/kmadmin/image/upload/v1620113610/kiomoi/Tawang_Sela_Pass_1620113609430.jpg",
     description: "Snow-covered high-altitude mountain pass offering breathtaking views, a sacred lake, and opportunities for trekking and photography."
@@ -163,8 +141,6 @@ module.exports = [
     budgetRange: [4000, 12000],
     activities: ["river rafting", "camping", "nature walks", "bird watching", "picnics", "boating"],
     seasons: ["spring", "autumn", "summer"],
-    rating: 4.3,
-    popularity: 6,
     tags: ["outdoor activities", "riverside", "camping", "adventure sports", "wildlife", "hill station gateway", "family outing"],
     imageUrl: "https://tripxl.com/blog/wp-content/uploads/2024/08/Bhalukpong-Fort.jpg",
     description: "A peaceful gateway to Arunachal Pradesh known for outdoor activities like river rafting, camping, and serene riverside scenery."
@@ -177,8 +153,6 @@ module.exports = [
     budgetRange: [5000, 13000],
     activities: ["nature walks", "hot springs", "hiking", "monastery visits", "bird watching", "scenic drive"],
     seasons: ["summer", "spring", "autumn"],
-    rating: 4.5,
-    popularity: 7,
     tags: ["hot springs", "scenic valley", "monasteries", "mountain views", "relaxation", "eco-retreat", "peaceful stay"],
     imageUrl: "https://oddessemania.in/wp-content/uploads/2024/10/Dirang-images.jpg",
     description: "A serene valley famous for natural hot springs, beautiful monasteries, hiking trails, and breathtaking mountain views."
@@ -191,8 +165,6 @@ module.exports = [
     budgetRange: [5000, 12000],
     activities: ["meditation", "monastery visits", "nature views", "yoga", "prayer", "spiritual discourse"],
     seasons: ["monsoon", "autumn", "spring", "summer"],
-    rating: 4.5,
-    popularity: 7,
     tags: ["peaceful retreat", "Buddhist monastery", "meditation center", "mindfulness", "hillside view", "quiet escape"],
     imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Bomdila_Monastery.jpg",
     description: "A serene monastery retreat ideal for couples and spiritual seekers, especially tranquil during the monsoon season."
@@ -201,40 +173,34 @@ module.exports = [
     name: "Kaziranga National Park",
     stateId: 3,
     state: "Assam",
-    travelTypes: ["family", "wildlife", "photography", "adventure"],
+    travelTypes: ["family", "group", "wildlife", "photography", "adventure", "luxury"],
     budgetRange: [8000, 20000],
     activities: ["wildlife safari", "bird watching", "jeep safari", "nature trails"],
     seasons: ["winter", "spring"],
-    rating: 4.6,
-    popularity: 9,
     tags: ["one-horned rhinoceros", "UNESCO heritage", "biodiversity", "jungle safari", "wildlife conservation"],
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJW6wVMFa8sLb6pi5p5JakJdYXoOZkRIHJig&s",
     description: "World Heritage site famed for one-horned rhinoceroses and diverse wildlife, ideal for safaris and nature enthusiasts."
   },
   {
-  name: "Chandubi Lake Eco-Tourism",
-  stateId: 3,
-  state: "Assam",
-  travelTypes: ["solo", "adventure", "eco-tourism"],
-  budgetRange: [4000, 10000],
-  activities: ["kayaking", "bird watching", "camping", "scuba diving"],
-  seasons: ["summer", "monsoon"],
-  rating: 4.2,
-  popularity: 6,
-  tags: ["scenic lake", "tribal culture", "eco camp", "boating", "water activities"],
-  imageUrl: "https://www.tourmyindia.com/states/assam/images/chandubi-lake1.jpg",
-  description: "Hidden lake with eco-tourism activities like kayaking and scuba diving, perfect for solo travelers seeking adventure."
-},
+    name: "Chandubi Lake Eco-Tourism",
+    stateId: 3,
+    state: "Assam",
+    travelTypes: ["solo", "adventure", "eco-tourism", "backpacking", "group"],
+    budgetRange: [4000, 10000],
+    activities: ["kayaking", "bird watching", "camping", "scuba diving"],
+    seasons: ["summer", "monsoon"],
+    tags: ["scenic lake", "tribal culture", "eco camp", "boating", "water activities"],
+    imageUrl: "https://www.tourmyindia.com/states/assam/images/chandubi-lake1.jpg",
+    description: "Hidden lake with eco-tourism activities like kayaking and scuba diving, perfect for solo travelers seeking adventure."
+  },
   {
     name: "Majuli Island",
     stateId: 3,
     state: "Assam",
-    travelTypes: ["solo", "culture", "nature", "adventure"],
+    travelTypes: ["solo", "culture", "nature", "adventure", "backpacking", "couple"],
     budgetRange: [3000, 10000],
     activities: ["culture", "river cruise", "monastery visits", "bird watching"],
     seasons: ["autumn", "winter"],
-    rating: 4.4,
-    popularity: 7,
     tags: ["largest river island", "Vaishnavite monasteries", "Assamese culture", "bird sanctuary", "river cruises"],
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_XdMjueEjodU6uxThvCtF0r1cFnIESNJGDQ&s",
     description: "World's largest river island, rich in Assamese culture and Vaishnavite monasteries, offering peaceful river cruises and bird watching."
@@ -243,12 +209,10 @@ module.exports = [
     name: "Kamakhya Temple",
     stateId: 3,
     state: "Assam",
-    travelTypes: ["pilgrimage", "culture", "solo", "spiritual"],
+    travelTypes: ["pilgrimage", "culture", "solo", "spiritual", "family", "group"],
     budgetRange: [2000, 7000],
-    activities: ["spiritual rituals", "heritage tours", "local markets", "festival visits","yoga"],
+    activities: ["spiritual rituals", "heritage tours", "local markets", "festival visits", "yoga"],
     seasons: ["monsoon", "autumn"],
-    rating: 4.5,
-    popularity: 8,
     tags: ["Hindu pilgrimage", "Nilachal Hill", "Ambubachi Mela", "temple market", "spiritual festivals"],
     imageUrl: "https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2023/12/20/f375af75a20179930ed9e19567ebed13_1000x1000.jpg",
     description: "Ancient temple atop Nilachal Hill, a major Hindu pilgrimage site known for the annual Ambubachi Mela festival."
@@ -257,12 +221,10 @@ module.exports = [
     name: "Sivasagar",
     stateId: 3,
     state: "Assam",
-    travelTypes: ["history", "family", "culture", "heritage"],
+    travelTypes: ["history", "family", "culture", "heritage", "solo", "group"],
     budgetRange: [4000, 11000],
     activities: ["heritage walks", "temple visits", "museum tours", "local festivals"],
     seasons: ["winter", "spring"],
-    rating: 4.3,
-    popularity: 7,
     tags: ["Ahom dynasty", "historic monuments", "Sivasagar tank", "temples", "cultural heritage"],
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTScddQ_JapwRGgIjxO4LbKhyrVIdQ2vxdajQ&s",
     description: "Historic town with Ahom-era monuments, temples, and the iconic Sivasagar tank, rich in cultural heritage and festivals."
@@ -271,12 +233,10 @@ module.exports = [
     name: "Hoollongapar Gibbon Sanctuary",
     stateId: 3,
     state: "Assam",
-    travelTypes: ["wildlife", "eco-tourism", "photography"],
+    travelTypes: ["wildlife", "eco-tourism", "photography", "solo", "backpacking"],
     budgetRange: [5000, 13000],
     activities: ["wildlife watching", "jungle walks", "bird watching", "nature photography"],
     seasons: ["winter", "spring"],
-    rating: 4.4,
-    popularity: 6,
     tags: ["hoolock gibbons", "primate sanctuary", "forest walks", "biodiversity", "conservation"],
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtsKDUphxRP5FI7Y1F9Ql-2CXJKRYbNdtKFA&s",
     description: "India’s only sanctuary for hoolock gibbons, a hidden gem for primate lovers and nature enthusiasts seeking peaceful forest walks."
@@ -285,12 +245,10 @@ module.exports = [
     name: "Manas National Park",
     stateId: 3,
     state: "Assam",
-    travelTypes: ["adventure", "wildlife", "group"],
+    travelTypes: ["adventure", "wildlife", "group", "family", "luxury", "backpacking"],
     budgetRange: [9000, 22000],
     activities: ["wildlife safari", "rafting", "camping", "bird watching"],
     seasons: ["winter", "autumn"],
-    rating: 4.7,
-    popularity: 8,
     tags: ["tigers", "elephants", "UNESCO heritage", "river rafting", "rare species"],
     imageUrl: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Manas_National_Park_Jeep_Safari.jpg",
     description: "UNESCO World Heritage site with tigers, elephants, and rare wildlife along the Bhutan border, ideal for adventure and wildlife enthusiasts."
@@ -303,8 +261,6 @@ module.exports = [
     budgetRange: [3000, 9000],
     activities: ["pilgrimage", "meditation", "heritage tours", "historical sightseeing"],
     seasons: ["winter", "spring"],
-    rating: 4.9,
-    popularity: 10,
     tags: ["Buddha enlightenment", "pilgrimage site", "meditation", "ancient temples", "UNESCO"],
     imageUrl: "https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/12/shutterstock_402120757-1.jpg",
     description: "One of the most important Buddhist pilgrimage sites where Lord Buddha attained enlightenment under the Bodhi tree, attracting spiritual seekers worldwide."
@@ -317,8 +273,6 @@ module.exports = [
     budgetRange: [2500, 8000],
     activities: ["heritage", "museum tours", "sightseeing", "archaeology"],
     seasons: ["winter", "autumn"],
-    rating: 4.4,
-    popularity: 7,
     tags: ["ancient university", "UNESCO heritage", "archaeological site", "Buddhist history", "education"],
     imageUrl: "https://imgcld.yatra.com/ytimages/image/upload/t_yt_blog_w_800_c_fill_g_auto_q_auto:good_f_jpg/v1512376308/Ruins_of_Nalanda_University_Bihar_1512376701.jpg",
     description: "Ancient center of learning and one of the world’s first residential universities, now a UNESCO World Heritage site of immense historical value."
@@ -331,8 +285,6 @@ module.exports = [
   budgetRange: [2500, 7000],
   activities: ["meditation", "yoga", "spiritual retreats"],
   seasons: ["autumn", "winter", "spring"],
-  rating: 4.6,
-  popularity: 7,
   tags: ["Buddhism", "silent retreat", "mindfulness", "vipassana", "peace"],
   imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/df/Dhamma_Bodhgaya.jpg",
   description: "A peaceful center offering silent Vipassana meditation and yoga retreats in the spiritual heartland of Bodh Gaya."
@@ -345,8 +297,6 @@ module.exports = [
     budgetRange: [3000, 10000],
     activities: ["cable car rides", "hot springs", "temple visits", "hiking"],
     seasons: ["winter", "spring"],
-    rating: 4.3,
-    popularity: 7,
     tags: ["Buddhism", "Jainism", "historic town", "hot springs", "peaceful valley"],
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrDsUgC4V0-kTu1yYsXdabp24WyDHLM7inxg&s",
     description: "A historic town nestled in hills, known for Vishwa Shanti Stupa, hot springs, and religious significance in Buddhism and Jainism."
@@ -359,8 +309,6 @@ module.exports = [
     budgetRange: [2500, 7000],
     activities: ["ruins exploration", "monuments", "spiritual tours"],
     seasons: ["autumn", "winter"],
-    rating: 4.2,
-    popularity: 6,
     tags: ["ancient city", "Buddhist pilgrimage", "Jain pilgrimage", "archaeological site", "democracy birthplace"],
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBtZ1FLbQL_4vZha9b9Nbp3gDpch2D_tSmew&s",
     description: "An ancient city and important Buddhist and Jain pilgrimage site, known as the birthplace of democracy."
@@ -373,8 +321,6 @@ module.exports = [
     budgetRange: [2000, 6000],
     activities: ["museum visits", "artifacts viewing", "local culture exploration"],
     seasons: ["winter", "spring"],
-    rating: 4.1,
-    popularity: 5,
     tags: ["Maurya empire", "Gupta empire", "historical artifacts", "Buddhist relic", "cultural museum"],
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR970f5C0yKXLHo6ZMdv5R_zV0IyQjPgkxn0g&s",
     description: "Historical museum housing artifacts from the Maurya and Gupta empires, including a holy relic of the Buddha."
@@ -387,8 +333,6 @@ module.exports = [
     budgetRange: [2000, 6500],
     activities: ["heritage tours", "photography", "exploration"],
     seasons: ["winter", "autumn"],
-    rating: 4.3,
-    popularity: 6,
     tags: ["Buddhist stupa", "ancient monument", "pilgrimage site", "largest stupa", "historical"],
     imageUrl: "https://pwonlyias.com/wp-content/uploads/2024/04/untitled-2024-04-20t121629155-1-66238db9aa2a9.webp",
     description: "One of the tallest and largest Buddhist stupas in the world, associated with Lord Buddha's final journey."
@@ -467,8 +411,6 @@ module.exports = [
     budgetRange: [4000, 12000],
     activities: ["beach lounging", "water sports", "nightlife"],
     seasons:  ["winter", "spring","summer","autumn"],
-    rating: 4.6,
-    popularity: 9,
     tags: ["sunset", "clubs", "watersports", "seafood", "parties"],
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8RuY0LoWUfHiMsQuTs4dV82SMC8__FDkUDA&s",
     description: "Vibrant beach hotspot with pulsating nightlife, beach shacks, and thrilling water sports—perfect for couples and groups."
@@ -481,8 +423,6 @@ module.exports = [
     budgetRange: [2000, 6000],
     activities: ["church visit", "architecture", "history"],
     seasons: ["winter", "spring","summer","autumn"],
-    rating: 4.8,
-    popularity: 8,
     tags: ["Baroque", "UNESCO", "church relic", "colonial", "pilgrimage"],
     imageUrl: "https://cdn-iladmib.nitrocdn.com/htBCYuNetSQrkeDEiUPoyTCbyIlIyAQV/assets/images/optimized/rev-0efd0da/www.soultravelling.in/blog/wp-content/uploads/2024/12/4-6-1024x685.jpg",
     description: "A 16th‑century Baroque church and UNESCO site housing the remains of St. Francis Xavier—rich in history and spiritual aura."
@@ -495,8 +435,6 @@ module.exports = [
     budgetRange: [2500, 7000],
     activities: ["fort exploration", "sunset view", "lighthouse visit"],
     seasons: ["winter", "spring","summer","autumn"],
-    rating: 4.5,
-    popularity: 8,
     tags: ["Portuguese fort", "sea view", "historic", "iconic", "sunset"],
     imageUrl: "https://goa-tourism.org.in/images/places-to-visit/headers/fort-aguada-goa-entry-fee-timings-holidays-reviews-header.jpg",
     description: "A well-preserved 17th-century Portuguese fort with an iconic lighthouse and sweeping coastal vistas—great for photo enthusiasts."
@@ -509,8 +447,6 @@ module.exports = [
     budgetRange: [3500, 10000],
     activities: ["beach stroll", "flea market", "paragliding"],
     seasons:  ["winter", "spring","summer","autumn"],
-    rating: 4.4,
-    popularity: 7,
     tags: ["hippie", "market", "beach parties", "flying", "scenic"],
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1WyMZG5nFdxHazAbUXOxWzJRuL89qrxs54A&s",
     description: "A bohemian beach famous for its flea market, airy vibes, and adventurous paragliding options."
@@ -523,8 +459,6 @@ module.exports = [
     budgetRange: [3000, 9000],
     activities: ["beach walking", "swimming", "sunbathing"],
     seasons:  ["winter", "spring","summer","autumn"],
-    rating: 4.3,
-    popularity: 7,
     tags: ["tranquil", "white sand", "families", "sunset", "swimming"],
     imageUrl: "https://media1.thrillophilia.com/filestore/v75wl4inicgj2sa3p1ux3rnlfje7_shutterstock_1066876736.jpg",
     description: "A serene South Goa beach known for its clean sands, calm waters, and perfect setting for relaxing family outings."
@@ -537,8 +471,6 @@ module.exports = [
     budgetRange: [7000, 15000],
     activities: ["jeep safari", "lion spotting", "bird watching"],
     seasons: ["winter", "spring","summer","autumn"],
-    rating: 4.7,
-    popularity: 9,
     tags: ["Asiatic lions", "wildlife safari", "biodiversity", "photography", "protected area"],
     imageUrl: "https://www.hlimg.com/images/stories/738X538/gir-national-park_1538032855m.jpeg",
     description: "Home to the rare Asiatic lion, Gir offers captivating wildlife safaris and a rich biodiversity experience."
@@ -551,8 +483,6 @@ module.exports = [
     budgetRange: [6000, 16000],
     activities: ["salt desert camping", "camel rides", "festival visits"],
     seasons: ["winter"],
-    rating: 4.6,
-    popularity: 8,
     tags: ["salt desert", "Rann Utsav", "white desert", "folk art", "sunset"],
     imageUrl: "https://static.toiimg.com/photo/72975551.cms",
     description: "An ethereal white salt desert that transforms during winter into a cultural extravaganza during the Rann Utsav festival."
@@ -565,8 +495,6 @@ module.exports = [
     budgetRange: [4000, 10000],
     activities: ["temple tours", "beach walks", "heritage walk"],
     seasons: ["winter", "autumn"],
-    rating: 4.5,
-    popularity: 8,
     tags: ["Krishna legend", "Char Dham", "sea temple", "pilgrimage", "coastal city"],
     imageUrl: "https://www.transindiatravels.com/wp-content/uploads/dwarka.jpg",
     description: "One of Lord Krishna’s sacred Char Dham sites, Dwarka is steeped in myth and spiritual tradition by the sea."
@@ -579,8 +507,6 @@ module.exports = [
     budgetRange: [3000, 9000],
     activities: ["temple darshan", "sea view", "heritage exploration"],
     seasons: ["winter", "monsoon"],
-    rating: 4.6,
-    popularity: 9,
     tags: ["Jyotirlinga", "coastal temple", "mythic tale", "heritage structure", "sea prayers"],
     imageUrl: "https://www.holidify.com/images/cmsuploads/compressed/Somnath-Temple1_20180205170350.jpg",
     description: "An iconic coastal Jyotirlinga temple renowned for its spiritual legacy, grandeur, and sea-side rituals."
@@ -593,8 +519,6 @@ module.exports = [
     budgetRange: [5000, 12000],
     activities: ["viewing gallery", "museum visit", "boat ride"],
     seasons: ["winter", "autumn"],
-    rating: 4.5,
-    popularity: 8,
     tags: ["tallest statue", "Sardar Patel", "museum", "river valley", "engineering marvel"],
     imageUrl: "https://upload.wikimedia.org/wikipedia/commons/8/88/Statue_of_Unity_Narmada_India_2020.jpg",
     description: "World’s tallest statue honoring Sardar Patel, featuring a museum, viewing gallery, and scenic river valley with boat rides."
@@ -607,8 +531,6 @@ module.exports = [
     budgetRange: [4000, 11000],
     activities: ["boating", "hill station walk", "sunset view"],
     seasons: ["summer", "monsoon"],
-    rating: 4.4,
-    popularity: 7,
     tags: ["hill station", "lake boating", "greenery", "romantic spot", "monsoon beauty"],
     imageUrl: "https://www.gujarattourism.com/content/dam/gujrattourism/images/destination/saputara/saputara_banner.jpg",
     description: "Gujarat’s only hill station with a peaceful lake, lush hills, and tranquil monsoon vistas—ideal for couples."
@@ -623,8 +545,6 @@ module.exports = [
     budgetRange: [3000, 9000],
     activities: ["temple visits", "heritage tours", "museum visit"],
     seasons: ["winter", "autumn"],
-    rating: 4.3,
-    popularity: 7,
     tags: ["Mahabharata", "battlefield", "holy tanks", "temples", "mythology"],
     imageUrl: "https://www.hlimg.com/images/stories/738X538/kurukshetra_1538032963m.jpeg",
     description: "A city steeped in Mahabharata lore, featuring sacred tanks, pilgrimage sites, and museums exploring ancient Hindu epics."
@@ -637,8 +557,6 @@ module.exports = [
     budgetRange: [2000, 7000],
     activities: ["birdwatching", "nature walk", "wildlife photography"],
     seasons: ["winter", "spring"],
-    rating: 4.5,
-    popularity: 6,
     tags: ["migratory birds", "wetland", "nature reserve", "photography spot", "eco-tourism"],
     imageUrl: "https://www.hlimg.com/images/stories/738X538/sultanpur-bird-sanctuary_1538032874m.jpeg",
     description: "A serene wetland reserve hosting a variety of migratory birds—a paradise for bird watchers and wildlife photographers."
@@ -651,8 +569,6 @@ module.exports = [
     budgetRange: [2500, 8000],
     activities: ["museum tour", "battlefield exploration", "historical sightseeing"],
     seasons: ["winter", "autumn"],
-    rating: 4.2,
-    popularity: 6,
     tags: ["battle sites", "museum", "heritage walk", "Maratha war", "historical importance"],
     imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Panipat_Museum.jpg",
     description: "Famed for its historic battlefields and memorials, Panipat is an educational hub with rich heritage and museums."
@@ -665,8 +581,6 @@ module.exports = [
     budgetRange: [3000, 9000],
     activities: ["trekking", "boating", "picnics"],
     seasons: ["summer", "monsoon"],
-    rating: 4.4,
-    popularity: 7,
     tags: ["hill station", "lakes", "scenic", "trek route", "family outing"],
     imageUrl: "https://www.nativeplanet.com/img/2017/03/25-1489734704-morni-hills2.jpg",
     description: "Haryana’s only hill station, offering scenic trekking trails, serene lakes, and a calm escape from city life."
@@ -678,9 +592,7 @@ module.exports = [
     travelTypes: ["heritage", "family", "relaxation"],
     budgetRange: [2000, 6000],
     activities: ["garden walk", "heritage exploration", "picnicking"],
-    seasons: ["spring", "autumn",],
-    rating: 4.3,
-    popularity: 6,
+    seasons: ["spring", "autumn"],
     tags: ["Mughal garden", "terraced lawns", "fountains", "family spot", "heritage architecture"],
     imageUrl: "https://www.tourmyindia.com/states/haryana/images/pinjore-gardens-1.jpg",
     description: "A beautifully landscaped Mughal-style garden with fountains, terraces, and wide lawns perfect for family outings."
@@ -693,8 +605,6 @@ module.exports = [
     budgetRange: [3000, 10000],
     activities: ["craft fair", "cultural shows", "local shopping"],
     seasons: ["winter"],
-    rating: 4.5,
-    popularity: 8,
     tags: ["Surajkund Mela", "crafts", "handicrafts fair", "cultural festivals", "artisan market"],
     imageUrl: "https://static.toiimg.com/thumb/msid-88667062,width-748,height-499,resizemode=4,imgsize-186214/.jpg",
     description: "Host to the famed Surajkund Mela, a global crafts and cultural fair, this spot buzzes with vibrant folk performances and artisan stalls."
