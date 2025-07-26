@@ -1,12 +1,12 @@
-const chai = require('chai');
-const chaiHttp = require('chai-http');
-const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
+const mongoose = require('mongoose');
+const chai = require('chai');
 const sinon = require('sinon');
+const chaiHttp = require('chai-http');
 const nodemailer = require('nodemailer');
-
-const app = require('../index');
-const User = require('../models/User');
+const app = require('../../index'); // Make sure Express app is exported here
+const User = require('../../models/User');
+const connectDB = require('../../config/db'); // DB connection utility
 
 const { expect } = chai;
 chai.use(chaiHttp);
@@ -20,7 +20,12 @@ describe('Authentication Routes', () => {
   let sendMailStub;
 
   before(async () => {
-    // ✅ Separate stubs for createTransport & sendMail
+    // ✅ Ensure DB connection is alive
+    if (mongoose.connection.readyState === 0) {
+      await connectDB();
+    }
+
+    // ✅ Stub nodemailer.createTransport and sendMail
     sendMailStub = sinon.stub().resolves({
       accepted: ['mock@example.com'],
       response: '250 OK',
@@ -38,11 +43,17 @@ describe('Authentication Routes', () => {
       lastName: 'User',
       email: testEmail,
       password: 'password123',
-      recaptchaToken,
+      recaptchaToken: 'dummy-token', // in test mode
     };
 
     await User.deleteMany({});
-    sendMailStub.resetHistory(); // Clear stub usage between tests
+    sendMailStub.resetHistory();
+  });
+
+  after(async () => {
+    // ✅ Cleanup stubs and DB
+    mailStub.restore();
+    await mongoose.connection.close();
   });
 
   it('✔ should register a user', (done) => {

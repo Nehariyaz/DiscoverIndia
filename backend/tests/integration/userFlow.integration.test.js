@@ -1,6 +1,6 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-const app = require('../../src/index');
+const app = require('../../index');
 chai.use(chaiHttp);
 
 describe('Full User Workflow Integration', () => {
