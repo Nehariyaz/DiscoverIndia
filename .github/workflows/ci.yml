@@ -55,7 +55,7 @@ jobs:
       - name: Run Mocha tests
         run: npm test
 
-  frontend-build:
+  frontend-build: 
     name: Frontend Build
     runs-on: ubuntu-latest
     defaults:
@@ -70,6 +70,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+
+      - name: Ensure package.json exists
+        run: |
+          if [ ! -f package.json ]; then
+            echo "frontend/package.json not found!"
+            exit 1
+          fi
 
       - name: Install frontend dependencies
         run: npm install
