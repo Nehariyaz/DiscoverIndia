@@ -39,8 +39,11 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
+      - name: Install backend dependencies
         run: npm install
+
+      - name: Fix permissions for cross-env
+        run: chmod +x ./node_modules/.bin/cross-env
 
       - name: Wait for MongoDB to be ready
         run: |
@@ -66,10 +69,10 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
+      - name: Install frontend dependencies
         run: npm install
 
-      - name: Build Angular App
+      - name: Build Angular app
         run: npm run build --if-present
 
   ml-service-check:
@@ -88,10 +91,10 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Python Syntax Check
+      - name: Syntax check ML code
         run: python -m compileall .
