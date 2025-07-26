@@ -42,8 +42,10 @@ jobs:
       - name: Install backend dependencies
         run: npm install
 
-      - name: Fix permissions for cross-env
-        run: chmod +x ./node_modules/.bin/cross-env
+      - name: Fix permissions for cross-env and mocha
+        run: |
+          chmod +x ./node_modules/.bin/cross-env
+          chmod +x ./node_modules/.bin/mocha
 
       - name: Wait for MongoDB to be ready
         run: |
