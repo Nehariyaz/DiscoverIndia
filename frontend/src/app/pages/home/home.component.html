@@ -1,0 +1,35 @@
+
+<app-hcarousel></app-hcarousel>
+
+<section class="hero-banner">
+  <div class="hero-content">
+    <h1>Discover India Like Never Before!</h1>
+    <p>
+      Welcome to <strong>DiscoverIndia!</strong>, your ultimate gateway to the vibrant, diverse, and enchanting experiences that India has to offer. From the snow-capped peaks of the Himalayas to the sun-kissed beaches of Goa, from ancient palaces and bustling bazaars to tranquil backwaters and lush tea gardens — India is a land of endless wonders waiting to be explored.
+      <br /><br />
+      Whether you’re seeking soulful cultural journeys, thrilling adventures, delectable cuisine, or serene escapes, our curated experiences bring you closer to the heart of India’s rich heritage and breathtaking landscapes. Dive into immersive tours, local traditions, festivals, and hidden gems that promise unforgettable memories.
+      <br /><br />
+      Join us as we journey through the incredible tapestry of India’s people, places, and stories — crafted just for you.
+      <br /><br />
+      <strong>Start your adventure today and discover the magic of India!</strong>
+    </p>
+  </div>
+ 
+<div class="hero-video">
+  <video
+    #myVideo
+    autoplay
+    muted
+    loop
+    playsinline
+    (click)="toggleMute(myVideo)"
+  >
+    <source src="assets/videos/discover-india.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+</section>
+
+<app-activity-carousal></app-activity-carousal>
+

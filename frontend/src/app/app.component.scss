@@ -1,0 +1,19 @@
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ebcd6a; 
+}
+
+.navbar-custom .active {
+    color: #e6de94 !important; 
+}
+.footer-custom {
+    background-color: #092208;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}

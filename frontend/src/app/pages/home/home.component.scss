@@ -1,0 +1,84 @@
+.hero-banner {
+  position: relative;
+  background-image: url('https://media.istockphoto.com/id/1375236465/photo/plant-reflections-in-the-water.jpg?s=612x612&w=0&k=20&c=HYNZpWB5o0icNmc63X6v1ZKbVCVce1oOOkeW-5JgKZo=');
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  text-align: left;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55); /* overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 50%;
+  padding: 20px;
+  overflow-wrap: break-word;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hero-video {
+  position: relative;
+  z-index: 2;
+  max-width: 45%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.hero-video video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .hero-banner {
+    flex-direction: column;
+    min-height: auto;
+    padding: 20px 15px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-content, .hero-video {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .hero-video {
+    margin-top: 20px;
+  }
+}

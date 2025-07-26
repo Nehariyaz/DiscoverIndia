@@ -1,0 +1,144 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+:host {
+  display: flex;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.wrapper {
+  display: flex;
+  flex: 1;
+}
+
+.left-pane {
+  flex: 0 0 50%;
+  min-width: 300px;
+  padding: 2rem;
+}
+.right-pane {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: flex-start;  
+  align-items: center;
+  padding: 2rem;
+    flex: 0 0 50%; 
+  position: relative; 
+  background-image: url('https://images.pexels.com/photos/3358507/pexels-photo-3358507.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.form-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 2rem;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 550;
+    color: #0a3208;
+    text-align: center;
+    margin: 0 0 1rem; 
+    width: 100%;
+    max-width: 90%;
+    line-height: 1.2;
+  }
+}
+
+label {
+  font-weight: bold;
+  color: #1e320e;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+input, select {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+input:focus, select:focus {
+  border-color: #f78585;
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 1rem;        
+  margin-bottom: 1rem;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.checkbox-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+.checkbox-row label {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 1rem;
+  font-weight: normal;    
+  color: #1e320e;          
+  white-space: nowrap;
+}
+
+
+button[type="submit"],
+.btn-primary {
+  width: 50%;
+  padding: 14px;
+  font-size: 1.2rem;
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold;
+  background-color: #204128;
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+  text-align: center;
+}
+
+button[type="submit"]:hover,
+.btn-primary:hover {
+  opacity: 0.95;
+  background-color: #1c3a21;
+}
+@media (max-width: 900px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .left-pane, .right-pane {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .form-container {
+    margin-top: 2rem;
+  }
+}

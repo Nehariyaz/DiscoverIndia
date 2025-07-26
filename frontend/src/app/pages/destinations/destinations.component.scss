@@ -1,0 +1,20 @@
+:host{
+    background: linear-gradient(to bottom, #ffffff, #092208);
+    height:100v;
+    justify-content: center;
+    display: flex;
+    padding: auto;
+    font-weight: 550;
+  }
+/* Card shadow effect (optional) */
+.card {
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.navbar-custom {
+    background-color: #3f684b; 
+}
+

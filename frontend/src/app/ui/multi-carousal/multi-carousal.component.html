@@ -1,0 +1,36 @@
+<div class="col-12">
+  <h4 class="head">Main Attractions</h4>
+  <div id="multiImageCarousel" class="carousel slide" data-bs-ride="carousel" *ngIf="attractions.length > 0">
+    <div class="carousel-inner">
+      <div 
+        *ngFor="let group of chunk(attractions, 3); let i = index" 
+        class="carousel-item" 
+        [class.active]="i === 0"
+      >
+       <div class="d-flex justify-content-around w-100">
+  <div *ngFor="let attraction of group" class="text-center" style="flex: 1; padding: 10px;">
+
+            <img 
+            [src]="attraction.imageUrl" 
+            [alt]="attraction.name" 
+            class="carousel-img rounded"
+            (click)="selectAttraction(attraction)"
+            style="cursor: pointer; height: 200px; width: 100%; object-fit: cover;"
+          />
+            <p>{{ attraction.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#multiImageCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#multiImageCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>

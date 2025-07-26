@@ -1,0 +1,109 @@
+.chatbot-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.chat-window {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #f4f7f9;
+}
+
+.user,
+.bot {
+  max-width: 75%;
+  padding: 0.75rem 1rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.user {
+  align-self: flex-end;
+  background-color: #96d2b7;
+  color: #00314d;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 90, 150, 0.1);
+}
+
+.bot {
+  align-self: flex-start;
+  background-color: #e8e8e8;
+  color: #222;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.chat-input-form {
+  display: flex;
+  padding: 0.75rem;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.chat-input-form input {
+  flex: 1;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.chat-input-form input:focus {
+  border-color: #104e18;
+}
+
+.chat-input-form button {
+  margin-left: 10px;
+  padding: 0.6rem 1.2rem;
+  background-color:  #1c3a21;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.chat-input-form button:hover {
+  background-color: #1e7123;
+}
+.recommendations .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+}
+
+.recommendations img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+
+.recommendations .card-title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.recommendations .card-text {
+  font-size: 0.9rem;
+}

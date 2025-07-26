@@ -1,0 +1,50 @@
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: 75vh; 
+  object-fit: cover; 
+}
+
+@media(max-width:768px) {S
+    .carousel-item img{
+        height:250px;
+    }
+    
+}
+/* Custom hover effect for the Discover More button */
+.discover-btn {
+  background-color: hsl(47, 86%, 49%); /* Bootstrap primary blue (default) */
+  border-color: #db940f;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.discover-btn:hover {
+  background-color: #0b5ed7; /* Darker blue on hover */
+  border-color: #0a58ca;
+  transform: translateY(-2px); /* Optional: slight lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.carousel-overlay-text-top-left {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 10;
+  color: #ffffff;  /* white text for contrast */
+  font-size: 1.5rem;
+  font-weight: 600;
+  user-select: none;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+

@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background-size: cover;
+  color: rgb(32, 53, 17);
+}
+
+.gradient-bg {
+  background: transparent;
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding: 0;
+}
+
+.p-3 {
+  font-size: 1.2rem;
+  color: #2f4b20;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: #0d280d;
+  font-weight: 550;
+  font-size: 2.5rem;
+}
+
+.card-img-top {
+  height: 800px;
+  object-fit: cover;
+}
+
+app-multi-carousal img,
+.carousel-img {
+  width: 100%;
+  height: 420px !important;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+app-multi-carousal {
+  display: block;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+/* ========== Attraction Card Section ========== */
+.attraction-card-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.attraction-card {
+  width: 100%;
+  max-width: 1400px;
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  color: #204128;
+}
+
+.attraction-card.card {
+  all: unset;
+}
+
+/* Increase heading and value font size */
+.attraction-card h5,
+h5.fw-bold {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0a3208;
+  margin-bottom: 0.4rem;
+}
+
+/* Paragraphs inside info blocks */
+.attraction-card p,
+.row.text-center p,
+p.lead {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #2f4b20;
+  margin-bottom: 0.5rem;
+}
+
+/* Activity badges */
+ul.list-inline li {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  background-color: #204128;
+  color: #fff;
+  margin: 0.3rem;
+}
+
+/* Image */
+.attraction-card img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .attraction-card {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h5.fw-bold {
+    font-size: 1.3rem;
+  }
+
+  p.lead {
+    font-size: 1.2rem;
+  }
+
+  ul.list-inline li {
+    font-size: 1rem;
+  }
+}

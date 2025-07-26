@@ -1,0 +1,121 @@
+:host {
+  display: flex;
+  min-height: 100vh;
+  background-image: url("https://media.istockphoto.com/id/511119416/photo/indian-landmark-gadi-sagar-in-rajasthan.jpg?s=612x612&w=0&k=20&c=dO7TbXh3sd6_QmgcF_nYi6ynyIAvPI5STavwzCDyWTI=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+
+.contact-header {
+  text-align: center;
+  color: #0a3208;
+  margin-bottom: 0.25rem;
+  font-size: 2.5rem;
+  font-weight: 550;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: #4a4a4a;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255);
+  padding: 2rem;
+  box-shadow: none;
+}
+
+h1 {
+  color: #0a3208;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+p {
+  text-align: left;
+  color: #666;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  color: #1e320e;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 1.5rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+  font-size: 1rem;
+  font-family: 'Tahoma', sans-serif;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-bottom-color: #f78585;
+  outline: none;
+}
+
+button {
+  width: 50%;
+  padding: 14px;
+  font-size: 1.2rem;
+  background-color: #204128;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  align-self: center;
+  transition: opacity 0.3s;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+.contact-details {
+  margin-top: 2rem;
+  color: #1f380e;
+}
+
+.contact-details h3 {
+  color: #072606;
+  margin-bottom: 1rem;
+}
+
+.contact-details p {
+  margin: 0.5rem 0;
+}
+
+.contact-details a {
+  color: #bc8f13;
+  text-decoration: none;
+}
+
+.contact-details a:hover {
+  text-decoration: underline;
+}

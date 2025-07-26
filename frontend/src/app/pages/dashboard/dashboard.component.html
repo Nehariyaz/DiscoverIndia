@@ -1,0 +1,36 @@
+<h2>we have your preferences</h2>
+<div class="preferences" *ngIf="preferences">
+<ul>
+  <li><strong>Travel Type:</strong> <span>{{ preferences.travelType }}</span></li>
+  <li><strong>Budget:</strong> <span>₹{{ preferences.budget }}</span></li>
+  <li><strong>Season:</strong> <span>{{ preferences.preferredSeason }}</span></li>
+  <li><strong>Activities:</strong> <span>{{ preferences.interestedActivities?.join(', ') }}</span></li>
+</ul>
+
+<div class="button-wrapper">
+  <button class="change-preferences-btn" (click)="changePreferences()">
+    Change Preferences
+  </button>
+</div>
+
+
+</div>
+
+<section class="recommendations" *ngIf="recommendations.length">
+  <h2>Recommended Destinations</h2>
+  <div class="carousel">
+    <div class="card" *ngFor="let dest of recommendations" (click)="viewDetails(dest)">
+      <img [src]="dest.imageUrl" [alt]="dest.name" />
+      <div class="content">
+        <h3>{{ dest.name }}</h3>
+        <p>{{ dest.description }}</p>
+        <button>View</button>
+      </div>
+    </div>
+  </div>
+
+
+
+<div *ngIf="preferences && !recommendations.length">
+  <p>No recommendations match your preferences.</p>
+</div>

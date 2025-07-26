@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg navbar-custom position-relative">
+  <div class="container d-flex align-items-center">
+    <a class="navbar-brand" routerLink="/">DISCOVERINDIA!</a>
+
+    <form
+      class="d-flex position-absolute top-50 start-50 translate-middle flex-column align-items-stretch"
+      role="search"
+      style="width: 400px; max-width: 90vw;"
+      (submit)="onSubmitSearch($event)"
+    >
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Search destinations"
+        aria-label="Search"
+        [(ngModel)]="query"
+        name="searchQuery"
+        (input)="onInputChange()"
+        autocomplete="off"
+      />
+
+      <ul
+        *ngIf="suggestions.length > 0"
+        class="list-group position-absolute mt-1 shadow"
+        style="z-index: 1050;"
+      >
+        <li
+          *ngFor="let suggestion of suggestions"
+          class="list-group-item list-group-item-action"
+          style="cursor: pointer;"
+          (click)="selectSuggestion(suggestion)"
+        >
+          {{ suggestion }}
+        </li>
+      </ul>
+    </form>
+
+    <button
+      class="navbar-toggler ms-auto"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link" routerLink="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/destinations">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link" routerLink="/contacts">Contact</a></li>
+
+        <!-- 👤 Account dropdown -->
+        <li class="nav-item dropdown ms-3">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fas fa-user-circle fa-lg"></i>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li *ngIf="loggedIn"><a class="dropdown-item" (click)="logout()">Logout</a></li>
+            <li *ngIf="!loggedIn"><a class="dropdown-item" routerLink="/account">Login / Signup</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

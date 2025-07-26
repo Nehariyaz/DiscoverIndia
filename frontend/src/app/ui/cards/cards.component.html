@@ -1,0 +1,8 @@
+<a [routerLink]="data.id" class="text-decoration-none">
+  <div class="card h-100 w-100 position-relative overflow-hidden border-0 rounded-4">
+    <img [src]="data.image" class="card-img-top" alt="{{data.name}}" style="height: 200px; object-fit: cover;">
+    <div class="card-img-overlay d-flex align-items-end p-3 bg-gradient-overlay">
+      <h5 class="text-white fw-semibold mb-0">{{ data.name.slice(0, 75) }}</h5>
+    </div>
+  </div>
+</a>

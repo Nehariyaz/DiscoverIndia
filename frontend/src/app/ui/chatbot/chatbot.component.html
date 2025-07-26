@@ -1,0 +1,26 @@
+<div class="chatbot-container">
+  <div class="chat-window">
+    <div *ngFor="let msg of messages" [ngClass]="msg.sender" class="chat-message">
+      {{ msg.text }}
+    </div>
+  </div>
+
+  <form (ngSubmit)="sendMessage()" class="chat-input-form">
+    <input type="text" [(ngModel)]="userInput" name="chat" placeholder="Type your answer..." required />
+    <button type="submit">Send</button>
+  </form>
+
+  <!-- Recommended Destinations -->
+  <div class="recommendations mt-4" *ngIf="recommendations && recommendations.length > 0">
+    <h4>Recommended Destinations</h4>
+
+    <div class="card mb-3" *ngFor="let place of recommendations">
+      <img [src]="place.imageUrl" class="card-img-top" alt="{{ place.name }}">
+      <div class="card-body">
+        <h5 class="card-title">{{ place.name }}</h5>
+        <p class="card-text">{{ place.description }}</p>
+        <a *ngIf="place.mapLink" [href]="place.mapLink" target="_blank" class="btn btn-sm btn-primary">View on Map</a>
+      </div>
+    </div>
+  </div>
+</div>

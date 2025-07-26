@@ -1,0 +1,132 @@
+
+.account-wrapper {
+  display: flex;
+  min-height: 100vh;
+  background: #ffffff; 
+}
+
+.account-left {
+  flex: 1;
+  background-image: url('https://www.elefantastic.in/uploads/jodhpur_1734692806.webp');
+  background-size: cover;          
+  background-position: center;     
+  background-repeat: no-repeat;
+}
+
+.account-right {
+  flex: 1;
+  display: flex;
+  align-items: center;        
+  justify-content: center;     
+  background: #ffffff;
+  padding: 0;                  
+}
+
+.form-container {
+
+  max-width: 1000px;
+  padding: 2rem;
+  box-shadow: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  text-align: center;
+}
+
+.form-container h1 {
+  color: #0a3208;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  text-align: left;
+  font-weight: 550;
+}
+
+.subtitle {
+  text-align: left;
+  margin-bottom: 2rem;
+  color: #666;
+  font-size: 1.15rem;
+}
+
+.toggle-tabs {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+.toggle-tabs span {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #666;
+}
+.toggle-tabs .active {
+  color: #28a745;
+  border-bottom: 2px solid #28a745;
+  font-size: 1.25rem;
+}
+
+.auth-form {
+  display: none;
+}
+.auth-form.active {
+  display: block;
+}
+.form-group {
+  margin-bottom: 2rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  margin-bottom: 1.2rem;
+}
+.row input,
+.row select {
+  flex: 1;
+  width: 300px;
+  padding: 14px;
+  font-family:  'Tahoma';
+  font-size: 1rem;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background: transparent;
+}
+.row input:focus,
+.row select:focus {
+  border-color: #f78585;
+  outline: none;
+  
+}
+
+.btn-primary {
+  width: 50%;
+  padding: 14px;
+  font-size: 1.20rem;
+  background-color: #204128; 
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  opacity: 0.95;
+}
+
+.recaptcha-box {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0; 
+}
+.error-text {
+  color: #b00020;      /* A bright red for visibility */
+  margin-top: 0.5rem;  /* Spacing from above button */
+  font-size: 0.9rem;   /* Slightly smaller than default text */
+}
+
+.success-text {
+  color: #007e33;      /* A subtle green for positive feedback */
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}

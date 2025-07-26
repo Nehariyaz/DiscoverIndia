@@ -1,0 +1,22 @@
+
+.navbar-custom {
+  height: 60px;
+  background-color: #0e3b1b;
+  align-items: center;
+}
+
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ebcd6a; /* Light Orange */
+}
+
+.navbar-custom .active {
+    color: #e6de94 !important; /* Highlighted Yellow for Active */
+}
+

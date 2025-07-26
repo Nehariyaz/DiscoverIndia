@@ -1,0 +1,30 @@
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+.card-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+  
+.card-img-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent); // gradient for better readability
+  border-radius: 0 0 1rem 1rem; // match image corners if needed
+}
+

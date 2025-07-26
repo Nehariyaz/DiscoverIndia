@@ -1,0 +1,65 @@
+<div class="container">
+  <h1 class="contact-header">Contact Us</h1>
+  <p class="contact-subtitle">If you have any questions, suggestions, or need assistance, feel free to reach out to us. We are here to help!</p>
+ 
+  <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+    <label for="name">Full Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      [(ngModel)]="contact.name"
+      placeholder="Enter your full name"
+      required
+    />
+
+    <label for="email">Email Address</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      [(ngModel)]="contact.email"
+      placeholder="Enter your email address"
+      required
+    />
+
+    <label for="phone">Phone Number</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      [(ngModel)]="contact.phone"
+      placeholder="Enter your phone number"
+    />
+
+    <label for="subject">Subject</label>
+    <select id="subject" name="subject" [(ngModel)]="contact.subject" required>
+      <option value="">Select a subject</option>
+      <option value="general">General Inquiry</option>
+      <option value="tourism">Tourism Information</option>
+      <option value="feedback">Feedback</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      [(ngModel)]="contact.message"
+      rows="5"
+      placeholder="Write your message here"
+      required
+    ></textarea>
+
+    <button type="submit" [disabled]="!contactForm.form.valid">Submit</button>
+  </form>
+
+  <p *ngIf="responseMessage">{{ responseMessage }}</p>
+
+  <div class="contact-details">
+    <h3>Contact Information</h3>
+    <p><strong>Email:</strong> <a href="mailto:support@incredibleindia.org">support.org</a></p>
+    <p><strong>Phone:</strong> +91-1234-567-890</p>
+    <p><strong>Address:</strong> Ministry of Tourism, Incredible India, New Delhi, India</p>
+  </div>
+</div>

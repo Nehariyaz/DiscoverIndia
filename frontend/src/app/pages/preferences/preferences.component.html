@@ -1,0 +1,74 @@
+<div class="wrapper">
+  <div class="left-pane">
+    <app-chatbot (formFilled)="fillForm($event)"></app-chatbot>
+  </div>
+
+  <div class="right-pane">
+    <div class="form-container">
+      <h1>Personalize your experience with us</h1>
+      <form (ngSubmit)="submitPreferences()" #prefForm="ngForm">
+
+        <!-- State -->
+        <input
+          type="text"
+          id="state"
+          name="state"
+          [(ngModel)]="preferences.state"
+          required
+          placeholder="Enter your preferred state"
+        />
+
+        <!-- Travel Type -->
+        <label for="travelType">Travel Type</label>
+        <select id="travelType" [(ngModel)]="preferences.travelType" name="travelType" required>
+          <option value="" disabled>Select a type</option>
+          <option value="solo">Solo</option>
+          <option value="couple">Couple</option>
+          <option value="family">Family</option>
+          <option value="group">Group</option>
+          <option value="luxury">Luxury</option>
+          <option value="backpacking">Backpacking</option>
+        </select>
+
+        <!-- Budget -->
+        <label for="budget">Budget (in INR)</label>
+        <input
+          type="number"
+          id="budget"
+          name="budget"
+          [(ngModel)]="preferences.budget"
+          required
+          placeholder="Enter your budget"
+        />
+
+        <!-- Activities -->
+        <label>Interested Activities</label>
+        <div class="checkbox-group">
+          <div class="checkbox-row" *ngFor="let activity of activityOptions">
+            <input
+              type="checkbox"
+              [id]="activity"
+              [value]="activity"
+              (change)="toggleActivity(activity, $event)"
+              [checked]="preferences.interestedActivities.includes(activity)"
+            />
+            <label [for]="activity">{{ activity | titlecase }}</label>
+          </div>
+        </div>
+
+        <!-- Preferred Season -->
+        <label for="preferredSeason">Preferred Travel Season</label>
+        <select id="preferredSeason" [(ngModel)]="preferences.preferredSeason" name="preferredSeason">
+          <option value="" disabled>Select season</option>
+          <option value="winter">Winter</option>
+          <option value="summer">Summer</option>
+          <option value="monsoon">Monsoon</option>
+          <option value="autumn">Autumn</option>
+        </select>
+
+        <!-- Submit -->
+        <button type="submit">Save Preferences</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+
+<div #carouselWrapper class="carousel-wrapper">
+  <div class="carousel">
+    <div class="slide-card" *ngFor="let activity of activities">
+      <img [src]="activity.img" [alt]="activity.name" />
+      <div class="activity-name">{{ activity.name }}</div>
+    </div>
+    <!-- Duplicate slides for infinite effect -->
+    <div class="slide-card" *ngFor="let activity of activities">
+      <img [src]="activity.img" [alt]="activity.name" />
+      <div class="activity-name">{{ activity.name }}</div>
+    </div>
+  </div>
+</div>

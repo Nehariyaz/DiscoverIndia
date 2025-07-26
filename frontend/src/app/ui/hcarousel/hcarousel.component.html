@@ -1,0 +1,30 @@
+<div id="carouselExampleAutoplaying" class="carousel slide position-relative" data-bs-ride="carousel" data-bs-interval="2000">
+  <div class="carousel-inner">
+    <div 
+      *ngFor="let state of states; let i = index" 
+      class="carousel-item" 
+      [class.active]="i === 0"
+    >
+      <img [src]="state.img" class="img-fluid responsive-size" [alt]="state.name" />
+      <div class="carousel-caption d-none d-md-block">
+        <h2>{{ state.name }}</h2>
+        <button 
+          type="button" 
+          class="btn btn-primary custom-btn discover-btn" 
+          [routerLink]="['/state', state.id]"
+        >
+        Discover More
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

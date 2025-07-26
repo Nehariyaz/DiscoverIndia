@@ -1,0 +1,15 @@
+
+<div class="container-fluid travel-background">
+  <div class="text-center py-4">
+    <h2 class="display-5">Choose Your Dream Destination</h2>
+    <p class="lead text">Select the state you wish to explore</p>
+  </div>
+<div class="container-fluid travel-background">
+  <div class="row g-3 justify-content-center mx-0"> 
+    @for (item of states; track item.id) {
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 p-2"> 
+        <app-cards [data]="item"></app-cards>
+      </div>
+    }
+  </div>
+</div>
