@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const destinations = require('../data/destination');
 
+// Function to sanitize NaN values from destination objects
 function sanitizeNaN(obj) {
   const sanitized = {};
   for (const [key, value] of Object.entries(obj)) {
@@ -22,7 +23,19 @@ router.get('/', (req, res) => {
   res.json(sanitizedDestinations);
 });
 
-// ✅ NEW: GET destinations that match a search query
+// GET destinations filtered by stateId
+router.get('/byState/:stateId', (req, res) => {
+  const stateId = Number(req.params.stateId);
+  if (Number.isNaN(stateId)) {
+    return res.status(400).json({ error: 'Invalid stateId parameter' });
+  }
+  const filteredDestinations = destinations
+    .filter(dest => dest.stateId === stateId)
+    .map(dest => sanitizeNaN(dest));
+  res.json(filteredDestinations);
+});
+
+// GET destinations matching a search query
 router.get('/search', (req, res) => {
   const query = req.query.q?.toLowerCase();
   if (!query) return res.json([]);
@@ -40,10 +53,7 @@ router.get('/search', (req, res) => {
 // GET destination by name (slug-safe)
 router.get('/:name', (req, res) => {
   const searchName = req.params.name.toLowerCase().replace(/-/g, ' ');
-
-  const destination = destinations.find(d =>
-    d.name.toLowerCase() === searchName
-  );
+  const destination = destinations.find(d => d.name.toLowerCase() === searchName);
 
   if (destination) {
     res.json(sanitizeNaN(destination));

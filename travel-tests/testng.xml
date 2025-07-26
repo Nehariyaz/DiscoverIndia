@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Travel Suite">
+  <test name="Travel Website Tests">
+    <classes>
+      <class name="com.travel.tests.DemoTest"/>
+      <class name="com.travel.tests.NavbarAndSearchTest"/>
+    </classes>
+  </test>
+</suite>

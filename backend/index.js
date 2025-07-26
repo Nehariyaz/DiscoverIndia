@@ -16,30 +16,37 @@ const recommendationsRouter = require('./routes/recommendations');
 const destinationRoutes = require('./routes/destination');
 const chatbotRoutes = require('./routes/chatbot');
 
+// Connect to DB
 connectDB();
 
+// Middlewares
 app.use(cors());
-
 app.use(bodyParser.json());
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
-  auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_PASS,
-  },
-});
+
+
+// Routes
+app.use('/api/destinations', destinationRoutes);
+app.use('/api/recommendations', recommendationRoutes);
+app.use('/api/chatbot', chatbotRoutes);
 
 app.use('/api/destinations', destinationRoutes); 
 app.post('/enquiry', async (req, res) => {
   console.log('Received enquiry:', req.body);
 
   const { name, email, subject, message, recaptchaToken } = req.body;
+
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.GMAIL_USER,
+      pass: process.env.GMAIL_PASS,
+    },
+  });
 
   try {
     // Send email
@@ -167,6 +174,15 @@ app.post('/login', async (req, res) => {
 });
 app.post('/forgot-password', async (req, res) => {
   const { email } = req.body;
+  const transporter = nodemailer.createTransport({
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
+  auth: {
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_PASS,
+  },
+});
 
   if (!email) {
     return res.status(400).json({ error: 'Email is required' });
@@ -294,10 +310,11 @@ app.post('/api/preferences', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT 
+const PORT = process.env.PORT || 3000;
 
-app.use('/api/recommendations', recommendationsRouter);
-app.use('/api/chatbot', chatbotRoutes); // use a unique path for chatbot
-
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
+// ONLY listen if not testing
+if (require.main === module) {
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+} else {
+  module.exports = app; // So Mocha can use it without starting again
+}

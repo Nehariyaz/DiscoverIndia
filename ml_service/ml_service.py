@@ -4,6 +4,8 @@ import scipy.sparse as sp  # type: ignore
 from sklearn.preprocessing import MultiLabelBinarizer, OneHotEncoder  # type: ignore
 from sklearn.metrics.pairwise import cosine_similarity  # type: ignore
 from sentence_transformers import SentenceTransformer, util  # type: ignore
+from activity_matcher import expand_activities, match_activities
+from data_enrichment import normalize_column, budget_overlap
 import math
 
 
@@ -67,19 +69,27 @@ class MLService:
 
         if budget is not None and "budgetRange" in df.columns:
             try:
-                budget = int(budget)
-                df = df[df["budgetRange"].apply(lambda r: isinstance(r, list) and len(r) == 2 and r[0] <= budget <= r[1])]
-            except Exception:
-                pass
+                # Accept numeric or range input
+                if isinstance(budget, (list, tuple)) and len(budget) == 2:  # type: ignore
+                    budget_range = budget
+                else:
+                    budget = int(budget)
+                    buffer = 2000  # You can customize this
+                    budget_range = (budget - buffer, budget + buffer)
+
+                df = df[df["budgetRange"].apply(lambda br: budget_overlap(budget_range, br))]
+            except Exception as e:
+                print("Budget filtering error:", e)
 
         if activities:
-            matched_activities = self.fuzzy_match_activities(activities)
+            expanded_activities = expand_activities(activities)
             if "activities" in df.columns:
-                df = df[df["activities"].apply(lambda acts: any(act in matched_activities for act in acts))]
+                df = df[df["activities"].apply(lambda dest_acts: match_activities(expanded_activities, dest_acts))]
             else:
                 print("Warning: 'activities' column missing in filtered dataframe.")
 
-        return df
+        # Always return a DataFrame to avoid NoneType errors
+        return df if df is not None else pd.DataFrame()
 
     def recommend(self, prefs: dict, top_n: int = 3) -> list:
         print("Incoming preferences:", prefs)
@@ -98,6 +108,10 @@ class MLService:
                 df = full_df
 
         filtered_df = self.filter_data(df.copy(), prefs)
+        if filtered_df is None:
+            print("Warning: filter_data() returned None. Replacing with empty DataFrame.")
+            filtered_df = pd.DataFrame()
+
         print(f"Filtered destinations: {len(filtered_df)}")
 
         if not filtered_df.empty:
