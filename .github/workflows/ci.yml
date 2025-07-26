@@ -13,6 +13,14 @@ jobs:
     defaults:
       run:
         working-directory: backend
+    env:
+      DB_URI: ${{ secrets.DB_URI }}
+      JWT_SECRET: ${{ secrets.JWT_SECRET }}
+      RECAPTCHA_SECRET_KEY: ${{ secrets.RECAPTCHA_SECRET_KEY }}
+      GMAIL_USER: ${{ secrets.GMAIL_USER }}
+      GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
+      FRONTEND_URL: ${{ secrets.FRONTEND_URL }}
+      NODE_ENV: ${{ secrets.NODE_ENV }}
 
     steps:
       - name: Checkout code
