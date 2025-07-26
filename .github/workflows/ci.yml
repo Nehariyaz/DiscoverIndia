@@ -85,22 +85,22 @@ jobs:
       - name: Build Angular app without strict budgets
         run: npm run build -- --configuration=development --no-progress
 
-    ml-service-check:
-    name: ML Service Check
-    runs-on: ubuntu-latest
+  ml-service-check:
+      name: ML Service Check
+      runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: ml_service
+      defaults:
+        run:
+          working-directory: ml_service
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.10'
+        - name: Set up Python
+          uses: actions/setup-python@v5
+          with:
+            python-version: '3.10'
 
-      - name: Run syntax check on ML service
-        run: python -m compileall .
+        - name: Run syntax check on ML service
+          run: python -m compileall .
