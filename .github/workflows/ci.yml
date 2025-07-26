@@ -55,9 +55,10 @@ jobs:
       - name: Run Mocha tests
         run: npm test
 
-    frontend-build:
+  frontend-build:
     name: Frontend Build
     runs-on: ubuntu-latest
+
     defaults:
       run:
         working-directory: frontend
@@ -84,10 +85,10 @@ jobs:
       - name: Build Angular app
         run: npm run build --if-present
 
-
   ml-service-check:
     name: ML Service Check
     runs-on: ubuntu-latest
+
     defaults:
       run:
         working-directory: ml_service
