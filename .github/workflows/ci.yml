@@ -35,7 +35,9 @@ jobs:
         run: npm install
 
       - name: Fix permissions for cross-env
-        run: chmod +x ./node_modules/.bin/cross-env
+        run: |
+          chmod +x ./node_modules/.bin/cross-env
+          chmod +x ./node_modules/.bin/mocha
 
       - name: Run Mocha tests
         run: npm test
