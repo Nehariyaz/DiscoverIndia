@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "pretest": "copy .env.test .env",
+    "pretest": "cp .env.test .env",
     "test": "cross-env NODE_ENV=test mocha \"tests/**/*.test.js\" --timeout 10000",
     "start": "node index.js",
     "dev": "nodemon index.js"
