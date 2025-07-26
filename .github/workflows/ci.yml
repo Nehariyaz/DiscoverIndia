@@ -10,9 +10,17 @@ jobs:
   backend-tests:
     name: Backend Tests
     runs-on: ubuntu-latest
+
+    services:
+      mongodb:
+        image: mongo:5.0
+        ports:
+          - 27017:27017
+
     defaults:
       run:
         working-directory: backend
+
     env:
       DB_URI: ${{ secrets.TEST_DB_URI }}
       JWT_SECRET: ${{ secrets.TEST_JWT_SECRET }}
@@ -34,10 +42,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Fix permissions for cross-env and mocha
+      - name: Wait for MongoDB to be ready
         run: |
-          chmod +x ./node_modules/.bin/cross-env
-          chmod +x ./node_modules/.bin/mocha
+          echo "Waiting for MongoDB to be ready..."
+          until nc -z localhost 27017; do sleep 1; done
 
       - name: Run Mocha tests
         run: npm test
@@ -86,5 +94,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Python Syntax Check
-        run: |
-          python -m compileall .
+        run: python -m compileall .
