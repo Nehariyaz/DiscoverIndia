@@ -14,13 +14,13 @@ jobs:
       run:
         working-directory: backend
     env:
-      DB_URI: ${{ secrets.DB_URI }}
-      JWT_SECRET: ${{ secrets.JWT_SECRET }}
-      RECAPTCHA_SECRET_KEY: ${{ secrets.RECAPTCHA_SECRET_KEY }}
-      GMAIL_USER: ${{ secrets.GMAIL_USER }}
-      GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
-      FRONTEND_URL: ${{ secrets.FRONTEND_URL }}
-      NODE_ENV: ${{ secrets.NODE_ENV }}
+      DB_URI: ${{ secrets.TEST_DB_URI }}
+      JWT_SECRET: ${{ secrets.TEST_JWT_SECRET }}
+      RECAPTCHA_SECRET_KEY: ${{ secrets.TEST_RECAPTCHA_SECRET_KEY }}
+      GMAIL_USER: ${{ secrets.TEST_GMAIL_USER }}
+      GMAIL_PASS: ${{ secrets.TEST_GMAIL_PASS }}
+      FRONTEND_URL: ${{ secrets.TEST_FRONTEND_URL }}
+      NODE_ENV: ${{ secrets.TEST_NODE_ENV }}
 
     steps:
       - name: Checkout code
@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Fix permissions for cross-env
+      - name: Fix permissions for cross-env and mocha
         run: |
           chmod +x ./node_modules/.bin/cross-env
           chmod +x ./node_modules/.bin/mocha
@@ -85,5 +85,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run Python lint
-        run: python -m py_compile *.py
+      - name: Run Python Syntax Check
+        run: |
+          python -m compileall .
