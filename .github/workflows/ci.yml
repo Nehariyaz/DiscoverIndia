@@ -34,6 +34,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Fix permissions for cross-env
+        run: chmod +x ./node_modules/.bin/cross-env
+
       - name: Run Mocha tests
         run: npm test
 
@@ -81,5 +84,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Python lint
-        run: |
-          python -m py_compile *.py
+        run: python -m py_compile *.py
