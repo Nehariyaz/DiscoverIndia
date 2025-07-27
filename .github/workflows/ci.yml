@@ -126,16 +126,45 @@ jobs:
           npm install --legacy-peer-deps
           npm start -- --host=0.0.0.0 --disable-host-check &
 
+      # --- Debug: List running processes ---
+      - name: Debug: List all node and java processes
+        run: |
+          echo "Listing node processes:"
+          ps aux | grep node || echo "No node processes found"
+          echo "Listing java processes:"
+          ps aux | grep java || echo "No java processes found"
+
+      # --- Debug: Check listening ports ---
+      - name: Debug: Show listening ports on 127.0.0.1
+        run: |
+          echo "Listening TCP ports:"
+          ss -tunlp | grep LISTEN || echo "No listening ports found"
+
+      # --- Debug: Wait for frontend ---
       - name: Wait for frontend to be ready
         run: npx wait-on http://127.0.0.1:4200
 
+      # --- Debug: After waiting for frontend ---
+      - name: Debug: Verify frontend port 4200 is listening
+        run: ss -tuln | grep 4200 || echo "Port 4200 not listening"
+
+      # --- Debug: Wait for backend ---
       - name: Wait for backend to be ready
         run: npx wait-on http://127.0.0.1:5000 --timeout 180000
 
+      # --- Debug: Verify backend port 5000 listening ---
+      - name: Debug: Verify backend port 5000
+        run: ss -tuln | grep 5000 || echo "Port 5000 not listening"
+
+      # --- Debug: Wait for Selenium server ---
       - name: Wait for Selenium server
         run: |
           echo "Waiting for Selenium server at 127.0.0.1:4444..."
           until nc -z 127.0.0.1 4444; do sleep 1; done
+
+      # --- Debug: Verify selenium port listening ---
+      - name: Debug: Verify Selenium port 4444
+        run: ss -tuln | grep 4444 || echo "Port 4444 not listening"
 
       - name: Run Selenium E2E Tests
         run: mvn test
