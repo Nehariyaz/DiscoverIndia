@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, HttpClientModule],
+  imports: [CommonModule, FormsModule], // <-- removed HttpClientModule here
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.scss']
 })
