@@ -55,8 +55,9 @@ jobs:
       - name: Run Mocha tests
         run: npm test
 
-  frontend-tests:
-    name: Frontend Unit Tests
+
+  frontend:
+    name: Frontend Tests and Build
     runs-on: ubuntu-latest
 
     defaults:
@@ -87,13 +88,23 @@ jobs:
       - name: Run unit tests with ChromeHeadless
         run: npm run test -- --watch=false --browsers=ChromeHeadless
 
-  frontend-build:
-    name: Frontend Build
+      - name: Build Angular app without strict budgets
+        run: npm run build -- --configuration=development --no-progress
+
+
+  selenium-e2e-tests:
+    name: Selenium E2E Tests
     runs-on: ubuntu-latest
 
     defaults:
       run:
-        working-directory: frontend
+        working-directory: frontend  # Adjust if your tests are elsewhere
+
+    services:
+      selenium:
+        image: selenium/standalone-chrome:latest
+        ports:
+          - 4444:4444
 
     steps:
       - name: Checkout code
@@ -104,18 +115,17 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Ensure package.json exists
-        run: |
-          if [ ! -f package.json ]; then
-            echo "package.json not found!"
-            exit 1
-          fi
-
-      - name: Install frontend dependencies (with legacy-peer-deps)
+      - name: Install frontend dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Build Angular app without strict budgets
-        run: npm run build -- --configuration=development --no-progress
+      - name: Wait for Selenium server to be ready
+        run: |
+          echo "Waiting for Selenium server at localhost:4444..."
+          until nc -z localhost 4444; do sleep 1; done
+
+      - name: Run Selenium E2E Tests
+        run: npm run e2e   # Adjust this command to whatever you use for selenium tests
+
 
   ml-service-check:
     name: ML Service Check
