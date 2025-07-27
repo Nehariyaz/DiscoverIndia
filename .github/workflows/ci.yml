@@ -11,11 +11,7 @@ jobs:
     name: Backend Tests
     runs-on: ubuntu-latest
 
-    services:
-      mongodb:
-        image: mongo:5.0
-        ports:
-          - 27017:27017
+    # Removed MongoDB service because you use Atlas instead
 
     defaults:
       run:
@@ -47,10 +43,7 @@ jobs:
           chmod +x ./node_modules/.bin/cross-env
           chmod +x ./node_modules/.bin/mocha
 
-      - name: Wait for MongoDB to be ready
-        run: |
-          echo "Waiting for MongoDB to be ready..."
-          until nc -z 127.0.0.1 27017; do sleep 1; done
+      # Removed wait for MongoDB step since Atlas is used
 
       - name: Run Mocha tests
         run: npm test
@@ -94,7 +87,6 @@ jobs:
     name: Selenium E2E Tests
     runs-on: ubuntu-latest
 
-    # Use repo root so relative paths work correctly
     defaults:
       run:
         working-directory: .
@@ -118,13 +110,8 @@ jobs:
       - name: Install Maven
         run: sudo apt-get update && sudo apt-get install -y maven
 
-      # Wait for MongoDB service readiness before backend start
-      - name: Wait for MongoDB to be ready
-        run: |
-          echo "Waiting for MongoDB to be ready..."
-          until nc -z 127.0.0.1 27017; do sleep 1; done
+      # Removed wait for MongoDB since Atlas is used
 
-      # Start backend server with PORT=5000 and background it
       - name: Start backend server
         run: |
           cd backend
@@ -133,28 +120,23 @@ jobs:
           node index.js &
           cd -
 
-      # Start frontend server in background with host flags
       - name: Start frontend server
         run: |
           cd frontend
           npm install --legacy-peer-deps
           npm start -- --host=0.0.0.0 --disable-host-check &
 
-      # Wait for frontend to be available
       - name: Wait for frontend to be ready
         run: npx wait-on http://127.0.0.1:4200
 
-      # Wait for backend to be available with 3 mins timeout
       - name: Wait for backend to be ready
         run: npx wait-on http://127.0.0.1:5000 --timeout 180000
 
-      # Wait for Selenium standalone Chrome server readiness
       - name: Wait for Selenium server
         run: |
           echo "Waiting for Selenium server at 127.0.0.1:4444..."
           until nc -z 127.0.0.1 4444; do sleep 1; done
 
-      # Run Selenium tests via Maven
       - name: Run Selenium E2E Tests
         run: mvn test
 
