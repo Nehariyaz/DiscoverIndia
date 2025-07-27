@@ -1,47 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-26T17:13:57 IST" name="Travel Suite" finished-at="2025-07-26T17:14:27 IST" duration-ms="30228">
+  <suite started-at="2025-07-27T10:35:31 IST" name="Travel Suite" finished-at="2025-07-27T10:35:57 IST" duration-ms="25935">
     <groups>
     </groups>
-    <test started-at="2025-07-26T17:13:57 IST" name="Travel Website Tests" finished-at="2025-07-26T17:14:27 IST" duration-ms="30228">
+    <test started-at="2025-07-27T10:35:31 IST" name="Travel Website Tests" finished-at="2025-07-27T10:35:57 IST" duration-ms="25935">
       <class name="com.travel.tests.DemoTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.travel.tests.DemoTest@47af7f3d]" started-at="2025-07-26T17:13:57 IST" name="setup" finished-at="2025-07-26T17:14:01 IST" duration-ms="4385" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.travel.tests.DemoTest@6f96c77]" started-at="2025-07-27T10:35:32 IST" name="setup" finished-at="2025-07-27T10:35:34 IST" duration-ms="2864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="openTravelApp()[pri:0, instance:com.travel.tests.DemoTest@47af7f3d]" started-at="2025-07-26T17:14:01 IST" name="openTravelApp" finished-at="2025-07-26T17:14:09 IST" duration-ms="8030" status="PASS">
+        <test-method signature="openTravelApp()[pri:0, instance:com.travel.tests.DemoTest@6f96c77]" started-at="2025-07-27T10:35:34 IST" name="openTravelApp" finished-at="2025-07-27T10:35:42 IST" duration-ms="7909" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.169)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [15284fe3081f3c0d03b8ecc44263c19c, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55826/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15284fe3081f3c0d03b8ecc44263c19c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=138.0.7204.169)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [15284fe3081f3c0d03b8ecc44263c19c, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55826}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55826/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15284fe3081f3c0d03b8ecc44263c19c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
+at com.travel.tests.DemoTest.openTravelApp(DemoTest.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openTravelApp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.travel.tests.DemoTest@47af7f3d]" started-at="2025-07-26T17:14:09 IST" name="tearDown" finished-at="2025-07-26T17:14:10 IST" duration-ms="1139" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.travel.tests.DemoTest@6f96c77]" started-at="2025-07-27T10:35:42 IST" name="tearDown" finished-at="2025-07-27T10:35:43 IST" duration-ms="595" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.travel.tests.DemoTest -->
       <class name="com.travel.tests.NavbarAndSearchTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.travel.tests.NavbarAndSearchTest@44ebcd03]" started-at="2025-07-26T17:14:10 IST" name="setup" finished-at="2025-07-26T17:14:25 IST" duration-ms="14312" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.travel.tests.NavbarAndSearchTest@3d680b5a]" started-at="2025-07-27T10:35:43 IST" name="setup" finished-at="2025-07-27T10:35:52 IST" duration-ms="9151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyTitleAndNavbar()[pri:1, instance:com.travel.tests.NavbarAndSearchTest@44ebcd03]" started-at="2025-07-26T17:14:25 IST" name="verifyTitleAndNavbar" finished-at="2025-07-26T17:14:25 IST" duration-ms="48" status="PASS">
+        <test-method signature="verifyTitleAndNavbar()[pri:1, instance:com.travel.tests.NavbarAndSearchTest@3d680b5a]" started-at="2025-07-27T10:35:52 IST" name="verifyTitleAndNavbar" finished-at="2025-07-27T10:35:52 IST" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitleAndNavbar -->
-        <test-method signature="testNavbarNavigation()[pri:2, instance:com.travel.tests.NavbarAndSearchTest@44ebcd03]" started-at="2025-07-26T17:14:25 IST" name="testNavbarNavigation" finished-at="2025-07-26T17:14:25 IST" duration-ms="384" status="PASS">
+        <test-method signature="testNavbarNavigation()[pri:2, instance:com.travel.tests.NavbarAndSearchTest@3d680b5a]" started-at="2025-07-27T10:35:52 IST" name="testNavbarNavigation" finished-at="2025-07-27T10:35:52 IST" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNavbarNavigation -->
-        <test-method signature="testSearchInput()[pri:3, instance:com.travel.tests.NavbarAndSearchTest@44ebcd03]" started-at="2025-07-26T17:14:25 IST" name="testSearchInput" finished-at="2025-07-26T17:14:26 IST" duration-ms="1097" status="PASS">
+        <test-method signature="testSearchInput()[pri:3, instance:com.travel.tests.NavbarAndSearchTest@3d680b5a]" started-at="2025-07-27T10:35:52 IST" name="testSearchInput" finished-at="2025-07-27T10:35:55 IST" duration-ms="2465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchInput -->
-        <test-method signature="testAccountDropdown()[pri:4, instance:com.travel.tests.NavbarAndSearchTest@44ebcd03]" started-at="2025-07-26T17:14:26 IST" name="testAccountDropdown" finished-at="2025-07-26T17:14:27 IST" duration-ms="343" status="PASS">
+        <test-method signature="testAccountDropdown()[pri:4, instance:com.travel.tests.NavbarAndSearchTest@3d680b5a]" started-at="2025-07-27T10:35:55 IST" name="testAccountDropdown" finished-at="2025-07-27T10:35:55 IST" duration-ms="314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAccountDropdown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.travel.tests.NavbarAndSearchTest@44ebcd03]" started-at="2025-07-26T17:14:27 IST" name="tearDown" finished-at="2025-07-26T17:14:27 IST" duration-ms="356" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.travel.tests.NavbarAndSearchTest@3d680b5a]" started-at="2025-07-27T10:35:55 IST" name="tearDown" finished-at="2025-07-27T10:35:57 IST" duration-ms="2189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

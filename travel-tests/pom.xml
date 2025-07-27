@@ -11,40 +11,46 @@
   <name>travel-tests</name>
   <url>http://maven.apache.org</url>
 
-  <!-- ✅ Specify Java version here -->
+  <!-- Specify Java version -->
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
   <dependencies>
-  <!-- Selenium -->
-  <dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.21.0</version>
-  </dependency>
+    <!-- Selenium -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.21.0</version>
+    </dependency>
 
-  <!-- TestNG -->
-  <dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.10.1</version>
-    <scope>test</scope>
-  </dependency>
+   <dependency>
+  <groupId>org.seleniumhq.selenium</groupId>
+  <artifactId>selenium-devtools-v121</artifactId>
+  <version>4.19.1</version>
+</dependency>
 
-  <!-- ✅ WebDriverManager (auto-manages browser drivers) -->
-  <dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>5.8.0</version>
-  </dependency>
-</dependencies>
 
+    <!-- TestNG -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.10.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- WebDriverManager (auto-manages browser drivers) -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.8.0</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <plugins>
-      <!-- ✅ Compiler plugin to set Java version explicitly -->
+      <!-- Compiler plugin to set Java version explicitly -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -55,7 +61,7 @@
         </configuration>
       </plugin>
 
-      <!-- ✅ Surefire plugin to run TestNG tests -->
+      <!-- Surefire plugin to run TestNG tests -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-plugin</artifactId>
