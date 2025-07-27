@@ -99,7 +99,7 @@ jobs:
     # Set this to the directory where your pom.xml for Maven is located
     defaults:
       run:
-        working-directory: travel-tests
+        working-directory: .
 
     services:
       selenium:
