@@ -94,7 +94,6 @@ jobs:
     name: Selenium E2E Tests
     runs-on: ubuntu-latest
 
-    # Working directory is repo root so relative paths work as expected
     defaults:
       run:
         working-directory: .
@@ -117,6 +116,12 @@ jobs:
 
       - name: Install Maven
         run: sudo apt-get update && sudo apt-get install -y maven
+
+      # --- Wait for MongoDB before backend is started ---
+      - name: Wait for MongoDB to be ready
+        run: |
+          echo "Waiting for MongoDB to be ready..."
+          until nc -z localhost 27017; do sleep 1; done
 
       # Start backend using node index.js with PORT=5000 in background
       - name: Start backend server
