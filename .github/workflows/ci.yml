@@ -141,7 +141,7 @@ jobs:
 
       # Wait for backend to be available
       - name: Wait for backend to be ready
-        run: npx wait-on http://localhost:3000
+        run: npx wait-on http://localhost:5000
 
       # Wait for Selenium standalone Chrome server to be ready
       - name: Wait for Selenium server
