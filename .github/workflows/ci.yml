@@ -11,7 +11,11 @@ jobs:
     name: Backend Tests
     runs-on: ubuntu-latest
 
-    # Removed MongoDB service because you use Atlas instead
+    services:
+      mongodb:
+        image: mongo:5.0
+        ports:
+          - 27017:27017
 
     defaults:
       run:
@@ -43,7 +47,10 @@ jobs:
           chmod +x ./node_modules/.bin/cross-env
           chmod +x ./node_modules/.bin/mocha
 
-      # Removed wait for MongoDB step since Atlas is used
+      - name: Wait for MongoDB to be ready
+        run: |
+          echo "Waiting for MongoDB to be ready..."
+          until nc -z localhost 27017; do sleep 1; done
 
       - name: Run Mocha tests
         run: npm test
@@ -109,8 +116,6 @@ jobs:
 
       - name: Install Maven
         run: sudo apt-get update && sudo apt-get install -y maven
-
-      # Removed wait for MongoDB since Atlas is used
 
       - name: Start backend server
         run: |
