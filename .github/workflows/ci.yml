@@ -98,7 +98,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: frontend  # Adjust if your tests are elsewhere
+        working-directory: frontend  # Change if Selenium tests are located elsewhere
 
     services:
       selenium:
@@ -124,7 +124,7 @@ jobs:
           until nc -z localhost 4444; do sleep 1; done
 
       - name: Run Selenium E2E Tests
-        run: npm run e2e   # Adjust this command to whatever you use for selenium tests
+        run: mvn test
 
 
   ml-service-check:
