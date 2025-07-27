@@ -96,10 +96,10 @@ jobs:
     name: Selenium E2E Tests
     runs-on: ubuntu-latest
 
-    # Set working directory to your Maven Selenium project
+    # Set this to the directory where your pom.xml for Maven is located
     defaults:
       run:
-        working-directory: travel-tests  # Adjust if your pom.xml is elsewhere
+        working-directory: travel-tests
 
     services:
       selenium:
@@ -120,38 +120,39 @@ jobs:
       - name: Install Maven
         run: sudo apt-get update && sudo apt-get install -y maven
 
-      # Start backend using node index.js
+      # Start backend with node index.js in background
       - name: Start backend server
         run: |
-          cd backend      # Adjust to your backend directory
+          cd backend
           npm install
           node index.js &
           cd -
 
-      # Start frontend using npm start
+      # Start frontend with npm start in background
       - name: Start frontend server
         run: |
-          cd frontend    # Adjust to your frontend directory
+          cd frontend
           npm install --legacy-peer-deps
           npm start -- --host=0.0.0.0 --disable-host-check &
 
-      # Wait until frontend is ready (adjust port if needed)
+      # Wait for frontend to be available
       - name: Wait for frontend to be ready
         run: npx wait-on http://localhost:4200
 
-      # Wait until backend is ready (adjust port if needed)
+      # Wait for backend to be available
       - name: Wait for backend to be ready
         run: npx wait-on http://localhost:3000
 
-      # Wait for Selenium server to be ready
+      # Wait for Selenium standalone Chrome server to be ready
       - name: Wait for Selenium server
         run: |
           echo "Waiting for Selenium server at localhost:4444..."
           until nc -z localhost 4444; do sleep 1; done
 
-      # Run your Selenium tests
+      # Run Selenium tests using Maven
       - name: Run Selenium E2E Tests
         run: mvn test
+
 
   ml-service-check:
     name: ML Service Check
