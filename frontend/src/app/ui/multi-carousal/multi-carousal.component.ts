@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
-import { DestinationService } from '../../services/destination.service'; // Adjust path if needed
+import { DestinationService } from '../../services/destination.service';
 
 interface Attraction {
   name: string;
@@ -33,6 +33,8 @@ export class MultiCarousalComponent implements OnChanges {
   @Output() attractionClicked = new EventEmitter<Attraction>();
 
   attractions: Attraction[] = [];
+  loading: boolean = false;
+  errorMessage: string = '';
 
   constructor(
     private sanitizer: DomSanitizer,
@@ -50,21 +52,32 @@ export class MultiCarousalComponent implements OnChanges {
   }
 
   loadAttractionsByState(): void {
+    this.loading = true;
+    this.errorMessage = '';
+    this.attractions = [];
+
     this.destinationService.getAllDestinations().subscribe({
       next: (data) => {
-        const filtered = data.filter(
+        // Filter by stateId and ensure type safety
+        const filtered: any[] = data.filter(
           (item: any) => item.stateId === this.stateId
         );
+
+        // Debug: log filtered data
+        console.log('Filtered attractions for stateId', this.stateId, ':', filtered);
 
         this.attractions = filtered.map((item: any) => ({
           ...item,
           imageUrl: item.imageUrl
             ? this.sanitizer.bypassSecurityTrustUrl(item.imageUrl)
-            : 'assets/default.jpg' // fallback image
+            : 'assets/default.jpg' // fallback image if no imageUrl
         }));
+        this.loading = false;
       },
       error: (err) => {
         console.error('Error loading destinations:', err);
+        this.loading = false;
+        this.errorMessage = 'Failed to load attractions. Please try again later.';
       }
     });
   }

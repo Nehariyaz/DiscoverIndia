@@ -1,0 +1,56 @@
+service: ml-service
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: eu-north-1
+  memorySize: 1024
+  timeout: 29
+  environment:
+    FRONTEND_URL: http://discoverindia.s3-website.eu-north-1.amazonaws.com
+
+  httpApi:
+    cors:
+      allowedOrigins:
+        - ${self:provider.environment.FRONTEND_URL}
+      allowedMethods:
+        - POST
+        - GET
+        - OPTIONS
+      allowedHeaders:
+        - Content-Type
+        - Authorization
+      allowCredentials: true
+
+package:
+  exclude:
+    - tests/**
+    - docs/**
+    - .env
+    - '*.md'
+  include:
+    - destination.js   # ✅ make sure dataset is packaged
+
+functions:
+  recommendations:
+    handler: recommend_service.recommend_handler
+    events:
+      - httpApi:
+          path: /api/recommendations
+          method: post
+
+  health:
+    handler: recommend_service.health_handler
+    events:
+      - httpApi:
+          path: /api/health
+          method: get
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: true   # ✅ build dependencies in Amazon Linux using Docker
+    layer: true          # ✅ put them in a Lambda Layer automatically
+    slim: true           # ✅ reduce size

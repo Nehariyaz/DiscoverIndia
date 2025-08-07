@@ -21,7 +21,6 @@ connectDB();
 
 // Middlewares
 app.use(cors());
-app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -32,12 +31,11 @@ app.use('/api/destinations', destinationRoutes);
 app.use('/api/recommendations', recommendationRoutes);
 app.use('/api/chatbot', chatbotRoutes);
 
-app.use('/api/destinations', destinationRoutes); 
 app.post('/enquiry', async (req, res) => {
   console.log('Received enquiry:', req.body);
 
-  const { name, email, subject, message, recaptchaToken } = req.body;
-
+  const { name, email, phone, subject, message } = req.body; // include phone
+  
   const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
@@ -49,18 +47,19 @@ app.post('/enquiry', async (req, res) => {
   });
 
   try {
-    // Send email
+    // Send email, include phone if you want
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
       to: process.env.GMAIL_USER,
       subject: subject || "New Travel Enquiry",
-      text: message,
+      text: `Message: ${message}\nPhone: ${phone}`,  // include phone in email body
     });
 
-    // Log in DB
+    // Log in DB, add phone field to EmailLog schema if necessary
     await EmailLog.create({
       name,
       email,
+      phone,   // save phone if your schema allows
       subject,
       message,
       status: "success",
@@ -73,6 +72,7 @@ app.post('/enquiry', async (req, res) => {
     await EmailLog.create({
       name,
       email,
+      phone,
       subject,
       message,
       status: "failure",
@@ -82,6 +82,7 @@ app.post('/enquiry', async (req, res) => {
     res.status(500).json({ error: "Failed to send enquiry", details: error.message });
   }
 });
+
 
 app.post('/signup', async (req, res) => {
   const { firstName, lastName, email, password, recaptchaToken } = req.body;

@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
+import { environment } from '../../../environments/environment'; 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule], // <-- removed HttpClientModule here
+  imports: [CommonModule, FormsModule, HttpClientModule], // HttpClientModule is required here
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.scss']
 })
@@ -21,10 +23,12 @@ export class ContactComponent {
 
   responseMessage = '';
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   submitForm() {
-    this.http.post('http://localhost:5000/enquiry', this.contact).subscribe({
+    const enquiryUrl = `${environment.apiUrlNode}/enquiry`; // Use environment URL
+
+    this.http.post(enquiryUrl, this.contact).subscribe({
       next: (res: any) => {
         this.responseMessage = 'Message sent successfully!';
         this.contact = { name: '', email: '', phone: '', subject: '', message: '' };

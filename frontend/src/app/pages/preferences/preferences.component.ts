@@ -1,9 +1,11 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnChanges, SimpleChanges } from '@angular/core';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Router, ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ChatbotComponent } from '../../ui/chatbot/chatbot.component';
+import { environment } from '../../../environments/environment';  // Import environment
+
 
 @Component({
   selector: 'app-preferences',
@@ -23,6 +25,7 @@ export class PreferencesComponent implements OnChanges {
     state: ''
   };
 
+
   // Activity options displayed in form
   activityOptions: string[] = [
     'trekking', 'nature', 'beach', 'nightlife', 'culture', 'heritage',
@@ -30,6 +33,7 @@ export class PreferencesComponent implements OnChanges {
     'spiritual', 'temples', 'wildlife', 'tea gardens', 'ruins', 'history', 'urban',
     'architecture'
   ];
+
 
   constructor(
     private http: HttpClient,
@@ -46,9 +50,11 @@ export class PreferencesComponent implements OnChanges {
     }
   }
 
+
   ngOnChanges(changes: SimpleChanges): void {
     // Placeholder - not needed unless working with @Input()s
   }
+
 
   /**
    * Called when chatbot emits collected form data
@@ -68,6 +74,7 @@ export class PreferencesComponent implements OnChanges {
       : (data.activity ? [data.activity] : []);
   }
 
+
   /**
    * Toggled a checkbox input for activity
    */
@@ -84,6 +91,7 @@ export class PreferencesComponent implements OnChanges {
       if (index > -1) list.splice(index, 1);
     }
   }
+
 
   /**
    * Submits preferences to backend
@@ -108,7 +116,7 @@ export class PreferencesComponent implements OnChanges {
 
     console.log('📤 Submitting preferences:', fullPreferences);
 
-    this.http.post('http://localhost:5000/api/preferences', fullPreferences).subscribe({
+    this.http.post(`${environment.apiUrlNode}/api/preferences`, fullPreferences).subscribe({
       next: () => {
         this.router.navigate(['/dashboard'], {
           state: { preferences: this.preferences }
