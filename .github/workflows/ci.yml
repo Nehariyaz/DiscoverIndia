@@ -22,8 +22,8 @@ jobs:
         working-directory: backend
 
     env:
-      DB_URI: ${{ secrets.TEST_DB_URI }}
-      JWT_SECRET: ${{ secrets.TEST_JWT_SECRET }}
+      DB_URI: mongodb://localhost:27017/discoverindia-test   # CI database container, no Atlas needed
+      JWT_SECRET: ci-only-test-secret   # not a real secret
       RECAPTCHA_SECRET_KEY: ${{ secrets.TEST_RECAPTCHA_SECRET_KEY }}
       GMAIL_USER: ${{ secrets.TEST_GMAIL_USER }}
       GMAIL_PASS: ${{ secrets.TEST_GMAIL_PASS }}
@@ -37,7 +37,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install backend dependencies
         run: npm install
@@ -70,7 +70,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install Chrome
         run: |
