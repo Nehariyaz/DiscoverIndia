@@ -1,11 +1,11 @@
 // db.js
 const mongoose = require('mongoose');
 
-let isConnected = false; // cached connection flag
-
 const connectDB = async () => {
-  if (isConnected) {
-    // Return early if already connected to avoid reconnecting on warm Lambda
+  // readyState 1 = connected. Reusing the connection keeps warm Lambda
+  // invocations fast, and (unlike a manual flag) it stays correct if the
+  // connection is closed or dropped.
+  if (mongoose.connection.readyState === 1) {
     return;
   }
 
@@ -15,14 +15,10 @@ const connectDB = async () => {
       throw new Error("Missing DB_URI in environment variables");
     }
 
-    await mongoose.connect(uri, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      // useCreateIndex, useFindAndModify no longer needed with new Mongoose versions
-    });
+    await mongoose.connect(uri);
 
-    isConnected = true;
-    console.log(`MongoDB connected to ${uri}`);
+    // Never log the URI: it contains the database password.
+    console.log("MongoDB connected");
   } catch (err) {
     console.error('MongoDB connection error:', err.message);
     throw err; // Let the caller decide how to handle this
