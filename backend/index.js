@@ -16,8 +16,8 @@ const recommendationsRouter = require('./routes/recommendations');
 const destinationRoutes = require('./routes/destination');
 const chatbotRoutes = require('./routes/chatbot');
 
-// Connect to DB
-connectDB();
+// Connect to DB (a failed attempt must not crash the process)
+connectDB().catch(err => console.error('DB connection failed:', err.message));
 
 // Middlewares
 app.use(cors());
@@ -69,15 +69,19 @@ app.post('/enquiry', async (req, res) => {
   } catch (error) {
     console.error('Error sending enquiry:', error);
 
-    await EmailLog.create({
-      name,
-      email,
-      phone,
-      subject,
-      message,
-      status: "failure",
-      error: error.message,
-    });
+    try {
+      await EmailLog.create({
+        name,
+        email,
+        phone,
+        subject,
+        message,
+        status: "failure",
+        error: error.message,
+      });
+    } catch (logErr) {
+      console.error('Could not log failed enquiry:', logErr.message);
+    }
 
     res.status(500).json({ error: "Failed to send enquiry", details: error.message });
   }
@@ -309,6 +313,15 @@ app.post('/api/preferences', async (req, res) => {
     console.error('Error inserting preferences:', err.stack || err.message);
     res.status(500).json({ error: 'Failed to save preferences' });
   }
+});
+
+// 404 and error handlers (log the real error, never crash)
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not found' });
+});
+app.use((err, req, res, next) => {
+  console.error('Unhandled error:', err);
+  res.status(500).json({ error: 'Internal server error' });
 });
 
 const PORT = process.env.PORT || 5000;
