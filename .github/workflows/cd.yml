@@ -14,7 +14,7 @@ permissions:
 env:
   AWS_REGION: eu-north-1
   S3_BUCKET: discoverindia
-  LAMBDA_FUNCTION: discoverbackend
+  LAMBDA_FUNCTION: discoverindia-api
   AWS_ROLE_ARN: arn:aws:iam::156234218863:role/github-actions-discoverindia
 
 jobs:
