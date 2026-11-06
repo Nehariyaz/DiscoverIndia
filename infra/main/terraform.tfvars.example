@@ -1,0 +1,8 @@
+# Copy this file to terraform.tfvars and fill in your NEW (rotated) values.
+# terraform.tfvars is gitignored. Never share it or paste it anywhere.
+frontend_url         = "http://discoverindia.s3-website.eu-north-1.amazonaws.com"
+gmail_user           = "your-address@gmail.com"
+db_uri               = "paste the new DB_URI"
+jwt_secret           = "paste the new JWT secret"
+recaptcha_secret_key = "paste the new reCAPTCHA secret key"
+gmail_pass           = "paste the new Gmail app password (no spaces)"
